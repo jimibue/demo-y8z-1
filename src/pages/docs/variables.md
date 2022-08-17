@@ -8,6 +8,7 @@ To create a variable in JS we use the `let` keyword.
 
 ```javascript
 let age = 23;
+//
 ```
 ---
 
