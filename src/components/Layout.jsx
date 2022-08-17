@@ -22,7 +22,7 @@ const navigation = [
   {
     title: 'Core concepts',
     links: [
-      { title: 'Understanding caching', href: '/docs/understanding-caching' },
+      { title: 'Variables', href: '/docs/variables' },
       {
         title: 'Predicting user behavior',
         href: '/docs/predicting-user-behavior',
@@ -39,14 +39,14 @@ const navigation = [
     title: 'Advanced guides',
     links: [
       { title: 'Writing plugins', href: '/docs/writing-plugins' },
-      { title: 'Neuralink integration', href: '/docs/neuralink-integration' },
-      { title: 'Temporal paradoxes', href: '/docs/temporal-paradoxes' },
-      { title: 'Testing', href: '/docs/testing' },
-      { title: 'Compile-time caching', href: '/docs/compile-time-caching' },
-      {
-        title: 'Predictive data generation',
-        href: '/docs/predictive-data-generation',
-      },
+      // { title: 'Neuralink integration', href: '/docs/neuralink-integration' },
+      // { title: 'Temporal paradoxes', href: '/docs/temporal-paradoxes' },
+      // { title: 'Testing', href: '/docs/testing' },
+      // { title: 'Compile-time caching', href: '/docs/compile-time-caching' },
+      // {
+      //   title: 'Predictive data generation',
+      //   href: '/docs/predictive-data-generation',
+      // },
     ],
   },
   {
@@ -255,7 +255,7 @@ export function Layout({ children, title, tableOfContents }) {
             )}
           </dl>
         </div>
-        <div className="hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-16 xl:pr-6">
+        {false && (<div className="hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-16 xl:pr-6">
           <nav aria-labelledby="on-this-page-title" className="w-56">
             {tableOfContents.length > 0 && (
               <>
@@ -307,7 +307,7 @@ export function Layout({ children, title, tableOfContents }) {
               </>
             )}
           </nav>
-        </div>
+        </div>)}
       </div>
     </>
   )

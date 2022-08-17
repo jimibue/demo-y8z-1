@@ -1,11 +1,10 @@
-import 'focus-visible'
-import '@/styles/tailwind.css'
-
 import Head from 'next/head'
 import { slugifyWithCounter } from '@sindresorhus/slugify'
 
 import { Layout } from '@/components/Layout'
-import { useRouter } from 'next/router'
+
+import 'focus-visible'
+// import '@/styles/tailwind.css'
 
 function getNodeText(node) {
   let text = ''
@@ -50,9 +49,6 @@ function collectHeadings(nodes, slugify = slugifyWithCounter()) {
 }
 
 export default function App({ Component, pageProps }) {
-  let {asPath} = useRouter()
-   console.log(asPath)
-  if(asPath.includes('course') || asPath.includes('docs') ){
   let title = pageProps.markdoc?.frontmatter.title
 
   let pageTitle =
@@ -76,8 +72,4 @@ export default function App({ Component, pageProps }) {
       </Layout>
     </>
   )
-  }
-  return <Component {...pageProps} />
 }
-
-
