@@ -7,6 +7,7 @@ export function Navigation({ navigation, className }) {
 console.log(navigation)
   return (
     <nav className={clsx('text-base lg:text-sm', className)}>
+      <Link href='/courses' ><a className="mt-2 space-y-2">Back to courses</a></Link>
       <ul role="list" className="space-y-9">
         {navigation.map((section) => (
           <li key={section.title}>

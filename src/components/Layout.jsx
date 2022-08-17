@@ -4,69 +4,16 @@ import { useRouter } from 'next/router'
 import clsx from 'clsx'
 
 import { Hero } from '@/components/Hero'
+import { HeroPrep } from '@/components/HeroPrep'
 import { Logo, Logomark } from '@/components/Logo'
 import { MobileNavigation } from '@/components/MobileNavigation'
 import { Navigation } from '@/components/Navigation'
 import { Prose } from '@/components/Prose'
 import { Search } from '@/components/Search'
 import { ThemeSelector } from '@/components/ThemeSelector'
+import introToJsNav from './layoutNavs/intro-to-js-nav'
+import introToHTMLNav from '../pages/intro-to-html/intro-to-html-nav'
 
-const navigation = [
-  {
-    title: 'Introduction',
-    links: [
-      { title: 'Getting started', href: '/' },
-      { title: 'Installation', href: '/docs/installation' },
-    ],
-  },
-  {
-    title: 'Core concepts',
-    links: [
-      { title: 'Variables', href: '/docs/variables' },
-      {
-        title: 'Predicting user behavior',
-        href: '/docs/predicting-user-behavior',
-      },
-      { title: 'Basics of time-travel', href: '/docs/basics-of-time-travel' },
-      {
-        title: 'Introduction to string theory',
-        href: '/docs/introduction-to-string-theory',
-      },
-      { title: 'The butterfly effect', href: '/docs/the-butterfly-effect' },
-    ],
-  },
-  {
-    title: 'Advanced guides',
-    links: [
-      { title: 'Writing plugins', href: '/docs/writing-plugins' },
-      // { title: 'Neuralink integration', href: '/docs/neuralink-integration' },
-      // { title: 'Temporal paradoxes', href: '/docs/temporal-paradoxes' },
-      // { title: 'Testing', href: '/docs/testing' },
-      // { title: 'Compile-time caching', href: '/docs/compile-time-caching' },
-      // {
-      //   title: 'Predictive data generation',
-      //   href: '/docs/predictive-data-generation',
-      // },
-    ],
-  },
-  {
-    title: 'API reference',
-    links: [
-      { title: 'CacheAdvance.predict()', href: '/docs/cacheadvance-predict' },
-      { title: 'CacheAdvance.flush()', href: '/docs/cacheadvance-flush' },
-      { title: 'CacheAdvance.revert()', href: '/docs/cacheadvance-revert' },
-      { title: 'CacheAdvance.regret()', href: '/docs/cacheadvance-regret' },
-    ],
-  },
-  {
-    title: 'Contributing',
-    links: [
-      { title: 'How to contribute', href: '/docs/how-to-contribute' },
-      { title: 'Architecture guide', href: '/docs/architecture-guide' },
-      { title: 'Design principles', href: '/docs/design-principles' },
-    ],
-  },
-]
 
 function GitHubIcon(props) {
   return (
@@ -106,6 +53,9 @@ function Header({ navigation }) {
         <Link href="/" aria-label="Home page">
           <Logomark className="h-9 w-9 lg:hidden" />
           <Logo className="hidden h-9 w-auto fill-slate-700 dark:fill-sky-100 lg:block" />
+        </Link>
+        <Link href="/courses" aria-label="Home page">
+           All courses
         </Link>
       </div>
       <div className="-my-5 mr-6 sm:mr-8 md:mr-0">
@@ -166,7 +116,17 @@ function useTableOfContents(tableOfContents) {
 
 export function Layout({ children, title, tableOfContents }) {
   let router = useRouter()
-  let isHomePage = router.pathname === '/'
+  if(router.pathname === '/courses'){
+    return (
+      <>
+      <Header navigation={[]}/>
+      <HeroPrep />
+      {renderMainContent('Courses','',false)}
+      </>
+    )
+  }
+  let isHomePage = router.pathname === '/intro-to-js'
+  let navigation = getNavigation(router.pathname)
   let allLinks = navigation.flatMap((section) => section.links)
   let linkIndex = allLinks.findIndex((link) => link.href === router.pathname)
   let previousPage = allLinks[linkIndex - 1]
@@ -186,13 +146,82 @@ export function Layout({ children, title, tableOfContents }) {
     return section.children.findIndex(isActive) > -1
   }
 
+  function renderMainContent(title, section,renderPages=true){
+    return(
+      <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
+      <article>
+        {(title || section) && (
+          <header className="mb-9 space-y-1">
+            {section && (
+              <p className="font-display text-sm font-medium text-sky-500">
+                {section.title}
+              </p>
+            )}
+            {title && (
+              <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
+                {title}
+              </h1>
+            )}
+          </header>
+        )}
+        <Prose>{children}</Prose>
+      </article>
+      <dl className="mt-12 flex border-t border-slate-200 pt-6 dark:border-slate-800">
+        {renderPages && previousPage && (
+          <div>
+            <dt className="font-display text-sm font-medium text-slate-900 dark:text-white">
+              Previous
+            </dt>
+            <dd className="mt-1">
+              <Link
+                href={previousPage.href}
+                className="text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
+              >
+                <span aria-hidden="true">&larr;</span> {previousPage.title}
+              </Link>
+            </dd>
+          </div>
+        )}
+        {renderPages && nextPage && (
+          <div className="ml-auto text-right">
+            <dt className="font-display text-sm font-medium text-slate-900 dark:text-white">
+              Next
+            </dt>
+            <dd className="mt-1">
+              <Link
+                href={nextPage.href}
+                className="text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
+              >
+                {nextPage.title} <span aria-hidden="true">&rarr;</span>
+              </Link>
+            </dd>
+          </div>
+        )}
+      </dl>
+    </div>
+    )
+  }
+
+  function getNavigation(path){
+    if(path.includes('js')){
+       return introToJsNav
+    }
+    if(path.includes('html')){
+      return introToHTMLNav
+   }
+   else{
+    return []
+   }
+  }
+
+
   return (
     <>
       <Header navigation={navigation} />
 
       {isHomePage && <Hero />}
 
-      <div className="relative mx-auto flex max-w-8xl justify-center sm:px-2 lg:px-8 xl:px-12">
+      <div className="relative mx-auto flex max-w-10xl justify-center sm:px-2 lg:px-8 xl:px-12">
         <div className="hidden lg:relative lg:block lg:flex-none">
           <div className="absolute inset-y-0 right-0 w-[50vw] bg-slate-50 dark:hidden" />
           <div className="sticky top-[4.5rem] -ml-0.5 h-[calc(100vh-4.5rem)] overflow-y-auto py-16 pl-0.5">
@@ -204,58 +233,8 @@ export function Layout({ children, title, tableOfContents }) {
             />
           </div>
         </div>
-        <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
-          <article>
-            {(title || section) && (
-              <header className="mb-9 space-y-1">
-                {section && (
-                  <p className="font-display text-sm font-medium text-sky-500">
-                    {section.title}
-                  </p>
-                )}
-                {title && (
-                  <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
-                    {title}
-                  </h1>
-                )}
-              </header>
-            )}
-            <Prose>{children}</Prose>
-          </article>
-          <dl className="mt-12 flex border-t border-slate-200 pt-6 dark:border-slate-800">
-            {previousPage && (
-              <div>
-                <dt className="font-display text-sm font-medium text-slate-900 dark:text-white">
-                  Previous
-                </dt>
-                <dd className="mt-1">
-                  <Link
-                    href={previousPage.href}
-                    className="text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
-                  >
-                    <span aria-hidden="true">&larr;</span> {previousPage.title}
-                  </Link>
-                </dd>
-              </div>
-            )}
-            {nextPage && (
-              <div className="ml-auto text-right">
-                <dt className="font-display text-sm font-medium text-slate-900 dark:text-white">
-                  Next
-                </dt>
-                <dd className="mt-1">
-                  <Link
-                    href={nextPage.href}
-                    className="text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
-                  >
-                    {nextPage.title} <span aria-hidden="true">&rarr;</span>
-                  </Link>
-                </dd>
-              </div>
-            )}
-          </dl>
-        </div>
-        {false && (<div className="hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-16 xl:pr-6">
+        {renderMainContent(title, section, true)}
+        {true && (<div className="hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-16 xl:pr-6">
           <nav aria-labelledby="on-this-page-title" className="w-56">
             {tableOfContents.length > 0 && (
               <>

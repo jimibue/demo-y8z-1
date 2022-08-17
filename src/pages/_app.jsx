@@ -52,7 +52,7 @@ function collectHeadings(nodes, slugify = slugifyWithCounter()) {
 export default function App({ Component, pageProps }) {
   let {asPath} = useRouter()
    console.log(asPath)
-  if(asPath.includes('course') || asPath.includes('docs') ){
+  if(asPath.includes('course') || asPath.includes('intro') ){
   let title = pageProps.markdoc?.frontmatter.title
 
   let pageTitle =

@@ -1,6 +1,6 @@
 ---
 title: Variables
-description: Quidem magni aut exercitationem maxime rerum eos.
+description: A tutorial about variables in js
 ---
 A variable is the way in which we can name and store our data in programing languages
 
