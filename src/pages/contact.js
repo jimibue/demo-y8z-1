@@ -45,22 +45,21 @@ export default function Faqs() {
               id="faq-title"
               className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl"
             >
-              Contact us
+              Get in touch with us
             </h2>
             <p className="mt-4 text-lg tracking-tight text-slate-700">
-              If you can’t find what you’re looking for, email our support team
-              and if you’re lucky someone will get back to you.
+              If you're wanting to sign up for our course or simply learn more about and get any another general questions answered we'd love to hear from you.  Use the calendar below to setup a zoom call.
             </p>
           </div>
 
           <div>
           <div
-              class="calendly-inline-widget"
+              className="calendly-inline-widget"
               data-url="https://calendly.com/y8z-studios"
               style={{ minWidth: '320px', height: '630px' }}
             ></div>
             {/* <div
-              class="calendly-inline-widget"
+              className="calendly-inline-widget"
               data-url="https://calendly.com/y8z-studios"
               style={{ minWidth: '320px', height: '630px' }}
             ></div>
