@@ -1,4 +1,4 @@
-const introToJSNav = [
+export const introToJsNav = [
     {
       title: 'Getting Started',
       links: [
@@ -49,5 +49,3 @@ const introToJSNav = [
       ],
     },
   ]
-
-  export default introToJSNav

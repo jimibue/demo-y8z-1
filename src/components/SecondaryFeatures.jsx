@@ -10,8 +10,8 @@ import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
 
 const features = [
   {
-    name: 'Weeks 1 - 4',
-    summary: 'Frontend Web Development',
+    name: '1. Prep work',
+    summary: 'time: 1-2 months(100 + hours)',
     description:
       'Learn the fundamentals of React, Javascript, HTML, CSS and Frontend Web Development.',
     image: screenshotProfitLoss,
@@ -44,9 +44,9 @@ const features = [
     },
   },
   {
-    name: 'Weeks 5-8',
+    name: 'Part 2: Y8Z Bootcamp',
     summary:
-      'Fullstack Web Development',
+      'time: 12 weeks (>500 hours)',
     description:
       'Learn how to create the backend and also integrate with it React using the MERN stack.',
     image: screenshotInventory,
@@ -72,9 +72,9 @@ const features = [
     },
   },
   {
-    name: 'Weeks 9-12',
+    name: 'part 3 post camp',
     summary:
-      'Senior Dev Skills',
+      '1-6 months(~500hours)',
     description:
       'Learn common skills that companies are looking for and build advanced applications.',
     image: screenshotContacts,
@@ -216,7 +216,7 @@ export function SecondaryFeatures() {
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            3 sections to help opitize learning
+            Your path to becoming a software engineer
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
             Because you’d probably be a little confused if we suggested you
