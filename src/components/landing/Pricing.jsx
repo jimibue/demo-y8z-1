@@ -51,7 +51,7 @@ function Plan({ name, price, description, href, features, featured = false }) {
     <section
       className={clsx(
         'flex flex-col rounded-3xl px-6 sm:px-8',
-        featured ? 'order-first bg-blue-600 py-8 lg:order-none' : 'lg:py-8'
+        featured ? 'order-first bg-blue-600 py-8 lg:order-none' : 'lg:py-12'
       )}
     >
       <h3 className="mt-5 font-display text-lg text-white">{name}</h3>
@@ -63,9 +63,18 @@ function Plan({ name, price, description, href, features, featured = false }) {
       >
         {description}
       </p>
+      <p
+        className={clsx(
+          'mt-2 text-base',
+          featured ? 'text-white' : 'text-slate-400'
+        )}
+      >
+        Dates:{ '11/1/22 - 2/3/23'}
+      </p>
       <p className="order-first font-display text-5xl font-light tracking-tight text-white">
         {price}
       </p>
+
       <ul
         role="list"
         className={clsx(
@@ -114,7 +123,24 @@ export function Pricing() {
             work well for you.
           </p>
         </div>
-        <div className="-mx-4 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-8 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
+        <div className="-mx-16 mt-16 grid max-w-2xl grid-cols-1 gap-y-10 sm:mx-auto lg:-mx-16 lg:max-w-none lg:grid-cols-3 xl:mx-0 xl:gap-x-8">
+        <Plan
+            featured
+            name="Y8Z Prep Work"
+            price="FREE"
+            description="Online | Outside resources | Self Paced"
+            href="/register"
+            features={[
+              'Senior Lead lead classes',
+              '40+ hours a week',
+              'Advanced curriculum',
+              'MERN Stack',
+              'Learn real world skills and tools',
+              'TA assisted project time',
+              'Recorded lectures',
+              'Career coaching',
+            ]}
+          />
 
           <Plan
             featured
@@ -131,6 +157,20 @@ export function Pricing() {
               'TA assisted project time',
               'Recorded lectures',
               'Career coaching',
+            ]}
+          />
+
+<Plan
+            featured
+            name="Y8Z Post Bootcamp"
+            price="Coming Soon"
+            description=""
+            href="/register"
+            features={[
+              'Senior Lead lead classes',
+              '40+ hours a week',
+              'Advanced curriculum',
+           
             ]}
           />
 

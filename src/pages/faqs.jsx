@@ -1,4 +1,6 @@
 import Image from 'next/future/image'
+import Head from 'next/head'
+import { Header } from '@/components/landing/Header'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-faqs.jpg'
@@ -57,8 +59,17 @@ const faqs = [
   ],
 ]
 
-export function Faqs() {
+export default function Faqs() {
   return (
+    <>
+    <Head>
+      <title>Y8Z Fulltime Web Deveolpment Course</title>
+      <meta
+        name="description"
+        content="Don't spend $14000 on a bootcamp.  We offer an advanced and proffesional fullstack web development course for $3500"
+      />
+    </Head>
+    <Header />
     <section
       id="faq"
       aria-labelledby="faq-title"
@@ -106,5 +117,6 @@ export function Faqs() {
         </ul>
       </Container>
     </section>
+    </>
   )
 }

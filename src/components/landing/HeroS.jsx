@@ -9,6 +9,7 @@ import js from '@/images/jv.svg'
 // import logoStaticKit from '@/images/logos/statickit.svg'
 import logoTransistor from '@/images/logos/transistor.svg'
 import logoTuple from '@/images/logos/tuple.svg'
+import { Pricing } from './Pricing'
 
 export function Hero() {
   return (
@@ -32,7 +33,8 @@ export function Hero() {
       Affordable and professional online full-time web development course for $3500
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
-        <Button href="/register">Talk with advisor</Button>
+        {/* <Pricing /> */}
+        {/* <Button href="/register">Talk with advisor</Button> */}
         {/* <Button
           href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           variant="outline"

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import { GridPattern } from '@/components/GridPattern'
 import { SectionHeading } from '@/components/SectionHeading'
-import authorImage from '@/images/avatars/avatar-8.png'
+import authorImage from '@/images/james.jpg'
 
 function TwitterIcon(props) {
   return (
@@ -46,11 +46,11 @@ export function Author() {
             </p>
             <p className="mt-8">
               <Link
-                href="#"
+                href="https://www.linkedin.com/in/jamescharlesyeates/"
                 className="inline-flex items-center text-base font-medium tracking-tight text-blue-600"
               >
                 <TwitterIcon className="h-10 w-10 fill-current" />
-                <span className="ml-4">Follow on Twitter</span>
+                <span className="ml-4">Linkedin</span>
               </Link>
             </p>
           </div>

@@ -56,7 +56,7 @@ export function Hero() {
                 Learn the basic of Javascript and software enginering.
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
-                <Button href="/">Get started</Button>
+                <Button href="/">GetX started</Button>
                 <Button href="/" variant="secondary">
                   Back to Courses
                 </Button>

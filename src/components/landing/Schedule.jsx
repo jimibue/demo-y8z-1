@@ -8,7 +8,7 @@ import backgroundImage from '@/images/background.jpg'
 
 const schedule = [
   {
-    date: 'Part 1: Frontend Focus',
+    date: 'Module 1: Frontend Focus',
     dateTime: 'Frontend',
     summary:
       'Learn the fundamentals of React, Javascript, HTML, CSS and Frontend Web Development.',
@@ -44,7 +44,7 @@ const schedule = [
     ],
   },
   {
-    date: 'Module 2: Fullstack',
+    date: 'Module 2: Fullstack Focus',
     dateTime: 'Fullstack Web Development',
     summary:
       'Learn how to create the backend and also integrate with it React using the MERN stack.',
@@ -77,7 +77,7 @@ const schedule = [
     ],
   },
   {
-    date: 'Module 3',
+    date: 'Module 3: Industry Skills',
     dateTime: 'Industry Dev Skills',
     summary:
       'Learn common skills that companies are looking for and build advanced applications.',
@@ -246,7 +246,7 @@ export function Schedule() {
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
           <h2 className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
-          Our three-part course is jam-packed with brilliant and creative content
+          Our full-time course is jam-packed with brilliant and creative content
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
           Advanced, in-depth, and, integrated curriculum, picking the best of the best to help you become the engineer companies are looking for.

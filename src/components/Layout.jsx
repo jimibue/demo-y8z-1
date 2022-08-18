@@ -13,6 +13,7 @@ import { Search } from '@/components/Search'
 import { ThemeSelector } from '@/components/ThemeSelector'
 import { introToJsNav }  from './layoutNavs/intro-to-js-nav'
 import { introToHTMLNav } from './layoutNavs/intro-to-html-nav'
+import { Header } from '@/components/landing/Header'
 
 function GitHubIcon(props) {
   return (
@@ -22,7 +23,7 @@ function GitHubIcon(props) {
   )
 }
 
-function Header({ navigation }) {
+function HeaderSearch({ navigation }) {
   let [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
