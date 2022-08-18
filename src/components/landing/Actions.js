@@ -35,12 +35,14 @@ const actions = [
     title: 'PROFESSIONAL CURRICULUM',
     href: '#',
     icon: ClockIcon,
+    description:'Learn relevant tools and skills that are used today in the real world.',
     iconForeground: 'text-teal-700',
     iconBackground: 'bg-teal-50',
   },
   {
     title: 'SKILLED INSTRUCTOR',
     href: '#',
+    description:"Course created and taught by a senior engineer, with 3 years of experience as an educator",
     icon: BadgeCheckIcon,
     iconForeground: 'text-purple-700',
     iconBackground: 'bg-purple-50',
@@ -48,6 +50,7 @@ const actions = [
   {
     title: 'LIVE ONLINE CLASS',
     href: '#',
+    description:"Live class every day. Ask questions as they come up and get them answered on the spot.",
     icon: UsersIcon,
     iconForeground: 'text-sky-700',
     iconBackground: 'bg-sky-50',
@@ -55,6 +58,7 @@ const actions = [
   {
     title: 'LOW PRICE',
     href: '#',
+    description:"At $3500, this is the lowest priced, professional lead full-time Bootcamp",
     icon: CashIcon,
     iconForeground: 'text-yellow-700',
     iconBackground: 'bg-yellow-50',
@@ -62,6 +66,7 @@ const actions = [
   {
     title: 'TA LEAD PROJECT TIME',
     href: '#',
+    description:"  Stuck on a problem? Get live help from the instructor or one of our TAs",
     icon: ReceiptRefundIcon,
     iconForeground: 'text-rose-700',
     iconBackground: 'bg-rose-50',
@@ -69,6 +74,7 @@ const actions = [
   {
     title: 'SMALL CLASS SIZE',
     href: '#',
+    description:"Class size will cap at 20 students.",
     icon: AcademicCapIcon,
     iconForeground: 'text-indigo-700',
     iconBackground: 'bg-indigo-50',
@@ -120,16 +126,14 @@ export function Actions() {
                 </div>
                 <div className="mt-8">
                   <h3 className="text-lg font-medium">
-                    <a href={action.href} className="focus:outline-none">
+                    <a disabled className="focus:outline-none">
                       {/* Extend touch target to entire panel */}
                       <span className="absolute inset-0" aria-hidden="true" />
                       {action.title}
                     </a>
                   </h3>
                   <p className="mt-2 text-sm text-gray-500">
-                    Doloribus dolores nostrum quia qui natus officia quod et
-                    dolorem. Sit repellendus qui ut at blanditiis et quo et
-                    molestiae.
+                   {action.description}
                   </p>
                 </div>
                 <span

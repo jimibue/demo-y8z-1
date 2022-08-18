@@ -5,7 +5,7 @@ description: Cache every single thing your app could ever do ahead of time, so y
 leftNav: 'none'
 ---
 
-Learn the basics for free.  Try our our chrash courses on HTML, CSS, Javascript and general dev tools such as terminal and git {% .lead %}
+Prep yourself before I wreck yourself. Learn the basics for free.  Try our our chrash courses on HTML, CSS, Javascript and general dev tools such as terminal and git {% .lead %}
 
 {% quick-links %}
 

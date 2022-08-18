@@ -47,8 +47,8 @@ export default function Faqs() {
             >
               Get in touch with us
             </h2>
-            <p className="mt-4 text-lg tracking-tight text-slate-700">
-              If you're wanting to sign up for our course or simply learn more about and get any another general questions answered we'd love to hear from you.  Use the calendar below to setup a zoom call.
+            <p className="mt-4 text-lg tracking-tight text-slate-700">{`
+              If you are wanting to sign up for our course or simply learn more about and get any another general questions answered we would love to hear from you.  Use the calendar below to setup a zoom call.`}
             </p>
           </div>
 
