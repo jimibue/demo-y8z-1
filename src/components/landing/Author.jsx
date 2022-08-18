@@ -34,21 +34,15 @@ export function Author() {
             />
           </div>
           <div className="px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32">
-            <SectionHeading number="5" id="author-title">
+            <SectionHeading number="YO!" id="author-title">
               Meet the instructor
             </SectionHeading>
             <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-              <span className="block text-blue-600">James Yeates –</span> {`Hey
-              there, I'm the I'm the creator and instructor here at Y8Z.`}
+              <span className="block text-blue-600">James Yeates :)</span> {`Hey
+              there, I am the curriculum creator and instructor here at Y8Z.`}
             </p>
             <p className="mt-4 text-lg tracking-tight text-slate-700">
-              {`I've been designing icons professionally for over a decade and
-              have worked with dozens of the biggest brands to create custom
-              sets for their products. I'm an accomplished conference speaker,
-              and have been teaching icon design workshops every month for the
-              last three years. I've worked with designers of all skill levels
-              and honed my way of teaching to really click for anyone who has
-              the itch to start designing their own icons.`}
+              {`I've been coding and teaching professionally for about 7 years now. I have 4 years of experience working as a software engineer and 3 years of experience creating curriculum and teaching at software development bootcamps. I have started my own camp because I love teaching and wanted to create the best coding bootcamp that was also one of the most affordable. I believe I have done that and would love to have you as a student.`}
             </p>
             <p className="mt-8">
               <Link

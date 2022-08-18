@@ -13,7 +13,7 @@ const features = [
     name: '1. Prep work',
     summary: 'time: 1-2 months(100 + hours)',
     description:
-      'Learn the fundamentals of React, Javascript, HTML, CSS and Frontend Web Development.',
+      'Learn the fundamentals of React, Javascript, HTML, CSS, and Frontend Web Development.',
     image: screenshotProfitLoss,
     icon: function ReportingIcon() {
       let id = useId()

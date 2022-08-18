@@ -125,11 +125,12 @@ export function Pricing() {
             features={[
               'Senior Lead lead classes',
               '40+ hours a week',
-              'Advanced circulum',
-              'MEARN Stack',
+              'Advanced curriculum',
+              'MERN Stack',
+              'Learn real world skills and tools',
               'TA assisted project time',
               'Recorded lectures',
-              'Track in multiple currencies',
+              'Career coaching',
             ]}
           />
 

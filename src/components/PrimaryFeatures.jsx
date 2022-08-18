@@ -75,7 +75,7 @@ export function PrimaryFeatures() {
             12 intense thought out weeks, one low price.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            It is not going to be easy but it will be worth it. Guarenteed.
+          It is not going to be easy but it will be worth it. Guaranteed.
           </p>
         </div>
        

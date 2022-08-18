@@ -29,7 +29,7 @@ export function Hero() {
         Here.
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-        Afforadable and proffesional online fulltime web development course for $3500 
+      Affordable and professional online full-time web development course for $3500
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
         <Button href="/register">Talk with advisor</Button>

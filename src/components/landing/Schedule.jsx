@@ -23,7 +23,7 @@ const schedule = [
       {
         name: 'Week 2: INTRO TO REACT',
         description:
-          'A crash course in React. Learn about state, props, react-router, and component design and libraries. CSS and HTML review as well',
+          'A crash course in React. Learn about state, props, react-router,component design and libraries. CSS and HTML review as well',
         start: '10:00AM',
         end: '11:00AM',
       },
@@ -37,7 +37,7 @@ const schedule = [
       {
         name: 'Week 4: Tailwind and Next.js',
         description:
-          'Tools of the trade that are pertinent to Frontend development, Figma, wireframes, component design, agile development, Trello, helpful resources, styled-components, and more',
+          'Learn how to make our apps look professional and beatiful with tailwind.css and learn how to more easily get static website up and running with next.js',
         start: '12:00PM',
         end: '1:00PM',
       },
@@ -101,8 +101,8 @@ const schedule = [
         end: '12:00PM',
       },
       {
-        name: "Week 12: NO LECTURE: PROJECT",
-        description: "This is your week to take what you have learned and finish building out a advanced fullstack application that you can show off to potential employers.",
+        name: "Week 12: FINAL PROJECT",
+        description: "This is your week to take what you have learned and finish building out an advanced fullstack application that you can show off to potential employers.",
         start: '12:00PM',
         end: '1:00PM',
       },
@@ -246,11 +246,10 @@ export function Schedule() {
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
           <h2 className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
-            Our three part course is jam-packed with brilliant, creative, evil
-            geniuses.
+          Our three-part course is jam-packed with brilliant and creative content
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
-            A advanced, thought out, ciruculum, picking the best of the best to help you become the engineer companines are looking for.
+          Advanced, in-depth, and, integrated curriculum, picking the best of the best to help you become the engineer companies are looking for.
           </p>
         </div>
       </Container>
