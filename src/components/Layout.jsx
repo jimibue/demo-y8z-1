@@ -12,7 +12,7 @@ import { Prose } from '@/components/Prose'
 import { Search } from '@/components/Search'
 import { ThemeSelector } from '@/components/ThemeSelector'
 import { introToJsNav }  from './layoutNavs/intro-to-js-nav'
-import { introToHTMLNav } from '../pages/intro-to-html/intro-to-html-nav'
+import { introToHTMLNav } from './layoutNavs/intro-to-html-nav'
 
 function GitHubIcon(props) {
   return (
