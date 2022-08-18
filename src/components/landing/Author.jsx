@@ -38,8 +38,8 @@ export function Author() {
               Meet the instructor
             </SectionHeading>
             <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-              <span className="block text-blue-600">James Yeates –</span> Hey
-              there, I'm the I'm the creator and instructor here at Y8Z.
+              <span className="block text-blue-600">James Yeates –</span> {`Hey
+              there, I'm the I'm the creator and instructor here at Y8Z.`}
             </p>
             <p className="mt-4 text-lg tracking-tight text-slate-700">
               {`I've been designing icons professionally for over a decade and

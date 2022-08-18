@@ -5,6 +5,7 @@ import { Faqs } from '@/components/Faqs'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/landing/Header'
 import { Actions } from '@/components/landing/Actions'
+import { Schedule } from '@/components/landing/Schedule'
 import { Hero } from '@/components/landing/HeroS'
 import { Author } from '@/components/landing/Author'
 import { Pricing } from '@/components/landing/Pricing'
@@ -26,6 +27,7 @@ export default function Home() {
       <main>
         <Hero />
         <PrimaryFeatures />
+        <Schedule />
         <SecondaryFeatures />
         {/* <CallToAction />
         <Testimonials /> */}
