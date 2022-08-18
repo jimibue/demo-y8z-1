@@ -1,4 +1,4 @@
-const introToHTMLNav = [
+export const introToHTMLNav = [
     {
       title: 'Getting Started',
       links: [
@@ -49,5 +49,3 @@ const introToHTMLNav = [
       ],
     },
   ]
-
-  export default introToHTMLNav

@@ -11,9 +11,8 @@ import { Navigation } from '@/components/Navigation'
 import { Prose } from '@/components/Prose'
 import { Search } from '@/components/Search'
 import { ThemeSelector } from '@/components/ThemeSelector'
-import introToJsNav from './layoutNavs/intro-to-js-nav'
-import introToHTMLNav from '../pages/intro-to-html/intro-to-html-nav'
-
+import introToJsNav  from './layoutNavs/intro-to-js-nav'
+import { introToHTMLNav } from '../pages/intro-to-html/intro-to-html-nav'
 
 function GitHubIcon(props) {
   return (
@@ -54,7 +53,6 @@ function Header({ navigation }) {
           <Logomark className="h-9 w-9 lg:hidden" />
           <Logo className="hidden h-9 w-auto fill-slate-700 dark:fill-sky-100 lg:block" />
         </Link>
-
       </div>
       <div className="-my-5 mr-6 sm:mr-8 md:mr-0">
         <Search />
@@ -115,12 +113,12 @@ function useTableOfContents(tableOfContents) {
 export function Layout({ children, title, tableOfContents }) {
   let router = useRouter()
   let currentSection = useTableOfContents(tableOfContents)
-  if(router.pathname === '/courses'){
+  if (router.pathname === '/courses') {
     return (
       <>
-      <Header navigation={[]}/>
-      <HeroPrep />
-      {renderMainContent('Courses','',false)}
+        <Header navigation={[]} />
+        <HeroPrep />
+        {renderMainContent('Courses', '', false)}
       </>
     )
   }
@@ -134,7 +132,6 @@ export function Layout({ children, title, tableOfContents }) {
     section.links.find((link) => link.href === router.pathname)
   )
 
-
   function isActive(section) {
     if (section.id === currentSection) {
       return true
@@ -145,76 +142,73 @@ export function Layout({ children, title, tableOfContents }) {
     return section.children.findIndex(isActive) > -1
   }
 
-  function renderMainContent(title, section,renderPages=true){
-    return(
+  function renderMainContent(title, section, renderPages = true) {
+    return (
       <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
-      <article>
-       
-        {(title || section) && (
-          <header className="mb-9 space-y-1">
-            {section && (
-              <p className="font-display text-sm font-medium text-sky-500">
-                {section.title}
-              </p>
-            )}
-            {title && (
-              <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
-                {title}
-              </h1>
-            )}
-          </header>
-        )}
-        {section && <div>{JSON.stringify(section)}</div>}
-        <Prose>{children}</Prose>
-      </article>
-      <dl className="mt-12 flex border-t border-slate-200 pt-6 dark:border-slate-800">
-        {renderPages && previousPage && (
-          <div>
-            <dt className="font-display text-sm font-medium text-slate-900 dark:text-white">
-              Previous
-            </dt>
-            <dd className="mt-1">
-              <Link
-                href={previousPage.href}
-                className="text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
-              >
-                <span aria-hidden="true">&larr;</span> {previousPage.title}
-              </Link>
-            </dd>
-          </div>
-        )}
-        {renderPages && nextPage && (
-          <div className="ml-auto text-right">
-            <dt className="font-display text-sm font-medium text-slate-900 dark:text-white">
-              Next
-            </dt>
-            <dd className="mt-1">
-              <Link
-                href={nextPage.href}
-                className="text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
-              >
-                {nextPage.title} <span aria-hidden="true">&rarr;</span>
-              </Link>
-            </dd>
-          </div>
-        )}
-      </dl>
-    </div>
+        <article>
+          {(title || section) && (
+            <header className="mb-9 space-y-1">
+              {section && (
+                <p className="font-display text-sm font-medium text-sky-500">
+                  {section.title}
+                </p>
+              )}
+              {title && (
+                <h1 className="font-display text-3xl tracking-tight text-slate-900 dark:text-white">
+                  {title}
+                </h1>
+              )}
+            </header>
+          )}
+          {section && <div>{JSON.stringify(section)}</div>}
+          <Prose>{children}</Prose>
+        </article>
+        <dl className="mt-12 flex border-t border-slate-200 pt-6 dark:border-slate-800">
+          {renderPages && previousPage && (
+            <div>
+              <dt className="font-display text-sm font-medium text-slate-900 dark:text-white">
+                Previous
+              </dt>
+              <dd className="mt-1">
+                <Link
+                  href={previousPage.href}
+                  className="text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
+                >
+                  <span aria-hidden="true">&larr;</span> {previousPage.title}
+                </Link>
+              </dd>
+            </div>
+          )}
+          {renderPages && nextPage && (
+            <div className="ml-auto text-right">
+              <dt className="font-display text-sm font-medium text-slate-900 dark:text-white">
+                Next
+              </dt>
+              <dd className="mt-1">
+                <Link
+                  href={nextPage.href}
+                  className="text-base font-semibold text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
+                >
+                  {nextPage.title} <span aria-hidden="true">&rarr;</span>
+                </Link>
+              </dd>
+            </div>
+          )}
+        </dl>
+      </div>
     )
   }
 
-  function getNavigation(path){
-    if(path.includes('js')){
-       return introToJsNav
+  function getNavigation(path) {
+    if (path.includes('js')) {
+      return introToJsNav
     }
-    if(path.includes('html')){
+    if (path.includes('html')) {
       return introToHTMLNav
-   }
-   else{
-    return []
-   }
+    } else {
+      return []
+    }
   }
-
 
   return (
     <>
@@ -222,7 +216,7 @@ export function Layout({ children, title, tableOfContents }) {
 
       {isHomePage && <Hero />}
 
-      <div className="relative mx-auto flex max-w-10xl justify-center sm:px-2 lg:px-8 xl:px-12">
+      <div className="max-w-10xl relative mx-auto flex justify-center sm:px-2 lg:px-8 xl:px-12">
         <div className="hidden lg:relative lg:block lg:flex-none">
           <div className="absolute inset-y-0 right-0 w-[50vw] bg-slate-50 dark:hidden" />
           <div className="sticky top-[4.5rem] -ml-0.5 h-[calc(100vh-4.5rem)] overflow-y-auto py-16 pl-0.5">
@@ -235,59 +229,61 @@ export function Layout({ children, title, tableOfContents }) {
           </div>
         </div>
         {renderMainContent(title, section, true)}
-        {true && (<div className="hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-16 xl:pr-6">
-          <nav aria-labelledby="on-this-page-title" className="w-56">
-            {tableOfContents.length > 0 && (
-              <>
-                <h2
-                  id="on-this-page-title"
-                  className="font-display text-sm font-medium text-slate-900 dark:text-white"
-                >
-                  On this page
-                </h2>
-                <ol role="list" className="mt-4 space-y-3 text-sm">
-                  {tableOfContents.map((section) => (
-                    <li key={section.id}>
-                      <h3>
-                        <Link
-                          href={`#${section.id}`}
-                          className={clsx(
-                            isActive(section)
-                              ? 'text-sky-500'
-                              : 'font-normal text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-300'
-                          )}
-                        >
-                          {section.title}
-                        </Link>
-                      </h3>
-                      {section.children.length > 0 && (
-                        <ol
-                          role="list"
-                          className="mt-2 space-y-3 pl-5 text-slate-500 dark:text-slate-400"
-                        >
-                          {section.children.map((subSection) => (
-                            <li key={subSection.id}>
-                              <Link
-                                href={`#${subSection.id}`}
-                                className={
-                                  isActive(subSection)
-                                    ? 'text-sky-500'
-                                    : 'hover:text-slate-600 dark:hover:text-slate-300'
-                                }
-                              >
-                                {subSection.title}
-                              </Link>
-                            </li>
-                          ))}
-                        </ol>
-                      )}
-                    </li>
-                  ))}
-                </ol>
-              </>
-            )}
-          </nav>
-        </div>)}
+        {true && (
+          <div className="hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-16 xl:pr-6">
+            <nav aria-labelledby="on-this-page-title" className="w-56">
+              {tableOfContents.length > 0 && (
+                <>
+                  <h2
+                    id="on-this-page-title"
+                    className="font-display text-sm font-medium text-slate-900 dark:text-white"
+                  >
+                    On this page
+                  </h2>
+                  <ol role="list" className="mt-4 space-y-3 text-sm">
+                    {tableOfContents.map((section) => (
+                      <li key={section.id}>
+                        <h3>
+                          <Link
+                            href={`#${section.id}`}
+                            className={clsx(
+                              isActive(section)
+                                ? 'text-sky-500'
+                                : 'font-normal text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-300'
+                            )}
+                          >
+                            {section.title}
+                          </Link>
+                        </h3>
+                        {section.children.length > 0 && (
+                          <ol
+                            role="list"
+                            className="mt-2 space-y-3 pl-5 text-slate-500 dark:text-slate-400"
+                          >
+                            {section.children.map((subSection) => (
+                              <li key={subSection.id}>
+                                <Link
+                                  href={`#${subSection.id}`}
+                                  className={
+                                    isActive(subSection)
+                                      ? 'text-sky-500'
+                                      : 'hover:text-slate-600 dark:hover:text-slate-300'
+                                  }
+                                >
+                                  {subSection.title}
+                                </Link>
+                              </li>
+                            ))}
+                          </ol>
+                        )}
+                      </li>
+                    ))}
+                  </ol>
+                </>
+              )}
+            </nav>
+          </div>
+        )}
       </div>
     </>
   )

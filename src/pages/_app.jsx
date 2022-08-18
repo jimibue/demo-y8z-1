@@ -52,7 +52,7 @@ function collectHeadings(nodes, slugify = slugifyWithCounter()) {
 export default function App({ Component, pageProps }) {
   let { asPath } = useRouter()
   // LANDING PAGE
-  if (!asPath.includes('course') || asPath.includes('intro')) {
+  if (!asPath.includes('course') && !asPath.includes('intro')) {
     return (
       <>
         <Component {...pageProps} />
