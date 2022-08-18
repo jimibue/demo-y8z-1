@@ -54,9 +54,7 @@ function Header({ navigation }) {
           <Logomark className="h-9 w-9 lg:hidden" />
           <Logo className="hidden h-9 w-auto fill-slate-700 dark:fill-sky-100 lg:block" />
         </Link>
-        <Link href="/courses" aria-label="Home page">
-           All courses
-        </Link>
+
       </div>
       <div className="-my-5 mr-6 sm:mr-8 md:mr-0">
         <Search />
@@ -150,6 +148,7 @@ export function Layout({ children, title, tableOfContents }) {
     return(
       <div className="min-w-0 max-w-2xl flex-auto px-4 py-16 lg:max-w-none lg:pr-0 lg:pl-8 xl:px-16">
       <article>
+       
         {(title || section) && (
           <header className="mb-9 space-y-1">
             {section && (
@@ -164,6 +163,7 @@ export function Layout({ children, title, tableOfContents }) {
             )}
           </header>
         )}
+        {section && <div>{JSON.stringify(section)}</div>}
         <Prose>{children}</Prose>
       </article>
       <dl className="mt-12 flex border-t border-slate-200 pt-6 dark:border-slate-800">

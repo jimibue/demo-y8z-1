@@ -61,6 +61,8 @@ export default function App({ Component, pageProps }) {
 
   let description = pageProps.markdoc?.frontmatter.description
 
+  let videoURL = pageProps.markdoc?.frontmatter.videoURL
+
   let tableOfContents = pageProps.markdoc?.content
     ? collectHeadings(pageProps.markdoc.content)
     : []
@@ -72,6 +74,7 @@ export default function App({ Component, pageProps }) {
         {description && <meta name="description" content={description} />}
       </Head>
       <Layout title={title} tableOfContents={tableOfContents}>
+        {/* <p>{JSON.stringify(videoURL)}</p> */}
         <Component {...pageProps} />
       </Layout>
     </>

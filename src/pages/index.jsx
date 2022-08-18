@@ -5,6 +5,7 @@ import { Faqs } from '@/components/Faqs'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/HeroS'
+import { Author } from '@/components/Author'
 import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
@@ -14,10 +15,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Y8Z - Coding yo</title>
+        <title>Y8Z Fulltime Web Deveolpment Course</title>
         <meta
           name="description"
-          content="Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited."
+          content="Don't spend $14000 on a bootcamp.  We offer an advanced and proffesional fullstack web development course for $3500"
         />
       </Head>
       <Header />
@@ -25,9 +26,10 @@ export default function Home() {
         <Hero />
         <PrimaryFeatures />
         <SecondaryFeatures />
-        <CallToAction />
-        <Testimonials />
+        {/* <CallToAction />
+        <Testimonials /> */}
         <Pricing />
+        <Author />
         <Faqs />
       </main>
       <Footer />

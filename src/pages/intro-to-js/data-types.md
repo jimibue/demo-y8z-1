@@ -1,15 +1,18 @@
 ---
 title: Datatype
 description: A tutorial about datatypes in js
+videoURL: 'https://www.youtube.com/watch?v=CcJD7RMPh88&list=PLDX4hvAvkvz1axBVoR7hJAEgLakfuf4z8'
 ---
 
 In this tutorial, you will learn about the JavaScript datatypes and their unique characteristics.
 
 JavaScript has two main categories of data types: primitive and reference.
 
-<img src="https://miro.medium.com/max/1400/1*z1Cacf_OSbsQ1rYYaQsXYA.png"
+![title](https://miro.medium.com/max/1400/1*z1Cacf_OSbsQ1rYYaQsXYA.png)
+
+<!-- <img src=""
      alt="datatypes"
-     style="float: left; margin-right: 10px;" />
+     style="float: left; margin-right: 10px;" /> -->
 
 JavaScript is a dynamically typed language. That means that a variable doesn’t associate with a type. In other words, a variable can hold a value of different types. For example:
 
