@@ -114,6 +114,7 @@ function useTableOfContents(tableOfContents) {
 
 export function Layout({ children, title, tableOfContents }) {
   let router = useRouter()
+  let currentSection = useTableOfContents(tableOfContents)
   if(router.pathname === '/courses'){
     return (
       <>
@@ -132,7 +133,7 @@ export function Layout({ children, title, tableOfContents }) {
   let section = navigation.find((section) =>
     section.links.find((link) => link.href === router.pathname)
   )
-  let currentSection = useTableOfContents(tableOfContents)
+
 
   function isActive(section) {
     if (section.id === currentSection) {

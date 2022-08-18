@@ -1,4 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
+  
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -27,6 +29,11 @@ module.exports = {
       },
       maxWidth: {
         '8xl': '88rem',
+      },
+      colors: {
+        sky: colors.sky,
+        teal: colors.teal,
+        rose: colors.rose,
       },
     },
   },

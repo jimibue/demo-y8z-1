@@ -50,9 +50,17 @@ function collectHeadings(nodes, slugify = slugifyWithCounter()) {
 }
 
 export default function App({ Component, pageProps }) {
-  let {asPath} = useRouter()
-   console.log(asPath)
-  if(asPath.includes('course') || asPath.includes('intro') ){
+  let { asPath } = useRouter()
+  // LANDING PAGE
+  if (!asPath.includes('course') || asPath.includes('intro')) {
+    return (
+      <>
+        <Component {...pageProps} />
+      </>
+    )
+  }
+
+  // Course Pages
   let title = pageProps.markdoc?.frontmatter.title
 
   let pageTitle =
@@ -79,8 +87,4 @@ export default function App({ Component, pageProps }) {
       </Layout>
     </>
   )
-  }
-  return <Component {...pageProps} />
 }
-
-
