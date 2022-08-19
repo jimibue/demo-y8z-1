@@ -47,10 +47,7 @@ const faqs = [
       answer:
         'A post bootcamp course is currently in the works and will offer job coaching services, intership oppurtunites, and resources for contining education',
     },
-    {
-      question: 'Do yo',
-      answer: 'In life it’s really better to never expect anything at all.',
-    },
+
     {
       question:
         'You did not answer my question here where can I get those answered?',

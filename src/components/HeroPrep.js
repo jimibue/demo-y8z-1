@@ -17,7 +17,6 @@ const learnToCode(scool, workEthic)=>{
 }
 `
 
-
 const tabs = [
   { name: 'index.js', isActive: true },
   { name: 'package.json', isActive: false },
@@ -55,11 +54,12 @@ export function HeroPrep() {
               <p className="mt-3 text-2xl tracking-tight text-slate-400">
                 Learn HTML, CSS, Javascript and more for free here.
               </p>
+
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
-                <Button href="/intro-to-html">Learn HTML</Button>
-                <Button href="/">Learn CSS</Button>
-                <Button href="/intro-to-js">Learn JS</Button>
-                <Button href="/">Learn Tools</Button>
+                <Button href="/intro-to-html">HTML</Button>
+                <Button href="/intro-to-css">CSS</Button>
+                <Button href="/intro-to-js">JS</Button>
+                <Button href="/intro-to-tools">Tools</Button>
                 <Button href="/" variant="secondary">
                   Back to Y8Z
                 </Button>

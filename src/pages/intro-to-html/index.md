@@ -1,9 +1,29 @@
 ---
-title: Intro to html
-pageTitle: Intro to html page-title.
-description: Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.
+title: Intro to HTML
+pageTitle: Intro to HTML d
+description: Learn the basic of HTML Here.
 ---
+## HTML
 
-Learn how to get CacheAdvance set up in your project in under thirty minutes or it's free. {% .lead %}
-Learn how to get CacheAdvance set up in your project in under thirty minutes or it's free. {% .lead %}
-Learn how to get CacheAdvance set up in your project in under thirty minutes or it's free. {% .lead %}
+HTML (HyperText Markup Language) is the standard markup language for creating Web pages.  It describes the structure of or Web page and allow to link our pages page together to help build functional websites
+
+A basic HTML page would look something like this:
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+<body>
+
+<h1>My Blog</h1>
+<p>This is where the</p>
+
+</body>
+</html>
+
+```
+
+
+

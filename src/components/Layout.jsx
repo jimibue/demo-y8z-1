@@ -11,9 +11,12 @@ import { Navigation } from '@/components/Navigation'
 import { Prose } from '@/components/Prose'
 import { Search } from '@/components/Search'
 import { ThemeSelector } from '@/components/ThemeSelector'
-import { introToJsNav }  from './layoutNavs/intro-to-js-nav'
+import { introToJsNav } from './layoutNavs/intro-to-js-nav'
 import { introToHTMLNav } from './layoutNavs/intro-to-html-nav'
+import { introToCSSNav } from './layoutNavs/intro-to-css-nav'
+import { introToToolsNav } from './layoutNavs/intro-to-tools-Nav'
 import { Header } from '@/components/landing/Header'
+import { Container } from './Container'
 
 function GitHubIcon(props) {
   return (
@@ -118,8 +121,14 @@ export function Layout({ children, title, tableOfContents }) {
     return (
       <>
         <Header navigation={[]} />
+        <div
+          class="mb-4 rounded-lg bg-yellow-100 p-4 text-sm text-yellow-700 dark:bg-yellow-200 dark:text-yellow-800"
+          role="alert"
+        >
+          <span class="font-medium">Warning alert!</span> This section is still under contrustion
+        </div>
         <HeroPrep />
-        {renderMainContent('Courses', '', false)}
+        <Container>{renderMainContent('Welcome', '', false)}</Container>
       </>
     )
   }
@@ -161,7 +170,6 @@ export function Layout({ children, title, tableOfContents }) {
               )}
             </header>
           )}
-          {section && <div>{JSON.stringify(section)}</div>}
           <Prose>{children}</Prose>
         </article>
         <dl className="mt-12 flex border-t border-slate-200 pt-6 dark:border-slate-800">
@@ -201,9 +209,12 @@ export function Layout({ children, title, tableOfContents }) {
   }
 
   function getNavigation(path) {
-    if (path.includes('js')) {
-      return introToJsNav
-    }
+    if (path.includes('js')) return introToJsNav
+
+    if (path.includes('css')) return introToCSSNav
+
+    if (path.includes('tools')) return introToToolsNav
+
     if (path.includes('html')) {
       return introToHTMLNav
     } else {
@@ -216,7 +227,12 @@ export function Layout({ children, title, tableOfContents }) {
       <Header navigation={navigation} />
 
       {isHomePage && <Hero />}
-
+      <div
+          class="mb-4 rounded-lg bg-yellow-100 p-4 text-sm text-yellow-700 dark:bg-yellow-200 dark:text-yellow-800"
+          role="alert"
+        >
+          <span class="font-medium">Warning alert!</span> This section is still under contrustion
+        </div>
       <div className="max-w-10xl relative mx-auto flex justify-center sm:px-2 lg:px-8 xl:px-12">
         <div className="hidden lg:relative lg:block lg:flex-none">
           <div className="absolute inset-y-0 right-0 w-[50vw] bg-slate-50 dark:hidden" />
@@ -229,6 +245,7 @@ export function Layout({ children, title, tableOfContents }) {
             />
           </div>
         </div>
+
         {renderMainContent(title, section, true)}
         {true && (
           <div className="hidden xl:sticky xl:top-[4.5rem] xl:-mr-6 xl:block xl:h-[calc(100vh-4.5rem)] xl:flex-none xl:overflow-y-auto xl:py-16 xl:pr-6">

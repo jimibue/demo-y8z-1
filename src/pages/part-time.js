@@ -6,13 +6,14 @@ import { Header } from '@/components/landing/Header'
 import { Actions } from '@/components/landing/Actions'
 import { Schedule } from '@/components/landing/Schedule'
 import { Hero } from '@/components/landing/HeroS'
-import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { Author } from '@/components/landing/Author'
 import { Pricing } from '@/components/Pricing'
+import { PrimaryFeatures } from '@/components/PrimaryFeatures'
+import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import ScrollContent from '@/components/landing/ScrollContent'
+import ScrollContentPT from '@/components/landing/ScrollContentPT'
 
-
-export default function Home() {
+export default function PartTime() {
 
   return (
     <>
@@ -25,21 +26,11 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-    
         <Hero />
         <PrimaryFeatures />
-        <ScrollContent />
+        <ScrollContentPT />
       </main>
       <Footer />
     </>
   )
-}
-
-{
-  /* <Actions /> */
-}
-
-{
-  /* <CallToAction />
-        <Testimonials /> */
 }

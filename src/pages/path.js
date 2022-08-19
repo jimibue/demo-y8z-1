@@ -14,7 +14,14 @@ export default function Path() {
         <title>Path</title>
         <meta name="description" content="get in contact" />
       </Head>
+
       <Header />
+      <div
+          class="mb-4 rounded-lg bg-yellow-100 p-4 text-sm text-yellow-700 dark:bg-yellow-200 dark:text-yellow-800"
+          role="alert"
+        >
+          <span class="font-medium">Warning alert!</span> This section is still under contrustion
+        </div>
       <section
         id="faq"
         aria-labelledby="faq-title"
@@ -29,6 +36,7 @@ export default function Path() {
           unoptimized
         />
         <Container className="relative">
+
            <SecondaryFeatures />
         </Container>
       </section>
