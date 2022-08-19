@@ -238,7 +238,7 @@ export function SecondaryFeatures() {
           </p>
 
           <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
-            Spending time here is going to do two things.  It will give your a chance to see if coding is something you might enjoy doing.  It also might show you that you can learn on your own and you don't need to spend thousand of dollars on a bootcamp. The common expiernce is though that many people find that they enjoy it, but find that is challenging to learn on your own espically once you start to move on from the basics.
+            Spending time here is going to do two things.  It will give your a chance to see if coding is something you might enjoy doing.  It also might show you that you can learn on your own and you do not need to spend thousand of dollars on a bootcamp. The common expiernce is though that many people find that they enjoy it, but find that is challenging to learn on your own espically once you start to move on from the basics.
           </p>
 
           <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
@@ -250,7 +250,7 @@ export function SecondaryFeatures() {
           </h2>
 
           <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
-            There are two main flavors of bootcamps one that are full-time, meaning you spend 40+ hours a week in lecture, coding, and learning.  These generally run anywhere from 10 - 16 weeks.  The other variety is partime bootcamps which you will spend around 20+ hours a week in lecture, coding, and leanring.  These last anywhere from 10-36 weeks. I personally think Full-Time bootcamps are the more efficient way to leatn, they teach you how to 'drink from the fire hose' as they say which really does prepare you for a software job.  I think they also help yo get into a rythm of coding 40 hours a week, which if you maintain after the bootcamp you will be on a path to getting hired.   That not everyone can the time off required to do a full-time bootcamp and parttime bootcamps provide a good option for that.  
+            There are two main flavors of bootcamps one that are full-time, meaning you spend 40+ hours a week in lecture, coding, and learning.  These generally run anywhere from 10 - 16 weeks.  The other variety is partime bootcamps which you will spend around 20+ hours a week in lecture, coding, and leanring.  These last anywhere from 10-36 weeks. I personally think Full-Time bootcamps are the more efficient way to leatn, they teach you how to -drink from the fire hose- as they say which really does prepare you for a software job.  I think they also help yo get into a rythm of coding 40 hours a week, which if you maintain after the bootcamp you will be on a path to getting hired.   That not everyone can the time off required to do a full-time bootcamp and parttime bootcamps provide a good option for that.  
           </p>
 
           <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
