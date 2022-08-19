@@ -17,11 +17,12 @@ export default function Path() {
 
       <Header />
       <div
-          class="mb-4 rounded-lg bg-yellow-100 p-4 text-sm text-yellow-700 dark:bg-yellow-200 dark:text-yellow-800"
-          role="alert"
-        >
-          <span class="font-medium">Warning alert!</span> This section is still under contrustion
-        </div>
+        className="mb-4 rounded-lg bg-yellow-100 p-4 text-sm text-yellow-700 dark:bg-yellow-200 dark:text-yellow-800"
+        role="alert"
+      >
+        <span className="font-medium">Warning alert!</span> This section is still
+        under contrustion
+      </div>
       <section
         id="faq"
         aria-labelledby="faq-title"
@@ -36,8 +37,7 @@ export default function Path() {
           unoptimized
         />
         <Container className="relative">
-
-           <SecondaryFeatures />
+          <SecondaryFeatures />
         </Container>
       </section>
     </>

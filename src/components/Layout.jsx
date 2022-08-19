@@ -122,10 +122,10 @@ export function Layout({ children, title, tableOfContents }) {
       <>
         <Header navigation={[]} />
         <div
-          class="mb-4 rounded-lg bg-yellow-100 p-4 text-sm text-yellow-700 dark:bg-yellow-200 dark:text-yellow-800"
+          className="mb-4 rounded-lg bg-yellow-100 p-4 text-sm text-yellow-700 dark:bg-yellow-200 dark:text-yellow-800"
           role="alert"
         >
-          <span class="font-medium">Warning alert!</span> This section is still under contrustion
+          <span className="font-medium">Warning alert!</span> This section is still under contrustion
         </div>
         <HeroPrep />
         <Container>{renderMainContent('Welcome', '', false)}</Container>
@@ -228,10 +228,10 @@ export function Layout({ children, title, tableOfContents }) {
 
       {isHomePage && <Hero />}
       <div
-          class="mb-4 rounded-lg bg-yellow-100 p-4 text-sm text-yellow-700 dark:bg-yellow-200 dark:text-yellow-800"
+          className="mb-4 rounded-lg bg-yellow-100 p-4 text-sm text-yellow-700 dark:bg-yellow-200 dark:text-yellow-800"
           role="alert"
         >
-          <span class="font-medium">Warning alert!</span> This section is still under contrustion
+          <span className="font-medium">Warning alert!</span> This section is still under contrustion
         </div>
       <div className="max-w-10xl relative mx-auto flex justify-center sm:px-2 lg:px-8 xl:px-12">
         <div className="hidden lg:relative lg:block lg:flex-none">
