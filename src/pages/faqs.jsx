@@ -68,7 +68,7 @@ export default function Faqs() {
         <title>Y8Z Full-Time Web Deveolpment Course</title>
         <meta
           name="description"
-          content="Don't spend $14000 on a bootcamp.  We offer an advanced and proffesional fullstack web development course for $3500"
+          content="Don't spend $14000 on a bootcamp.  We offer an advanced and proffesional full-stack web development course for $3500"
         />
       </Head>
       <Header />
