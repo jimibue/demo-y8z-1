@@ -22,6 +22,8 @@ export default function PrivacyPolicy() {
         <a
           href="https://www.termsfeed.com/privacy-policy-generator/"
           target="_blank"
+          rel="noreferrer" 
+          
         >
           TermsFeed Privacy Policy Generator
         </a>
@@ -106,6 +108,7 @@ export default function PrivacyPolicy() {
               href="https://y8z.org"
               rel="external nofollow noopener"
               target="_blank"
+              rel="noreferrer" 
             >
               https://y8z.org
             </a>
@@ -186,6 +189,7 @@ export default function PrivacyPolicy() {
             href="https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_"
             rel="external nofollow noopener"
             target="_blank"
+            rel="noreferrer" 
           >
             https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_
           </a>
@@ -208,6 +212,7 @@ export default function PrivacyPolicy() {
         <a
           href="https://www.termsfeed.com/blog/cookies/#What_Are_Cookies"
           target="_blank"
+          rel="noreferrer"
         >
           TermsFeed website
         </a>{' '}

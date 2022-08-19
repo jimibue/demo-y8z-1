@@ -13,11 +13,11 @@ export default function TermsOfService() {
           1. AGREEMENT TO TERMS
         </h1>
         These Terms of Use constitute a legally binding agreement made between
-        you, whether personally or on behalf of an entity (“you”) and Y8Z LLC
-        ("Company," “we," “us," or “our”), concerning your access to and use of
+        you, whether personally or on behalf of an entity (&quot;you&quot;) and Y8Z LLC
+        (&quot;Company,&quot;&quot;we,&quot;&quot;us,&quot; or&quot;our&quot;), concerning your access to and use of
         the https://y8z/org website as well as any other media form, media
         channel, mobile website or mobile application related, linked, or
-        otherwise connected thereto (collectively, the “Site”). You agree that
+        otherwise connected thereto (collectively, the&quot;Site&quot;). You agree that
         by accessing the Site, you have read, understood, and agreed to be bound
         by all of these Terms of Use. IF YOU DO NOT AGREE WITH ALL OF THESE
         TERMS OF USE, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SITE AND
@@ -27,7 +27,7 @@ export default function TermsOfService() {
         Site from time to time are hereby expressly incorporated herein by
         reference. We reserve the right, in our sole discretion, to make changes
         or modifications to these Terms of Use at any time and for any reason.
-        We will alert you about any changes by updating the “Last updated” date
+        We will alert you about any changes by updating the&quot;Last updated&quot; date
         of these Terms of Use, and you waive any right to receive specific
         notice of each such change. Please ensure that you check the applicable
         Terms every time you use our Site so that you understand which Terms
@@ -60,12 +60,12 @@ export default function TermsOfService() {
         Unless otherwise indicated, the Site is our proprietary property and all
         source code, databases, functionality, software, website designs, audio,
         video, text, photographs, and graphics on the Site (collectively, the
-        “Content”) and the trademarks, service marks, and logos contained
-        therein (the “Marks”) are owned or controlled by us or licensed to us,
+       &quot;Content&quot;) and the trademarks, service marks, and logos contained
+        therein (the&quot;Marks&quot;) are owned or controlled by us or licensed to us,
         and are protected by copyright and trademark laws and various other
         intellectual property rights and unfair competition laws of the United
         States, international copyright laws, and international conventions. The
-        Content and the Marks are provided on the Site “AS IS” for your
+        Content and the Marks are provided on the Site&quot;AS IS&quot; for your
         information and personal use only. Except as expressly provided in these
         Terms of Use, no part of the Site and no Content or Marks may be copied,
         reproduced, aggregated, republished, uploaded, posted, publicly
@@ -130,9 +130,9 @@ export default function TermsOfService() {
         or use the username of another user. Upload or transmit (or attempt to
         upload or to transmit) any material that acts as a passive or active
         information collection or transmission mechanism, including without
-        limitation, clear graphics interchange formats (“gifs”), 1×1 pixels, web
+        limitation, clear graphics interchange formats (&quot;gifs&quot;), 1×1 pixels, web
         bugs, cookies, or other similar devices (sometimes referred to as
-        “spyware” or “passive collection mechanisms” or “pcms”). Interfere with,
+       &quot;spyware&quot; or&quot;passive collection mechanisms&quot; or&quot;pcms&quot;). Interfere with,
         disrupt, or create an undue burden on the Site or the networks or
         services connected to the Site. Harass, annoy, intimidate, or threaten
         any of our employees or agents engaged in providing any portion of the
@@ -163,7 +163,7 @@ export default function TermsOfService() {
         perform, publish, distribute, or broadcast content and materials to us
         or on the Site, including but not limited to text, writings, video,
         audio, photographs, graphics, comments, suggestions, or personal
-        information or other material (collectively, "Contributions").
+        information or other material (collectively, &quot;Contributions&quot;).
         Contributions may be viewable by other users of the Site and through
         third-party websites. As such, any Contributions you transmit may be
         treated in accordance with the Site Privacy Policy. When you create or
@@ -257,7 +257,7 @@ export default function TermsOfService() {
         Apple and Android Devices
         <br />
         The following terms apply when you use a mobile application obtained
-        from either the Apple Store or Google Play (each an “App Distributor”)
+        from either the Apple Store or Google Play (each an&quot;App Distributor&quot;)
         to access the Site: (1) the license granted to you for our mobile
         application is limited to a non-transferable license to use the
         application on a device that utilizes the Apple iOS or Android operating
@@ -278,7 +278,7 @@ export default function TermsOfService() {
         respect to the mobile application; (4) you represent and warrant that
         (i) you are not located in a country that is subject to a U.S.
         government embargo, or that has been designated by the U.S. government
-        as a “terrorist supporting” country and (ii) you are not listed on any
+        as a&quot;terrorist supporting&quot; country and (ii) you are not listed on any
         U.S. government list of prohibited or restricted parties; (5) you must
         comply with applicable third-party terms of agreement when using the
         mobile application, e.g., if you have a VoIP application, then you must
@@ -294,7 +294,7 @@ export default function TermsOfService() {
           8. SUBMISSIONS
         </h1>
         You acknowledge and agree that any questions, comments, suggestions,
-        ideas, feedback, or other information regarding the Site ("Submissions")
+        ideas, feedback, or other information regarding the Site (&quot;Submissions&quot;)
         provided by you to us are non-confidential and shall become our sole
         property. We shall own exclusive rights, including all intellectual
         property rights, and shall be entitled to the unrestricted use and
@@ -309,10 +309,10 @@ export default function TermsOfService() {
           9. THIRD-PARTY WEBSITE AND CONTENT
         </h1>
         The Site may contain (or you may be sent via the Site) links to other
-        websites ("Third-Party Websites") as well as articles, photographs,
+        websites (&quot;Third-Party Websites&quot;) as well as articles, photographs,
         text, graphics, pictures, designs, music, sound, video, information,
         applications, software, and other content or items belonging to or
-        originating from third parties ("Third-Party Content"). Such Third-Party
+        originating from third parties (&quot;Third-Party Content&quot;). Such Third-Party
         Websites and Third-Party Content are not investigated, monitored, or
         checked for accuracy, appropriateness, or completeness by us, and we are
         not responsible for any Third-Party Websites accessed through the Site
@@ -422,9 +422,9 @@ export default function TermsOfService() {
         Informal Negotiations
         <br />
         To expedite resolution and control the cost of any dispute, controversy,
-        or claim related to these Terms of Use (each "Dispute" and collectively,
-        the “Disputes”) brought by either you or us (individually, a “Party” and
-        collectively, the “Parties”), the Parties agree to first attempt to
+        or claim related to these Terms of Use (each &quot;Dispute&quot; and collectively,
+        the&quot;Disputes&quot;) brought by either you or us (individually, a&quot;Party&quot; and
+        collectively, the&quot;Parties&quot;), the Parties agree to first attempt to
         negotiate any Dispute (except those Disputes expressly provided below)
         informally for at least thirty (30) days before initiating arbitration.
         Such informal negotiations commence upon written notice from one Party
@@ -438,9 +438,9 @@ export default function TermsOfService() {
         arbitration. YOU UNDERSTAND THAT WITHOUT THIS PROVISION, YOU WOULD HAVE
         THE RIGHT TO SUE IN COURT AND HAVE A JURY TRIAL. The arbitration shall
         be commenced and conducted under the Commercial Arbitration Rules of the
-        American Arbitration Association ("AAA") and, where appropriate, the
-        AAA’s Supplementary Procedures for Consumer Related Disputes ("AAA
-        Consumer Rules"), both of which are available at the AAA website:
+        American Arbitration Association (&quot;AAA&quot;) and, where appropriate, the
+        AAAs Supplementary Procedures for Consumer Related Disputes (&quot;AAA
+        Consumer Rules&quot;), both of which are available at the AAA website:
         www.adr.org. Your arbitration fees and your share of arbitrator
         compensation shall be governed by the AAA Consumer Rules and, where
         appropriate, limited by the AAA Consumer Rules. The arbitration may be
