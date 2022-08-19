@@ -106,9 +106,9 @@ export default function PrivacyPolicy() {
             <strong>Website</strong> refers to Y8Z Bootcamp, accessible from{' '}
             <a
               href="https://y8z.org"
-              rel="external nofollow noopener"
+              rel="noreferrer external nofollow noopener"
               target="_blank"
-              rel="noreferrer" 
+         
             >
               https://y8z.org
             </a>
@@ -187,9 +187,8 @@ export default function PrivacyPolicy() {
           disabling, or deleting local shared objects?&quot; available at{' '}
           <a
             href="https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_"
-            rel="external nofollow noopener"
+            rel="noreferrer external nofollow noopener"
             target="_blank"
-            rel="noreferrer" 
           >
             https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_
           </a>
@@ -208,14 +207,14 @@ export default function PrivacyPolicy() {
         Cookies can be &quot;Persistent&quot; or &quot;Session&quot; Cookies.
         Persistent Cookies remain on Your personal computer or mobile device
         when You go offline, while Session Cookies are deleted as soon as You
-        close Your web browser. You can learn more about cookies on{' '}
+        close Your web browser. You can learn more about cookies on
         <a
           href="https://www.termsfeed.com/blog/cookies/#What_Are_Cookies"
           target="_blank"
           rel="noreferrer"
         >
           TermsFeed website
-        </a>{' '}
+        </a>
         article.
       </p>
       <p  className="mt-4 text-lg tracking-tight ">
@@ -298,7 +297,7 @@ export default function PrivacyPolicy() {
           <p  className="mt-4 text-lg tracking-tight ">
             <strong>To contact You:</strong> To contact You by email, telephone
             calls, SMS, or other equivalent forms of electronic communication,
-            such as a mobile application's push notifications regarding updates
+            such as a mobile application&apos;s push notifications regarding updates
             or informative communications related to the functionalities,
             products or contracted services, including the security updates,
             when necessary or reasonable for their implementation.
@@ -394,7 +393,7 @@ export default function PrivacyPolicy() {
       </p>
       <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">Transfer of Your Personal Data</h2>
       <p  className="mt-4 text-lg tracking-tight ">
-        Your information, including Personal Data, is processed at the Company's
+        Your information, including Personal Data, is processed at the Company&apos;s
         operating offices and in any other places where the parties involved in
         the processing are located. It means that this information may be
         transferred to — and maintained on — computers located outside of Your
@@ -451,7 +450,7 @@ export default function PrivacyPolicy() {
         means to protect Your Personal Data, We cannot guarantee its absolute
         security.
       </p>
-      <h1  className="font-display text-3xl tracking-tight text-white sm:text-4xl">Children's Privacy</h1>
+      <h1  className="font-display text-3xl tracking-tight text-white sm:text-4xl">Children&apos;s Privacy</h1>
       <p  className="mt-4 text-lg tracking-tight ">
         Our Service does not address anyone under the age of 13. We do not
         knowingly collect personally identifiable information from anyone under
@@ -464,14 +463,14 @@ export default function PrivacyPolicy() {
       <p  className="mt-4 text-lg tracking-tight ">
         If We need to rely on consent as a legal basis for processing Your
         information and Your country requires consent from a parent, We may
-        require Your parent's consent before We collect and use that
+        require Your parent&apos;s consent before We collect and use that
         information.
       </p>
       <h1  className="font-display text-3xl tracking-tight text-white sm:text-4xl">Links to Other Websites</h1>
       <p  className="mt-4 text-lg tracking-tight ">
         Our Service may contain links to other websites that are not operated by
         Us. If You click on a third party link, You will be directed to that
-        third party's site. We strongly advise You to review the Privacy Policy
+        third party&apos;s site. We strongly advise You to review the Privacy Policy
         of every site You visit.
       </p>
       <p  className="mt-4 text-lg tracking-tight ">
