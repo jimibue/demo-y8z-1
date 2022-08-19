@@ -73,16 +73,19 @@ export default function Faqs() {
             </h2>
             <p className="mt-4 text-lg tracking-tight text-slate-700">
               {`
-              If you are wanting to sign up for our course or simply learn more about and get any another general questions answered we would love to hear from you.  Use the calendar below to setup a zoom call.`}
+              Want to sign up?  Or just learn more about or course and discuss your options for becoming a software engineer.  Setup a online zoom call to go over your options.`}
             </p>
           </div>
 
           <div>
-            <div
+            {/* <div
               className="calendly-inline-widget"
               data-url="https://calendly.com/y8z-studios"
               style={{ minWidth: '320px', height: '630px' }}
-            ></div>
+            ></div> */}
+
+<div class="calendly-inline-widget" data-url={`https://calendly.com/y8z-studios/20min?embed_domain=localhost%3A3000&embed_type=Inline&hide_landing_page_details=1&hide_gdpr_banner=1&back=1`} style={{minWidth:'320px', height:'630px'}}></div>
+{/* <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> */}
             {/* <div
               className="calendly-inline-widget"
               data-url="https://calendly.com/y8z-studios"
@@ -95,7 +98,7 @@ export default function Faqs() {
             ></script> */}
           </div>
         </Container>
-        <form onSubmit={handleSubmit} data-netlify="true" name="contact">
+        {false && (<form onSubmit={handleSubmit} data-netlify="true" name="contact">
           <p>
             <label>
               Your Name:{' '}
@@ -132,7 +135,7 @@ export default function Faqs() {
             <button type="submit">Send</button>
           </p>
         </form>
-        );
+        )}
       </section>
       <Footer />
     </>

@@ -22,7 +22,7 @@ export default function Path() {
         role="alert"
       >
         <span className="font-medium">Warning alert!</span> This section is still
-        under contrustion
+        under construction
       </div>
       <section
         id="faq"

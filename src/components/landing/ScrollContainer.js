@@ -43,7 +43,7 @@ export function ScrollContainer({
     <section
       id={id}
       aria-labelledby="table-of-contents-title"
-      className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-32"
+      className="scroll-mt-14 py-16 sm:scroll-mt-32 sm:py-20 lg:py-22"
     >
       <Container>
         <SectionHeading number={number} id={`${id}-title`}>

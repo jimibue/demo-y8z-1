@@ -14,6 +14,7 @@ const sections = [
   },
   { id: 'schedule', title: 'Curriculum' },
   { id: 'pricing', title: 'Pricing' },
+  { id: 'get-in-touch', title: 'Get In Touch' },
 ]
 
 function MenuIcon({ open, ...props }) {
