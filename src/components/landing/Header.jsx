@@ -99,13 +99,13 @@ export function Header() {
               <Logo className="h-10 w-auto" />
             </Link>
             <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="/">Our Fulltime Course</NavLink>
+              <NavLink href="/">Our Full-Time Course</NavLink>
               <NavLink href="/path">Path To A New Career</NavLink>
               <NavLink href="courses">
-                Free Intro Courses
+                Prep Work
               </NavLink>
    
-              <NavLink href="/life-after-bootcamp">Life after Bootcamp</NavLink>
+              {/* <NavLink href="/life-after-bootcamp">Life after Bootcamp</NavLink> */}
               <NavLink href="/faqs">FAQS</NavLink>
          
             </div>

@@ -144,7 +144,7 @@ export function Pricing() {
 
           <Plan
             featured
-            name="Y8Z Fulltime Bootcamp"
+            name="Y8Z Full-Time Bootcamp"
             price="$3500"
             description="Online | Live-Lectures | M-F: 9-5"
             href="/register"

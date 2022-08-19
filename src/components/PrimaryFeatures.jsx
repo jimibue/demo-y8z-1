@@ -72,10 +72,10 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            12 intense thought out weeks, one low price.
+            Built and taught by an expiernced dev and educator.
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-          It is not going to be easy but it will be worth it. Guaranteed.
+          It is not going to be easy but it will be worth it.
           </p>
         </div>
        

@@ -15,7 +15,7 @@ export function Hero() {
   return (
     <Container className="pt-20 pb-16 text-center lg:pt-32">
       <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
-        Y8Z Fulltime Course{' '}
+        Y8Z Full-Time Course{' '}
         <span className="relative whitespace-nowrap text-blue-600">
           <svg
             aria-hidden="true"
@@ -30,7 +30,7 @@ export function Hero() {
         Here.
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
-      Affordable and professional online full-time web development course for $3500
+      Professional online full-time full-stack web development course for $3500
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
         {/* <Pricing /> */}

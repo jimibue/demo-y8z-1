@@ -7,7 +7,7 @@ import { Actions } from '@/components/landing/Actions'
 import { Schedule } from '@/components/landing/Schedule'
 import { Hero } from '@/components/landing/HeroS'
 import { Author } from '@/components/landing/Author'
-import { Pricing } from '@/components/landing/Pricing'
+import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 
@@ -16,19 +16,20 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Y8Z Fulltime Web Deveolpment Course</title>
+        <title>Y8Z Full-Time Web Deveolpment Course</title>
         <meta
           name="description"
-          content="Don't spend $14000 on a bootcamp.  We offer an advanced and proffesional fullstack web development course for $3500"
+          content="Don't spend $14000 on a bootcamp.  We offer an advanced and proffesional full-stack web development course for $3500"
         />
       </Head>
       <Header />
       <main>
         <Hero />
         <PrimaryFeatures />
-        <Schedule />
-        <Actions />
         <Author />
+        <Schedule />
+        {/* <Actions /> */}
+
         {/* <CallToAction />
         <Testimonials /> */}
         <Pricing />

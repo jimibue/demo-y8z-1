@@ -7,6 +7,7 @@ import { Container } from '@/components/Container'
 import screenshotContacts from '@/images/screenshots/contacts.png'
 import screenshotInventory from '@/images/screenshots/inventory.png'
 import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
+import Link from 'next/link'
 
 const features = [
   {
@@ -44,9 +45,9 @@ const features = [
     },
   },
   {
-    name: 'Part 2: Y8Z Bootcamp',
+    name: 'Part 2: Full-Time Bootcamp',
     summary:
-      'time: 12 weeks (>500 hours)',
+      'time: 3-6 months (>500 hours)',
     description:
       'Learn how to create the backend and also integrate with it React using the MERN stack.',
     image: screenshotInventory,
@@ -72,7 +73,7 @@ const features = [
     },
   },
   {
-    name: 'part 3 post camp',
+    name: 'part 3 post bootcamp',
     summary:
       '1-6 months(~500hours)',
     description:
@@ -211,20 +212,64 @@ export function SecondaryFeatures() {
     <section
       id="secondary-features"
       aria-label="Features for simplifying everyday business tasks"
-      className="pt-20 pb-14 sm:pb-20 sm:pt-32 lg:pb-32"
+      className="pt-0"
     >
       <Container>
-        <div className="mx-auto max-w-2xl md:text-center">
+        <div className="mx-auto max-w-3xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Your path to becoming a software engineer
+            The acclerated path to becoming a Software Engineer
           </h2>
+          <FeaturesMobile />
+        <FeaturesDesktop />
           <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
-            We are here to help you pivot careers in as little as 5 months.  For some of you it might be longer.  We are here to help you pivot careers in as little as 5 months.  For some of you it might be longer.
+            There is no other field where the oppurtinty to switch careers into a well-paid in demand in a relatively cheap way than there is software.  This does not mean it is automatic or easy.  Learning to code is not easy and doing it in an accelerated pace makes things more challenging.  There is a huge ad
           </p>
+
+          <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
+            There is no other field where the oppurtinty to switch careers into a well-paid in demand in a relatively cheap way than there is software.  This does not mean it is automatic or easy.  Learning to code is not easy and doing it in an accelerated pace makes things more challenging.  There is a huge ad
+          </p>
+
+          <h2 className="font-display text-3xl tracking-tight text-slate-900 md:text-left mt-10">
+            Prep work
+          </h2>
+
+          <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
+            Before joining a Bootcamp or other type of school you should learn some basics on your own.  There are more than enough free resources to get you started and to start giving you a base.  You can checkout our reference <Link href='/courses'>here</Link> that is links to some goode resources as long as some of our own.
+          </p>
+
+          <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
+            Spending time here is going to do two things.  It will give your a chance to see if coding is something you might enjoy doing.  It also might show you that you can learn on your own and you don't need to spend thousand of dollars on a bootcamp. The common expiernce is though that many people find that they enjoy it, but find that is challenging to learn on your own espically once you start to move on from the basics.
+          </p>
+
+          <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
+            But don not under estimate this step.  Bootcamps are insanely faced paced and you do not want to start out behind so I reccommend spending at least 100 hours learning the basic of html, css, and javascript.  It is also wouldn not hurt if you did a little React or Node as well.  You can not over prepare for a Bootcamp, even if you have 400 hours coding expierince you will find them fast paced.
+          </p>
+
+          <h2 className="font-display text-3xl tracking-tight text-slate-900 md:text-left mt-10">
+            Bootcamp 
+          </h2>
+
+          <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
+            There are two main flavors of bootcamps one that are full-time, meaning you spend 40+ hours a week in lecture, coding, and learning.  These generally run anywhere from 10 - 16 weeks.  The other variety is partime bootcamps which you will spend around 20+ hours a week in lecture, coding, and leanring.  These last anywhere from 10-36 weeks. I personally think Full-Time bootcamps are the more efficient way to leatn, they teach you how to 'drink from the fire hose' as they say which really does prepare you for a software job.  I think they also help yo get into a rythm of coding 40 hours a week, which if you maintain after the bootcamp you will be on a path to getting hired.   That not everyone can the time off required to do a full-time bootcamp and parttime bootcamps provide a good option for that.  
+          </p>
+
+          <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
+            Whether you choose a parttime bootcamp our a full-time one,  you should be looking at spending about 500+ hours here.
+          </p>
+          <h2 className="font-display text-3xl tracking-tight text-slate-900 md:text-left mt-10">
+            Post Bootcamp 
+          </h2>
+
+          <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
+            There is a little white lie going around the bootcamp industry and that is you will be ready for a job after the bootcamp.  Truth of the matter is most graduates are not.  Now the reason this is a white lie is because their are some students who find jobs realtively quick (with in a month or so) of graduating.  But those are students who either has some previous expiernce that helped, or have naturally good netwroking skills or sometimes it is a matter of luck. Fact it can takes months before people land their first job, and it was not just because they were patiently waiting around. It was because they were actively still learning after the bootcamp and diligently apply for jobs. 
+            </p>
+
+            <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
+
+            </p>
    
         </div>
-        <FeaturesMobile />
-        <FeaturesDesktop />
+     
       </Container>
     </section>
   )

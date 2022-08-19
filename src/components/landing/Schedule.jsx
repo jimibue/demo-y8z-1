@@ -44,8 +44,8 @@ const schedule = [
     ],
   },
   {
-    date: 'Module 2: Fullstack Focus',
-    dateTime: 'Fullstack Web Development',
+    date: 'Module 2: Full-Stack Focus',
+    dateTime: 'Full-Stack Web Development',
     summary:
       'Learn how to create the backend and also integrate with it React using the MERN stack.',
     timeSlots: [
@@ -58,7 +58,7 @@ const schedule = [
       },
       {
         name: 'Week 6: THE MERN STACK PART 1',
-        description: "Crash course in the MERN stack: MongoDB, Express, React, and Node. We'll use this to build our first fullstack app.",
+        description: "Crash course in the MERN stack: MongoDB, Express, React, and Node. We'll use this to build our first full-stack app.",
         start: '10:00AM',
         end: '11:00AM',
       },
@@ -70,7 +70,7 @@ const schedule = [
       },
       {
         name: 'Week 8: THE MERN STACK PART 2',
-        description: "Continue to build fullstack apps. We will also integrate authentication, image upload, model associations, and more.",
+        description: "Continue to build full-stack apps. We will also integrate authentication, image upload, model associations, and more.",
         start: '12:00PM',
         end: '1:00PM',
       },
@@ -102,7 +102,7 @@ const schedule = [
       },
       {
         name: "Week 12: FINAL PROJECT",
-        description: "This is your week to take what you have learned and finish building out an advanced fullstack application that you can show off to potential employers.",
+        description: "This is your week to take what you have learned and finish building out an advanced full-stack application that you can show off to potential employers.",
         start: '12:00PM',
         end: '1:00PM',
       },
@@ -211,7 +211,7 @@ function TimeSlots({ day, className }) {
               {timeSlot.description}
             </p>
           )}
-          <p className="mt-1 font-mono text-sm text-slate-500">
+          {/* <p className="mt-1 font-mono text-sm text-slate-500">
             <time dateTime={`${day.dateTime}T${timeSlot.start}-08:00`}>
               {timeSlot.start}
             </time>{' '}
@@ -220,7 +220,7 @@ function TimeSlots({ day, className }) {
               {timeSlot.end}
             </time>{' '}
             PST
-          </p>
+          </p> */}
         </li>
       ))}
     </ol>
@@ -246,7 +246,7 @@ export function Schedule() {
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
           <h2 className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
-          Our full-time course is jam-packed with brilliant and creative content
+          Our course is jam-packed with brilliant and creative content
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
           Advanced, in-depth, and, integrated curriculum, picking the best of the best to help you become the engineer companies are looking for.

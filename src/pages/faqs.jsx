@@ -1,5 +1,6 @@
 import Image from 'next/future/image'
 import Head from 'next/head'
+import Link from 'next/link'
 import { Header } from '@/components/landing/Header'
 
 import { Container } from '@/components/Container'
@@ -8,53 +9,54 @@ import backgroundImage from '@/images/background-faqs.jpg'
 const faqs = [
   [
     {
-      question: 'Does TaxPal handle VAT?',
+      question: 'What language do I want to learn first?',
       answer:
-        'Well no, but if you move your company offshore you can probably ignore it.',
+        'Short answer: it really doesn not matter, pick one and stick with it for a bit. Longer answer If you are getting into web development you might as well start with Javascript. Note: if you are getting into web development learn a bit of  HTML and CSS, but these are not are not programing languages.',
     },
     {
-      question: 'Can I pay for my subscription via purchase order?',
-      answer: 'Absolutely, we are happy to take your money in all forms.',
+      question: 'Do you offer a part-time course',
+      answer: 'No, at this moment we do not but',
     },
     {
-      question: 'How do I apply for a job at TaxPal?',
-      answer:
-        'We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.',
+      question:
+        'How long does it take to find a job after finishing a bootcamp?',
+      answer: 'This is complicated question I wrote an article about it here',
+      link: '/path',
     },
   ],
   [
     {
-      question: 'What was that testimonial about tax fraud all about?',
+      question: 'What should I do before joining a bootcamp?',
       answer:
-        'TaxPal is just a software application, ultimately your books are your responsibility.',
+        'Code, code, code. The more the better.  You can checkout our prepwork section for some guidance on that.  Also talk to students who have walked the walk, learn from there mistakes and successes.',
     },
     {
-      question:
-        'TaxPal sounds horrible but why do I still feel compelled to purchase?',
+      question: 'Is this course accrediated?',
       answer:
-        'This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.',
+        'No, but the content for the course was written in 2022. and I have 3 years teaching expierience and 4 years proffesional software development.',
     },
     {
-      question:
-        'I found other companies called TaxPal, are you sure you can use this name?',
+      question: 'If I get cold feet, do you offer a refund',
       answer:
-        'Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.',
+        'We offer 100% refund after if you withdraw before the start of the 3rd week of class',
     },
   ],
   [
     {
-      question: 'How do you generate reports?',
+      question: 'What services do you offer after the bootcamp',
       answer:
-        'You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.',
+        'A post bootcamp course is currently in the works and will offer job coaching services, intership oppurtunites, and resources for contining education',
     },
     {
-      question: 'Can we expect more inventory features?',
+      question: 'Do yo',
       answer: 'In life it’s really better to never expect anything at all.',
     },
     {
-      question: 'I lost my password, how do I get into my account?',
+      question:
+        'You did not answer my question here where can I get those answered?',
       answer:
-        'Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.',
+        'I am happy to meet one on one and answer any other other questions you might have',
+      link: '/contact',
     },
   ],
 ]
@@ -62,61 +64,67 @@ const faqs = [
 export default function Faqs() {
   return (
     <>
-    <Head>
-      <title>Y8Z Fulltime Web Deveolpment Course</title>
-      <meta
-        name="description"
-        content="Don't spend $14000 on a bootcamp.  We offer an advanced and proffesional fullstack web development course for $3500"
-      />
-    </Head>
-    <Header />
-    <section
-      id="faq"
-      aria-labelledby="faq-title"
-      className="relative overflow-hidden bg-slate-50 py-20 sm:py-32"
-    >
-      <Image
-        className="absolute top-0 left-1/2 max-w-none translate-x-[-30%] -translate-y-1/4"
-        src={backgroundImage}
-        alt=""
-        width={1558}
-        height={946}
-        unoptimized
-      />
-      <Container className="relative">
-        <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2
-            id="faq-title"
-            className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl"
+      <Head>
+        <title>Y8Z Full-Time Web Deveolpment Course</title>
+        <meta
+          name="description"
+          content="Don't spend $14000 on a bootcamp.  We offer an advanced and proffesional fullstack web development course for $3500"
+        />
+      </Head>
+      <Header />
+      <section
+        id="faq"
+        aria-labelledby="faq-title"
+        className="relative overflow-hidden bg-slate-50 py-20 sm:py-32"
+      >
+        <Image
+          className="absolute top-0 left-1/2 max-w-none translate-x-[-30%] -translate-y-1/4"
+          src={backgroundImage}
+          alt=""
+          width={1558}
+          height={946}
+          unoptimized
+        />
+        <Container className="relative">
+          <div className="mx-auto max-w-2xl lg:mx-0">
+            <h2
+              id="faq-title"
+              className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl"
+            >
+              Frequently asked questions
+            </h2>
+            <p className="mt-4 text-lg tracking-tight text-slate-700">
+              Answered by James,
+            </p>
+          </div>
+          <ul
+            role="list"
+            className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3"
           >
-            Frequently asked questions
-          </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
-            If you can’t find what you’re looking for, email our support team
-            and if you’re lucky someone will get back to you.
-          </p>
-        </div>
-        <ul
-          role="list"
-          className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3"
-        >
-          {faqs.map((column, columnIndex) => (
-            <li key={columnIndex}>
-              <ul role="list" className="flex flex-col gap-y-8">
-                {column.map((faq, faqIndex) => (
-                  <li key={faqIndex}>
-                    <h3 className="font-display text-lg leading-7 text-slate-900">
-                      {faq.question}
-                    </h3>
-                    <p className="mt-4 text-sm text-slate-700">{faq.answer}</p>
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
-      </Container>
-    </section>
+            {faqs.map((column, columnIndex) => (
+              <li key={columnIndex}>
+                <ul role="list" className="flex flex-col gap-y-8">
+                  {column.map((faq, faqIndex) => (
+                    <li key={faqIndex}>
+                      <h3 className="font-display text-lg leading-7 text-slate-900">
+                        {faq.question}
+                      </h3>
+                      <p className="mt-4 text-sm text-slate-700">
+                        {faq.answer}
+                      </p>
+                      {faq.link && (
+                        <Link href={faq.link}>
+                          <span>here.</span>
+                        </Link>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+        </Container>
+      </section>
     </>
   )
 }
