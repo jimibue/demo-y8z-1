@@ -12,7 +12,7 @@ const sections = [
     id: 'author',
     title: 'Meet The Instructor',
   },
-  { id: 'schedule', title: 'Schedule' },
+  { id: 'schedule', title: 'Curriculum' },
   { id: 'pricing', title: 'Pricing' },
 ]
 

@@ -98,15 +98,10 @@ export function Pricing() {
       className="scroll-mt-14 pt-16 pb-8 sm:scroll-mt-32 sm:pt-20 sm:pb-10 lg:pt-32 lg:pb-16"
     >
       <Container>
-        {/* <SectionHeading number="4" id="pricing-title">
+        <SectionHeading number="4" id="pricing-title">
           Pricing
-        </SectionHeading> */}
-        <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
-          Pricing
-        </p>
-        <p className="mt-4 max-w-xl text-lg tracking-tight text-slate-600">
-          Simple and afforadable.  Invest in yourself.
-        </p>
+        </SectionHeading>
+
       </Container>
       <div className="mx-auto mt-16 max-w-5xl lg:px-6">
         <div className="grid bg-slate-50 sm:px-6 sm:pb-16 md:grid-cols-2 md:rounded-6xl md:px-8 md:pt-16 lg:p-20">

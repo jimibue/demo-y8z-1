@@ -1,4 +1,5 @@
 import { PaperClipIcon } from '@heroicons/react/solid'
+import { ScrollContainer } from './ScrollContainer'
 
 const stats = [
   { name: 'Start Date', stat: '11/1/22' },
@@ -31,7 +32,7 @@ function Stats() {
   )
 }
 
-export function CourseDetails() {
+export function CourseDetails1() {
   return (
     <section
       id="course-details"
@@ -51,5 +52,21 @@ export function CourseDetails() {
         </div>
       </div>
     </section>
+  )
+}
+
+export function CourseDetails() {
+  return (
+    <ScrollContainer
+      id="course-details"
+      number={'1'}
+      title="Course Details"
+    //   header={'yo dwag'}
+    //   description={'All the basics goodies'}
+    >
+      <div>
+        <Stats />
+      </div>
+    </ScrollContainer>
   )
 }

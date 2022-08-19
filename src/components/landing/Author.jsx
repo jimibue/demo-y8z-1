@@ -34,7 +34,7 @@ export function Author() {
             />
           </div>
           <div className="px-4 py-10 sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32">
-            <SectionHeading number="YO!" id="author-title">
+            <SectionHeading number="2" id="author-title">
               Meet the instructor
             </SectionHeading>
             <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
@@ -49,8 +49,8 @@ export function Author() {
                 href="https://www.linkedin.com/in/jamescharlesyeates/"
                 className="inline-flex items-center text-base font-medium tracking-tight text-blue-600"
               >
-                <TwitterIcon className="h-10 w-10 fill-current" />
-                <span className="ml-4">Linkedin</span>
+                {/* <TwitterIcon className="h-10 w-10 fill-current" /> */}
+                <span className="ml-4">Find me on Linkedin</span>
               </Link>
             </p>
           </div>
@@ -59,3 +59,7 @@ export function Author() {
     </section>
   )
 }
+
+
+
+

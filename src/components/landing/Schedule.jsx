@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import Image from 'next/future/image'
 import { Tab } from '@headlessui/react'
 import clsx from 'clsx'
+import { SectionHeading } from '@/components/SectionHeading'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background.jpg'
@@ -58,19 +59,22 @@ const schedule = [
       },
       {
         name: 'Week 6: THE MERN STACK PART 1',
-        description: "Crash course in the MERN stack: MongoDB, Express, React, and Node. We'll use this to build our first full-stack app.",
+        description:
+          "Crash course in the MERN stack: MongoDB, Express, React, and Node. We'll use this to build our first full-stack app.",
         start: '10:00AM',
         end: '11:00AM',
       },
       {
         name: 'Week 7: NO CLASS',
-        description: "This is an intensive Bootcamp, this week is an 'off' week but is meant to give you a chance to get caught up with sections you might have gotten behind in.",
+        description:
+          "This is an intensive Bootcamp, this week is an 'off' week but is meant to give you a chance to get caught up with sections you might have gotten behind in.",
         start: '11:00AM',
         end: '12:00PM',
       },
       {
         name: 'Week 8: THE MERN STACK PART 2',
-        description: "Continue to build full-stack apps. We will also integrate authentication, image upload, model associations, and more.",
+        description:
+          'Continue to build full-stack apps. We will also integrate authentication, image upload, model associations, and more.',
         start: '12:00PM',
         end: '1:00PM',
       },
@@ -84,25 +88,29 @@ const schedule = [
     timeSlots: [
       {
         name: 'Week 9: TESTING / TYPESCRIPT',
-        description: "Learn how to write better code by adding tests using jest and enzyme. Learn about typed Javascript with Typescript.",
+        description:
+          'Learn how to write better code by adding tests using jest and enzyme. Learn about typed Javascript with Typescript.',
         start: '9:00AM',
         end: '10:00AM',
       },
       {
-        name: "Week 10: DEV OPS",
-        description: "Using tools such as Docker, Kuberantes, Github, and Heroku we will see how we can streamline the development experience and create CI/CD pipelines.",
+        name: 'Week 10: DEV OPS',
+        description:
+          'Using tools such as Docker, Kuberantes, Github, and Heroku we will see how we can streamline the development experience and create CI/CD pipelines.',
         start: '10:00AM',
         end: '11:00AM',
       },
       {
-        name: "Week 11: DATA STRUCTURES AND ALGORITHMS",
-        description: "Get prepared for whiteboard interview questions and strengthen your coding fundamentals.",
+        name: 'Week 11: DATA STRUCTURES AND ALGORITHMS',
+        description:
+          'Get prepared for whiteboard interview questions and strengthen your coding fundamentals.',
         start: '11:00AM',
         end: '12:00PM',
       },
       {
-        name: "Week 12: FINAL PROJECT",
-        description: "This is your week to take what you have learned and finish building out an advanced full-stack application that you can show off to potential employers.",
+        name: 'Week 12: FINAL PROJECT',
+        description:
+          'This is your week to take what you have learned and finish building out an advanced full-stack application that you can show off to potential employers.',
         start: '12:00PM',
         end: '1:00PM',
       },
@@ -245,11 +253,14 @@ export function Schedule() {
     <section id="schedule" aria-label="Schedule" className="py-20 sm:py-32">
       <Container className="relative z-10">
         <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-4xl lg:pr-24">
+          <SectionHeading number="3"  className='mb-10' id="author-title">
+          Curriculum
+          </SectionHeading>
           <h2 className="font-display text-4xl font-medium tracking-tighter text-blue-600 sm:text-5xl">
-          Our course is jam-packed with brilliant and creative content
+            Our course is jam-packed with brilliant and creative content
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
-          Advanced, in-depth, and, integrated curriculum, picking the best of the best to help you become the engineer companies are looking for.
+            Advanced, in-depth, and integrated curriculum. You will the learn the tool and skills companies are looking for.
           </p>
         </div>
       </Container>
