@@ -2,6 +2,7 @@ import Image from 'next/future/image'
 import Head from 'next/head'
 import Link from 'next/link'
 import { Header } from '@/components/landing/Header'
+import { Footer } from '@/components/Footer'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-faqs.jpg'
@@ -122,6 +123,7 @@ export default function Faqs() {
           </ul>
         </Container>
       </section>
+      <Footer />
     </>
   )
 }

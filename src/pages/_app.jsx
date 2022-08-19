@@ -54,7 +54,7 @@ export default function App({ Component, pageProps }) {
   // LANDING PAGE
   console.log(asPath)
   console.log(asPath.includes('faqs'))
-  if ( asPath.includes('faqs')||asPath.includes('part-time') || (!asPath.includes('courses') && !asPath.includes('intro')  )) {
+  if ( asPath.includes('privacy') || asPath.includes('faqs')||asPath.includes('part-time') || (!asPath.includes('courses') && !asPath.includes('intro')  )) {
     return (
       <>
         <Component {...pageProps} />

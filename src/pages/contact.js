@@ -4,21 +4,45 @@ import { Header } from '@/components/landing/Header'
 
 import { Container } from '@/components/Container'
 import backgroundImage from '@/images/background-faqs.jpg'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import { Footer } from '@/components/Footer'
 
 export default function Faqs() {
-    useEffect(() => {
-        const script = document.createElement('script');
-      
-        script.src = "https://assets.calendly.com/assets/external/widget.js";
-        script.async = true;
-      
-        document.body.appendChild(script);
-      
-        return () => {
-          document.body.removeChild(script);
-        }
-      }, []);
+  const [email, setEmail] = useState('')
+  const [name, setName] = useState('')
+  const [message, setMessage] = useState('')
+  useEffect(() => {
+    const script = document.createElement('script')
+
+    script.src = 'https://assets.calendly.com/assets/external/widget.js'
+    script.async = true
+
+    document.body.appendChild(script)
+
+    return () => {
+      document.body.removeChild(script)
+    }
+  }, [])
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+      )
+      .join('&')
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault()
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contact', name, email, message }),
+    })
+      .then(() => alert('Success!'))
+      .catch((error) => alert(error))
+
+    e.preventDefault()
+  }
   return (
     <>
       <Head>
@@ -47,13 +71,14 @@ export default function Faqs() {
             >
               Get in touch with us
             </h2>
-            <p className="mt-4 text-lg tracking-tight text-slate-700">{`
+            <p className="mt-4 text-lg tracking-tight text-slate-700">
+              {`
               If you are wanting to sign up for our course or simply learn more about and get any another general questions answered we would love to hear from you.  Use the calendar below to setup a zoom call.`}
             </p>
           </div>
 
           <div>
-          <div
+            <div
               className="calendly-inline-widget"
               data-url="https://calendly.com/y8z-studios"
               style={{ minWidth: '320px', height: '630px' }}
@@ -70,7 +95,46 @@ export default function Faqs() {
             ></script> */}
           </div>
         </Container>
+        <form onSubmit={handleSubmit} data-netlify="true" name="contact">
+          <p>
+            <label>
+              Your Name:{' '}
+              <input
+                type="text"
+                name="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Email:{' '}
+              <input
+                type="email"
+                name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </label>
+          </p>
+          <p>
+            <label>
+              Message:{' '}
+              <textarea
+                name="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+              />
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+        );
       </section>
+      <Footer />
     </>
   )
 }

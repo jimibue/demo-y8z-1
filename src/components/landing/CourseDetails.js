@@ -4,7 +4,7 @@ import { ScrollContainer } from './ScrollContainer'
 const stats = [
   { name: 'Start Date', stat: '11/1/22' },
   { name: 'Duration', stat: '12 weeks' },
-  { name: 'Time *Attendace required', stat: ' M-F, 9:30 - 5:00 (MST)' },
+  { name: 'Time *Attendance required', stat: ' M-F, 9:30 - 5:00 (MST)' },
   { name: 'Price', stat: '$3,500' },
   { name: 'Location', stat: 'online' },
   { name: 'Instructor', stat: 'James Yeates' },
