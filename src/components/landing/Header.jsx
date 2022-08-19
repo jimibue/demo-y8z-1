@@ -79,7 +79,9 @@ function MobileNavigation() {
           >
             <MobileNavLink href="/#features">Our Full-time Course</MobileNavLink>
             <MobileNavLink href="/faqs">FAQS</MobileNavLink>
-            <MobileNavLink href="#pricing">Pricing</MobileNavLink>
+            <MobileNavLink href="/path">Path To A New Career</MobileNavLink>
+            <MobileNavLink href="/courses"> Prep Work</MobileNavLink>
+         
             <hr className="m-2 border-slate-300/40" />
  
          </Popover.Panel>
