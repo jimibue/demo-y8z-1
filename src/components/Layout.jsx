@@ -14,7 +14,7 @@ import { ThemeSelector } from '@/components/ThemeSelector'
 import { introToJsNav } from './layoutNavs/intro-to-js-nav'
 import { introToHTMLNav } from './layoutNavs/intro-to-html-nav'
 import { introToCSSNav } from './layoutNavs/intro-to-css-nav'
-import { introToToolsNav } from './layoutNavs/intro-to-tools-Nav'
+import { introToToolsNav } from './layoutNavs/intro-to-tools-nav'
 import { Header } from '@/components/landing/Header'
 import { Container } from './Container'
 
