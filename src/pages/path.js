@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Header } from '@/components/landing/Header'
 
 import { Container } from '@/components/Container'
+import { Footer } from '@/components/Footer'
 import backgroundImage from '@/images/background-faqs.jpg'
 import { useEffect } from 'react'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
@@ -40,6 +41,7 @@ export default function Path() {
           <SecondaryFeatures />
         </Container>
       </section>
+      <Footer />
     </>
   )
 }
