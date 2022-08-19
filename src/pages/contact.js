@@ -84,7 +84,7 @@ export default function Faqs() {
               style={{ minWidth: '320px', height: '630px' }}
             ></div> */}
 
-<div class="calendly-inline-widget" data-url={`https://calendly.com/y8z-studios/20min?embed_domain=localhost%3A3000&embed_type=Inline&hide_landing_page_details=1&hide_gdpr_banner=1&back=1`} style={{minWidth:'320px', height:'630px'}}></div>
+<div className="calendly-inline-widget" data-url={`https://calendly.com/y8z-studios/20min?embed_domain=localhost%3A3000&embed_type=Inline&hide_landing_page_details=1&hide_gdpr_banner=1&back=1`} style={{minWidth:'320px', height:'630px'}}></div>
 {/* <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> */}
             {/* <div
               className="calendly-inline-widget"

@@ -34,7 +34,7 @@ export function GetInTouch() {
               Want to learn more?  Setup a zoom call with us.`}
         </p>
         <div
-          class="calendly-inline-widget"
+          className="calendly-inline-widget"
           data-url={`https://calendly.com/y8z-studios/20min?embed_domain=localhost%3A3000&embed_type=Inline&hide_landing_page_details=1&hide_gdpr_banner=1&back=1`}
           style={{ minWidth: '320px', height: '930px' }}
         ></div>
