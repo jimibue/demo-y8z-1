@@ -142,7 +142,7 @@ export default function PrivacyPolicy() {
       <h3>Usage Data</h3>
       <p  className="mt-4 text-lg tracking-tight ">Usage Data is collected automatically when using the Service.</p>
       <p  className="mt-4 text-lg tracking-tight ">
-        Usage Data may include information such as Your Device's Internet
+        Usage Data may include information such as Your Devices Internet
         Protocol address (e.g. IP address), browser type, browser version, the
         pages of our Service that You visit, the time and date of Your visit,
         the time spent on those pages, unique device identifiers and other
