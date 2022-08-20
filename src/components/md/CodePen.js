@@ -7,10 +7,10 @@ export function CodePen() {
         scrolling="no"
         title="yo"
         src="https://codepen.io/JamesYeates/embed/bGvzMWm?default-tab=html%2Cresult"
-        frameborder="no"
+        frameBorder="no"
         loading="lazy"
-        allowtransparency="true"
-        allowfullscreen="true"
+        allowTransparency="true"
+        allowFullScreen="true"
       >
         See the Pen <a href="https://codepen.io/JamesYeates/pen/bGvzMWm">yo</a>{' '}
         by James Yeates (
