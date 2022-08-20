@@ -10,50 +10,51 @@ import backgroundImage from '@/images/background-faqs.jpg'
 const faqs = [
   [
     {
-      question: 'What language do I want to learn first?',
+      question: 'What language should I learn first?',
       answer:
-        'Short answer: it really doesn not matter, pick one and stick with it for a bit. Longer answer If you are getting into web development you might as well start with Javascript. Note: if you are getting into web development learn a bit of  HTML and CSS, but these are not are not programing languages.',
+        'It really does not matter, pick one and stick with it for a bit. If you are getting into web development or are coming here to Y8Z for school, you should start learning Javascript, HTML, and CSS.',
+        link: '/prep-work',
     },
     {
-      question: 'Do you offer a part-time course',
-      answer: 'No, at this moment we do not but',
+      question: 'Do you offer a part-time course?',
+      answer: 'No, at this moment we do not.',
     },
     {
       question:
-        'How long does it take to find a job after finishing a bootcamp?',
-      answer: 'This is complicated question I wrote an article about it here',
+        'How long does it take to find a job after finishing a Bootcamp?',
+      answer: 'This varies, I see it takes on average about 1-6+ months. This is a complicated question and I talk more about it below',
       link: '/path',
     },
   ],
   [
     {
-      question: 'What should I do before joining a bootcamp?',
+      question: 'What should I do before joining a Bootcamp?',
       answer:
-        'Code, code, code. The more the better.  You can checkout our prepwork section for some guidance on that.  Also talk to students who have walked the walk, learn from there mistakes and successes.',
+        'Code, code, code. The more the better.  You can check out our prep work section for some guidance on that.  Talk to students who have walked the walk, and learn from their mistakes and successes.  Do your research on different Bootcamps, Universities, and other resources to find the one that best suits you.',
     },
     {
-      question: 'Is this course accrediated?',
+      question: 'Is this course accredited?',
       answer:
-        'No, but the content for the course was written in 2022. and I have 3 years teaching expierience and 4 years proffesional software development.',
+        'No, but the content for the course was written in 2022. It is up to date with what is being used in the real world. I personally created using the 3 years of teaching experience and 4 years of professional software development I have.',
     },
     {
-      question: 'If I get cold feet, do you offer a refund',
+      question: 'Do you offer refunds?',
       answer:
-        'We offer 100% refund after if you withdraw before the start of the 3rd week of class',
+        'We offer a 100% refund if you withdraw before the start of the 3rd week of class.',
     },
   ],
   [
     {
-      question: 'What services do you offer after the bootcamp',
+      question: 'What services do you offer after the Bootcamp?',
       answer:
-        'A post bootcamp course is currently in the works and will offer job coaching services, intership oppurtunites, and resources for contining education',
+        'A post Bootcamp course is currently in the works and will offer job coaching services, internship opportunities, and resources for continuing education.',
     },
 
     {
       question:
         'You did not answer my question here where can I get those answered?',
       answer:
-        'I am happy to meet one on one and answer any other other questions you might have',
+        'I am happy to meet one on one and answer any other questions you might have, click on the link below to get in touch.',
       link: '/contact',
     },
   ],
@@ -92,7 +93,7 @@ export default function Faqs() {
               Frequently asked questions
             </h2>
             <p className="mt-4 text-lg tracking-tight text-slate-700">
-              Answered by James,
+              Answered by James
             </p>
           </div>
           <ul
@@ -112,7 +113,7 @@ export default function Faqs() {
                       </p>
                       {faq.link && (
                         <Link href={faq.link}>
-                          <span>here.</span>
+                          <span>learn more</span>
                         </Link>
                       )}
                     </li>

@@ -8,7 +8,7 @@ console.log(navigation)
   return (
     <nav className={clsx('text-base lg:text-sm', className)}>
       <div className="mb-5">
-      <Link href='/courses' ><a className="mb-2 space-y-2">Back to prep work</a></Link>
+      <Link href='/prep-work' ><a className="mb-2 space-y-2">Back to prep work</a></Link>
       </div>
       <ul role="list" className="space-y-9">
         {navigation.map((section) => (

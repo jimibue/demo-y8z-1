@@ -10,10 +10,6 @@ JavaScript has two main categories of data types: primitive and reference.
 
 ![title](https://miro.medium.com/max/1400/1*z1Cacf_OSbsQ1rYYaQsXYA.png)
 
-<!-- <img src=""
-     alt="datatypes"
-     style="float: left; margin-right: 10px;" /> -->
-
 JavaScript is a dynamically typed language. That means that a variable doesn’t associate with a type. In other words, a variable can hold a value of different types. For example:
 
 ```javascript

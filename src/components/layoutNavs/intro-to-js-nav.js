@@ -18,9 +18,9 @@ export const introToJsNav = [
       ],
     },
     {
-      title: 'Advanced guides',
+      title: 'Learn More',
       links: [
-        { title: 'Writing plugins', href: '/intro-to-js/writing-plugins' },
+        { title: 'External Resources', href: '/intro-to-js/external-resources' },
         // { title: 'Neuralink integration', href: '/docs/neuralink-integration' },
         // { title: 'Temporal paradoxes', href: '/docs/temporal-paradoxes' },
         // { title: 'Testing', href: '/docs/testing' },

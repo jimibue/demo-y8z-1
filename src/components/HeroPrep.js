@@ -59,7 +59,7 @@ export function HeroPrep() {
                 <Button href="/intro-to-html">HTML</Button>
                 <Button href="/intro-to-css">CSS</Button>
                 <Button href="/intro-to-js">JS</Button>
-                <Button href="/intro-to-tools">Tools</Button>
+                {/* <Button href="/intro-to-tools">Tools</Button> */}
                 <Button href="/" variant="secondary">
                   Back to Y8Z
                 </Button>

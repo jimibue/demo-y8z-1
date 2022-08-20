@@ -234,7 +234,7 @@ export function SecondaryFeatures() {
           </h2>
 
           <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
-            Before joining a Bootcamp or other type of school you should learn some basics on your own.  There are more than enough free resources to get you started and to start giving you a base.  You can checkout our reference <Link href='/courses'>here</Link> that is links to some goode resources as long as some of our own.
+            Before joining a Bootcamp or other type of school you should learn some basics on your own.  There are more than enough free resources to get you started and to start giving you a base.  You can checkout our reference <Link href='/prep-work'>here</Link> that is links to some goode resources as long as some of our own.
           </p>
 
           <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">

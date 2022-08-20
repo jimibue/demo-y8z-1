@@ -1,15 +1,10 @@
 export const introToToolsNav = [
     {
-      title: 'Getting Started',
+      parentDir: {title: 'Tools', href: '/intro-to-tools'}, 
+      title: 'Sections',
       links: [
-        { title: 'Overview', href: '/intro-to-tools' },
+        { title: 'Git and Github', href: '/intro-to-tools/git' },
+        { title: 'vsCode', href: '/intro-to-tools/vscode' },
       ],
     },
-    {
-      title: 'Learn More',
-      links: [
-        { title: 'External Resources', href: '/intro-to-tools/external-resources' },
-      ],
-    },
-   
   ]

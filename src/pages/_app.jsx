@@ -6,6 +6,7 @@ import { slugifyWithCounter } from '@sindresorhus/slugify'
 
 import { Layout } from '@/components/Layout'
 import { useRouter } from 'next/router'
+import { Pricing } from '@/components/landing/Pricing'
 
 function getNodeText(node) {
   let text = ''
@@ -54,9 +55,10 @@ export default function App({ Component, pageProps }) {
   // LANDING PAGE
   console.log(asPath)
   console.log(asPath.includes('faqs'))
-  if ( asPath.includes('privacy') || asPath.includes('faqs')||asPath.includes('part-time') || (!asPath.includes('courses') && !asPath.includes('intro')  )) {
+  if ( asPath.includes('privacy') || asPath.includes('faqs')||asPath.includes('part-time') || (!asPath.includes('prep-work') && !asPath.includes('intro') && !asPath.includes('dad')  )) {
     return (
       <>
+      
         <Component {...pageProps} />
       </>
     )

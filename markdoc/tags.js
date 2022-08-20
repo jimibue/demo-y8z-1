@@ -1,5 +1,8 @@
 import { Callout } from '@/components/Callout'
 import { QuickLink, QuickLinks } from '@/components/QuickLinks'
+import { Question } from '@/components/Question'
+import { List1 } from '@/components/md/List1'
+import { CodePen } from '@/components/md/CodePen'
 
 const tags = {
   callout: {
@@ -31,6 +34,17 @@ const tags = {
   },
   'quick-links': {
     render: QuickLinks,
+  },
+  'question': {
+    render: Question,
+  },
+  'codepen': {
+    render: CodePen,
+    selfClosing: true,
+  },
+  'list1': {
+    render: List1,    
+    selfClosing: true,
   },
   'quick-link': {
     selfClosing: true,

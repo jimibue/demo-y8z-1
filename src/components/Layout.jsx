@@ -12,8 +12,11 @@ import { Prose } from '@/components/Prose'
 import { Search } from '@/components/Search'
 import { ThemeSelector } from '@/components/ThemeSelector'
 import { introToJsNav } from './layoutNavs/intro-to-js-nav'
+import { introToDadNav } from './layoutNavs/intro-to-dad-nav'
 import { introToHTMLNav } from './layoutNavs/intro-to-html-nav'
 import { introToCSSNav } from './layoutNavs/intro-to-css-nav'
+import { introToGitNav } from './layoutNavs/intro-to-git-nav'
+import { introToCommandLineNav } from './layoutNavs/intro-to-command-line-nav'
 import { introToToolsNav } from './layoutNavs/intro-to-tools-nav'
 import { Header } from '@/components/landing/Header'
 import { Container } from './Container'
@@ -117,7 +120,7 @@ function useTableOfContents(tableOfContents) {
 export function Layout({ children, title, tableOfContents }) {
   let router = useRouter()
   let currentSection = useTableOfContents(tableOfContents)
-  if (router.pathname === '/courses') {
+  if (router.pathname === '/prep-work') {
     return (
       <>
         <Header navigation={[]} />
@@ -125,7 +128,8 @@ export function Layout({ children, title, tableOfContents }) {
           className="mb-4 rounded-lg bg-yellow-100 p-4 text-sm text-yellow-700 dark:bg-yellow-200 dark:text-yellow-800"
           role="alert"
         >
-          <span className="font-medium">Warning alert!</span> This section is still under construction
+          <span className="font-medium">Note:</span> This section is still under
+          construction.
         </div>
         <HeroPrep />
         <Container>{renderMainContent('Welcome', '', false)}</Container>
@@ -210,10 +214,12 @@ export function Layout({ children, title, tableOfContents }) {
 
   function getNavigation(path) {
     if (path.includes('js')) return introToJsNav
-
     if (path.includes('css')) return introToCSSNav
+    if (path.includes('git')) return introToGitNav
+    if (path.includes('dad')) return introToDadNav
+    if (path.includes('command-line')) return introToCommandLineNav
 
-    if (path.includes('tools')) return introToToolsNav
+    // if (path.includes('tools')) return introToToolsNav
 
     if (path.includes('html')) {
       return introToHTMLNav
@@ -226,23 +232,27 @@ export function Layout({ children, title, tableOfContents }) {
     <>
       <Header navigation={navigation} />
 
-      {isHomePage && <Hero />}
+      {/* Uncomment if we want intro section pages to have headers */}
+      {/* {isHomePage && <Hero />} */}
       <div
-          className="mb-4 rounded-lg bg-yellow-100 p-4 text-sm text-yellow-700 dark:bg-yellow-200 dark:text-yellow-800"
-          role="alert"
-        >
-          <span className="font-medium">Warning alert!</span> This section is still under construction
-        </div>
+        className="mb-4 rounded-lg bg-yellow-100 p-4 text-sm text-yellow-700 dark:bg-yellow-200 dark:text-yellow-800"
+        role="alert"
+      >
+        <span className="font-medium">Note:</span> This section is still under
+        construction
+      </div>
       <div className="max-w-10xl relative mx-auto flex justify-center sm:px-2 lg:px-8 xl:px-12">
         <div className="hidden lg:relative lg:block lg:flex-none">
           <div className="absolute inset-y-0 right-0 w-[50vw] bg-slate-50 dark:hidden" />
           <div className="sticky top-[4.5rem] -ml-0.5 h-[calc(100vh-4.5rem)] overflow-y-auto py-16 pl-0.5">
             <div className="absolute top-16 bottom-0 right-0 hidden h-12 w-px bg-gradient-to-t from-slate-800 dark:block" />
             <div className="absolute top-28 bottom-0 right-0 hidden w-px bg-slate-800 dark:block" />
-            <Navigation
-              navigation={navigation}
-              className="w-64 pr-8 xl:w-72 xl:pr-16"
-            />
+            {navigation.length > 0 && (
+              <Navigation
+                navigation={navigation}
+                className="w-64 pr-8 xl:w-72 xl:pr-16"
+              />
+            )}
           </div>
         </div>
 

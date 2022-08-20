@@ -80,7 +80,7 @@ function MobileNavigation() {
             <MobileNavLink href="/#features">Our Full-time Course</MobileNavLink>
             <MobileNavLink href="/faqs">FAQS</MobileNavLink>
             <MobileNavLink href="/path">Path To A New Career</MobileNavLink>
-            <MobileNavLink href="/courses"> Prep Work</MobileNavLink>
+            <MobileNavLink href="/prep-work"> Prep Work</MobileNavLink>
          
             <hr className="m-2 border-slate-300/40" />
  
@@ -103,7 +103,7 @@ export function Header() {
             <div className="hidden md:flex md:gap-x-6">
               <NavLink href="/">Our Full-Time Course</NavLink>
               <NavLink href="/path">Path To A New Career</NavLink>
-              <NavLink href="courses">
+              <NavLink href="prep-work">
                 Prep Work
               </NavLink>
    

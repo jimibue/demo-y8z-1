@@ -21,7 +21,7 @@ export default function Path() {
         className="mb-4 rounded-lg bg-yellow-100 p-4 text-sm text-yellow-700 dark:bg-yellow-200 dark:text-yellow-800"
         role="alert"
       >
-        <span className="font-medium">Warning alert!</span> This section is still
+        <span className="font-medium">Note:</span> This section is still
         under construction
       </div>
       <section
