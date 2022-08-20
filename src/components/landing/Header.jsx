@@ -103,7 +103,7 @@ export function Header() {
             <div className="hidden md:flex md:gap-x-6">
               <NavLink href="/">Our Full-Time Course</NavLink>
               <NavLink href="/path">Path To A New Career</NavLink>
-              <NavLink href="prep-work">
+              <NavLink href="/prep-work">
                 Prep Work
               </NavLink>
    
