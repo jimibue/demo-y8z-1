@@ -11,10 +11,10 @@ import Link from 'next/link'
 
 const features = [
   {
-    name: '1. Prep work',
-    summary: 'time: 1-2 months(100 + hours)',
+    name: 'Step 1: Prep',
+    summary: '1-2 months(100 + hours)',
     description:
-      'Learn the fundamentals of React, Javascript, HTML, CSS, and Frontend Web Development.',
+      'Learn the fundamentals of Javascript, HTML, CSS, and Programming',
     image: screenshotProfitLoss,
     icon: function ReportingIcon() {
       let id = useId()
@@ -45,11 +45,10 @@ const features = [
     },
   },
   {
-    name: 'Part 2: Full-Time Bootcamp',
-    summary:
-      'time: 3-6 months (>500 hours)',
+    name: 'Step 2: Bootcamp',
+    summary: '3-6 months(>500 hours)',
     description:
-      'Learn how to create the backend and also integrate with it React using the MERN stack.',
+      'Intensive, immersive, and structured content. Learn how to build complicated applications.',
     image: screenshotInventory,
     icon: function InventoryIcon() {
       return (
@@ -73,11 +72,10 @@ const features = [
     },
   },
   {
-    name: 'part 3 post bootcamp',
-    summary:
-      '1-6 months(~500hours)',
+    name: `Step 3: Don't stop`,
+    summary: '1-6+ months(~500hours)',
     description:
-      'Learn common skills that companies are looking for and build advanced applications.',
+      'Start applying for jobs while you continue to learn new skills and build upon your existing ones.',
     image: screenshotContacts,
     icon: function ContactsIcon() {
       return (
@@ -100,7 +98,11 @@ const features = [
 function Feature({ feature, isActive, className, ...props }) {
   return (
     <div
-      className={clsx(className, !isActive && 'opacity-75 hover:opacity-100')}
+      className={clsx(
+        className,
+        'p-5 shadow-lg',
+        !isActive && 'opacity-75 hover:opacity-100 '
+      )}
       {...props}
     >
       <div
@@ -109,19 +111,19 @@ function Feature({ feature, isActive, className, ...props }) {
           isActive ? 'bg-blue-600' : 'bg-slate-500'
         )}
       >
-        <svg aria-hidden="true" className="h-9 w-9" fill="none">
+        {/* <svg aria-hidden="true" className="h-9 w-9" fill="none">
           <feature.icon />
-        </svg>
+        </svg> */}
       </div>
       <h3
         className={clsx(
-          'mt-6 text-sm font-medium',
+          'mt-6 text-xl font-medium',
           isActive ? 'text-blue-600' : 'text-slate-600'
         )}
       >
         {feature.name}
       </h3>
-      <p className="mt-2 font-display text-xl text-slate-900">
+      <p className="text-md mt-2 font-display text-slate-700">
         {feature.summary}
       </p>
       <p className="mt-4 text-sm text-slate-600">{feature.description}</p>
@@ -131,21 +133,10 @@ function Feature({ feature, isActive, className, ...props }) {
 
 function FeaturesMobile() {
   return (
-    <div className="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6 lg:hidden">
+    <div className="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6 lg:hidden ">
       {features.map((feature) => (
         <div key={feature.name}>
           <Feature feature={feature} className="mx-auto max-w-2xl" isActive />
-          {/* <div className="relative mt-10 pb-10">
-            <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6" />
-            <div className="relative mx-auto w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-              <Image
-                className="w-full"
-                src={feature.image}
-                alt=""
-                sizes="52.75rem"
-              />
-            </div>
-          </div> */}
         </div>
       ))}
     </div>
@@ -157,14 +148,14 @@ function FeaturesDesktop() {
     <Tab.Group as="div" className="hidden lg:mt-20 lg:block">
       {({ selectedIndex }) => (
         <>
-          <Tab.List className="grid grid-cols-3 gap-x-8">
+          <Tab.List className="grid grid-cols-3 gap-x-8 ">
             {features.map((feature, featureIndex) => (
               <Feature
                 key={feature.name}
                 feature={{
                   ...feature,
                   name: (
-                    <Tab className="[&:not(:focus-visible)]:focus:outline-none">
+                    <Tab className="[&:not(:focus-visible)]:focus:outline-none ">
                       <span className="absolute inset-0" />
                       {feature.name}
                     </Tab>
@@ -175,32 +166,6 @@ function FeaturesDesktop() {
               />
             ))}
           </Tab.List>
-          {/* <Tab.Panels className="relative mt-20 overflow-hidden rounded-4xl bg-slate-200 px-14 py-16 xl:px-16">
-            <div className="-mx-5 flex">
-              {features.map((feature, featureIndex) => (
-                <Tab.Panel
-                  static
-                  key={feature.name}
-                  className={clsx(
-                    'px-5 transition duration-500 ease-in-out [&:not(:focus-visible)]:focus:outline-none',
-                    featureIndex !== selectedIndex && 'opacity-60'
-                  )}
-                  style={{ transform: `translateX(-${selectedIndex * 100}%)` }}
-                  aria-hidden={featureIndex !== selectedIndex}
-                >
-                  <div className="w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
-                    <Image
-                      className="w-full"
-                      src={feature.image}
-                      alt=""
-                      sizes="52.75rem"
-                    />
-                  </div>
-                </Tab.Panel>
-              ))}
-            </div>
-            <div className="pointer-events-none absolute inset-0 rounded-4xl ring-1 ring-inset ring-slate-900/10" />
-          </Tab.Panels> */}
         </>
       )}
     </Tab.Group>
@@ -215,61 +180,216 @@ export function SecondaryFeatures() {
       className="pt-0"
     >
       <Container>
-        <div className="mx-auto max-w-3xl md:text-center">
+        <div className="mx-auto max-w-3xl  md:text-left">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            The acclerated path to becoming a Software Engineer
+            The Accelerated Path to Becoming a Software Engineer
           </h2>
+          <p className="mt-1 text-lg font-bold tracking-tight text-slate-500 md:text-left">
+            by James Yeates
+          </p>
+          <p className="mt-8 text-lg tracking-tight text-slate-700 md:text-left">
+            {`
+        Software Engineers, Web Developers, and other coding-related careers are some of the fastest-growing and well-paying careers in today's economy. Coding Bootcamps were created to help people gain the skills they need to enter this industry in a short amount of time. This guide was created for those who are interested in pursuing a career in tech and doing it through a Bootcamp. It  is meant to give you a general overview and some honest expectations about what to expect along the way. Generally speaking, the path can be broken up into 3 main steps:`}
+          </p>
+          {/* <h2 className="mt-10 font-display text-3xl tracking-tight text-slate-900 md:text-left">
+            3 Steps
+          </h2> */}
+
           <FeaturesMobile />
-        <FeaturesDesktop />
-          <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
-            There is no other field where the oppurtinty to switch careers into a well-paid in demand in a relatively cheap way than there is software.  This does not mean it is automatic or easy.  Learning to code is not easy and doing it in an accelerated pace makes things more challenging.  There is a huge ad
-          </p>
+          <FeaturesDesktop />
 
-          <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
-            There is no other field where the oppurtinty to switch careers into a well-paid in demand in a relatively cheap way than there is software.  This does not mean it is automatic or easy.  Learning to code is not easy and doing it in an accelerated pace makes things more challenging.  There is a huge ad
-          </p>
-
-          <h2 className="font-display text-3xl tracking-tight text-slate-900 md:text-left mt-10">
-            Prep work
+          <h2 className="mt-20 font-display text-3xl tracking-tight text-slate-900 md:text-left">
+            Step 1: Prep
           </h2>
 
           <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
-            Before joining a Bootcamp or other type of school you should learn some basics on your own.  There are more than enough free resources to get you started and to start giving you a base.  You can checkout our reference <Link href='/prep-work'>here</Link> that is links to some goode resources as long as some of our own.
+            Before joining a Bootcamp or any other type of school, you should
+            learn some of the basics of coding on your own. There are plenty of
+            free resources to get you started and build a basic foundation. You
+            can check out our reference{' '}
+            <Link href="/prep-work">
+              <a className="text-cyan-500">here</a>
+            </Link>{' '}
+            which has some great external resources as well as some of our own
+            for getting started. Learning the basics is going to do a few things
+            for you:
+          </p>
+
+          <p className="mt-4 text-lg font-bold tracking-tight text-slate-700 md:text-left">
+            1. It will give you a chance to see if coding is something you enjoy
+            doing.
+          </p>
+          <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
+            Far too often people get lured into coding Bootcamps because they
+            get sold on the idea of getting into a great paying field in a short
+            amount of time. But more than just the idea of making more money you
+            need to find out if coding is something that you find interesting
+            and are excited about. This is a challenging field and is something
+            you might be doing a lot of in the future so you want to make sure
+            you enjoy it and the best way to find out is to try it.
+          </p>
+
+          <p className="mt-4 text-lg font-bold tracking-tight text-slate-700 md:text-left">
+            2. You will want to have a foundation in coding basics before
+            joining a Bootcamp.
           </p>
 
           <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
-            Spending time here is going to do two things.  It will give your a chance to see if coding is something you might enjoy doing.  It also might show you that you can learn on your own and you do not need to spend thousand of dollars on a bootcamp. The common expiernce is though that many people find that they enjoy it, but find that is challenging to learn on your own espically once you start to move on from the basics.
+            I'd recommend planning on spending a minimum of 100 hours coding,
+            which you could do in a month before you start a Bootcamp. The more
+            the better. Learning to code is hard and for most people is somewhat
+            foreign when first hearing some of the concepts and can take some
+            reputation before concepts begin to sink in. Bootcamps also move at
+            a rapid pace so the stronger your foundation going into one the more
+            you will be able to absorb during the Bootcamp.
+          </p>
+
+          <p className="mt-4 text-lg font-bold tracking-tight text-slate-700 md:text-left">
+            3. You might find that Bootcamps are not for you.
           </p>
 
           <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
-            But don not under estimate this step.  Bootcamps are insanely faced paced and you do not want to start out behind so I reccommend spending at least 100 hours learning the basic of html, css, and javascript.  It is also wouldn not hurt if you did a little React or Node as well.  You can not over prepare for a Bootcamp, even if you have 400 hours coding expierince you will find them fast paced.
+            Bootcamps are not for everyone. You might find the pace to be too
+            fast and might prefer to go to a University. You also might find
+            that you are able to learn on your own. I do warn that learning how
+            to code gets more challenging as the material gets harder but some
+            people are successful with this.
           </p>
 
-          <h2 className="font-display text-3xl tracking-tight text-slate-900 md:text-left mt-10">
-            Bootcamp 
+          <h2 className="mt-10 font-display text-3xl tracking-tight text-slate-900 md:text-left">
+            Step 2: Bootcamp
           </h2>
 
           <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
-            There are two main flavors of bootcamps one that are full-time, meaning you spend 40+ hours a week in lecture, coding, and learning.  These generally run anywhere from 10 - 16 weeks.  The other variety is partime bootcamps which you will spend around 20+ hours a week in lecture, coding, and leanring.  These last anywhere from 10-36 weeks. I personally think Full-Time bootcamps are the more efficient way to leatn, they teach you how to -drink from the fire hose- as they say which really does prepare you for a software job.  I think they also help yo get into a rythm of coding 40 hours a week, which if you maintain after the bootcamp you will be on a path to getting hired.   That not everyone can the time off required to do a full-time bootcamp and parttime bootcamps provide a good option for that.  
+            Something that is very common when people start learning to code on
+            their own, is that they realize it can be challenging and
+            frustrating a lot of the time. Your code does not work and you have
+            no idea what is wrong, it is harder to follow along with tutorials
+            as they get more advanced, there are so many resources out there
+            that you are not sure what to pick and what to learn next. You soon
+            realize that you need some structure, guidance, and actual people to
+            help. This is where Bootcamps come in. There are two primary types
+            of Bootcamps:
           </p>
 
-          <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
-            Whether you choose a parttime bootcamp our a full-time one,  you should be looking at spending about 500+ hours here.
+          <p className="mt-4 text-lg font-bold tracking-tight text-slate-700 md:text-left">
+            Full-time Bootcamps
           </p>
-          <h2 className="font-display text-3xl tracking-tight text-slate-900 md:text-left mt-10">
-            Post Bootcamp 
+          <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
+            In a full-time Bootcamp, you can expect to spend 40+ hours a week in
+            lecture, project time, and studying and writing code. These are
+            immersive and intensive and it is really not recommended that you
+            are working during these. They generally run anywhere from 10 - 16+
+            weeks. They are a great way to talk a leap and 100% immerse yourself
+            in code. They also create a supportive environment where you are
+            alongside peers in the same shoes and TAs and instructors to assist
+            you. They also should have a thought-out and well-structured
+            curriculum with a blend of lectures and lots of project time to give
+            you a great learning experience.
+          </p>
+
+          <p className="mt-4 text-lg font-bold tracking-tight text-slate-700 md:text-left">
+            Part-time Bootcamps
+          </p>
+          <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
+            In a part-time Bootcamp, you can expect to spend 20+ hours a week in
+            lecture, project time, and studying and writing code. These are less
+            immersive and intensive than full-time Bootcamps and are designed
+            more for people who are working or can not make the time commitment
+            required for the full-time Bootcamps. These are generally longer in
+            duration to make up for the less time spent during the week and can
+            be anywhere from 10-36 weeks. These do not provide the same
+            immersive and in-depth experience that full-time boot camps do, but
+            they are more flexible and not as fast-paced and can be a good
+            option for those with jobs, or for those who do not want the
+            intensity of a full-time Bootcamp.
+          </p>
+
+          <p className="mt-4 text-lg font-bold tracking-tight text-slate-700 md:text-left">
+            Either way: 500+ hours
+          </p>
+          <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
+            Whether you choose a part-time Bootcamp or a full-time one, you
+            should be looking at spending about 500+ hours here in this step.
+            These should be 500 hours of well-structured and relevant material.
+            Whether a full-time or part-time Bootcamp is better, really has more
+            to do with you and your individual circumstances. I personally think
+            full-time is the better option as it really does force you to make
+            the commitment to coding and can help give people a little bit extra
+            motivation.
+          </p>
+          <h2 className="mt-10 font-display text-3xl tracking-tight text-slate-900 md:text-left">
+            {`Step 3: Don't stop`}
           </h2>
 
           <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
-            There is a little white lie going around the bootcamp industry and that is you will be ready for a job after the bootcamp.  Truth of the matter is most graduates are not.  Now the reason this is a white lie is because their are some students who find jobs realtively quick (with in a month or so) of graduating.  But those are students who either has some previous expiernce that helped, or have naturally good netwroking skills or sometimes it is a matter of luck. Fact it can takes months before people land their first job, and it was not just because they were patiently waiting around. It was because they were actively still learning after the bootcamp and diligently apply for jobs. 
-            </p>
+            Before signing up for a Bootcamp you need to ask yourself if this is
+            something you truly want to do and if you are ready to put in the
+            amount of work required for it. The truth of the matter is
+            completing the Bootcamp is just the first step of many on this path.
+            It generally takes about 1-6 months after the Bootcamp to find your
+            first job. During this time it is important to keep going. Here is
+            what I recommend:
+          </p>
 
-            <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
+          <h3 className="mt-10 font-display text-2xl tracking-tight text-slate-900 md:text-left">
+            {`What to do after graduation`}
+          </h3>
 
-            </p>
-   
+          <p className="mt-4 text-lg font-bold tracking-tight text-slate-700 md:text-left">
+            Job Search
+          </p>
+          <p className="mt-2 text-lg tracking-tight text-slate-700 md:text-left">
+            Apply, apply and apply. Get creative here. Reach out directly to
+            hiring managers. reach out to people you know in the field,
+            non-profits, or small-sized businesses who might need websites
+            built.
+          </p>
+          <p className="mt-4 text-lg font-bold tracking-tight text-slate-700 md:text-left">
+            Network
+          </p>
+          <p className="mt-2 text-lg tracking-tight text-slate-700 md:text-left">
+            Finding a job sometimes can be as much about your soft skills as
+            your technical skills. Keep in touch with your classmates, and meet
+            new people at meetups and coding events. Put yourself out there.
+          </p>
+
+          <p className="mt-4 text-lg font-bold tracking-tight text-slate-700 md:text-left">
+            Continue to learn
+          </p>
+          <p className="mt-2 text-lg tracking-tight text-slate-700 md:text-left">
+            As you apply for jobs and have interviews, you will start to find
+            some of your weak spots and where you can improve. You should be
+            spending 15+ hours a week learning new skills.
+          </p>
+
+          <p className="mt-4 text-lg font-bold tracking-tight text-slate-700 md:text-left">
+            Continue to build
+          </p>
+          <p className="mt-2 text-lg tracking-tight text-slate-700 md:text-left">
+            As someone with little real-world experience, one way to stand out
+            from other Jr. Developers is to continue to work and build actual
+            projects that you can show off to potential employees. Much like an
+            artist builds their portfolio to show to an interested buyer, build
+            your own portfolio to showcase your skills.
+          </p>
+
+          <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left"></p>
+
+          <h2 className="mt-10 font-display text-3xl tracking-tight text-slate-900 md:text-left">
+            Conclusion
+          </h2>
+
+          <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
+            Becoming a Software Engineer via a coding Bootcamp is a challenging
+            and rewarding path. It is one full of ups and downs and more than
+            anything it is full of opportunities for those who stick with it.
+            When it comes down to it, going to a coding Bootcamp is not going to
+            get you a job. It is your hard work and persistence that will.
+            Bootcamps are there to give you guidance and assistance and to
+            accelerate this path, but ultimately it is up to you.
+          </p>
         </div>
-     
       </Container>
     </section>
   )

@@ -46,7 +46,7 @@ function CheckIcon({ className }) {
   )
 }
 
-function Plan({ name, price, description, href, features, featured = false }) {
+function Plan({ name, price, description, href, features, buttonText, featured = false }) {
   return (
     <section
       className={clsx(
@@ -96,7 +96,7 @@ function Plan({ name, price, description, href, features, featured = false }) {
         className="mt-8"
         aria-label={`Get started with the ${name} plan for ${price}`}
       >
-        Get started
+        {buttonText}
       </Button>
     </section>
   )
@@ -128,6 +128,7 @@ export function Pricing() {
             featured
             name="Y8Z Prep Work"
             price="FREE"
+            buttonText='Start Now'
             description="Online | Outside resources | Self Paced"
             href="/register"
             features={[
@@ -144,6 +145,7 @@ export function Pricing() {
 
           <Plan
             featured
+            buttonText='Apply'
             name="Y8Z Full-Time Bootcamp"
             price="$3500"
             description="Online | Live-Lectures | M-F: 9-5"

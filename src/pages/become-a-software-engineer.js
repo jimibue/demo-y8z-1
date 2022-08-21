@@ -1,10 +1,11 @@
 import Image from 'next/future/image'
+import backgroundImage from '@/images/background-faqs.jpg'
 import Head from 'next/head'
 import { Header } from '@/components/landing/Header'
 
 import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
-import backgroundImage from '@/images/background-faqs.jpg'
+
 import { useEffect } from 'react'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 
@@ -12,18 +13,12 @@ export default function Path() {
   return (
     <>
       <Head>
-        <title>Path</title>
-        <meta name="description" content="get in contact" />
+        <title>Becoming a Engineer</title>
+        <meta name="description" content="The Accelerated Path to Becoming a Software Engineer" />
       </Head>
 
       <Header />
-      <div
-        className="mb-4 rounded-lg bg-yellow-100 p-4 text-sm text-yellow-700 dark:bg-yellow-200 dark:text-yellow-800"
-        role="alert"
-      >
-        <span className="font-medium">Note:</span> This section is still
-        under construction
-      </div>
+
       <section
         id="faq"
         aria-labelledby="faq-title"

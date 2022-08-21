@@ -49,7 +49,7 @@ export function HeroPrep() {
             />
             <div className="relative">
               <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
-                Y8Z: PrepWork.
+                Y8Z: Prep Yourself.
               </p>
               <p className="mt-3 text-2xl tracking-tight text-slate-400">
                 Learn HTML, CSS, Javascript and more for free here.
@@ -61,7 +61,7 @@ export function HeroPrep() {
                 <Button href="/intro-to-js">JS</Button>
                 {/* <Button href="/intro-to-tools">Tools</Button> */}
                 <Button href="/" variant="secondary">
-                  Back to Y8Z
+                  Home
                 </Button>
               </div>
             </div>

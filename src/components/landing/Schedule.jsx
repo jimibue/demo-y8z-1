@@ -15,21 +15,21 @@ const schedule = [
       'Learn the fundamentals of React, Javascript, HTML, CSS and Frontend Web Development.',
     timeSlots: [
       {
-        name: 'Week 1: JAVASCRIPT',
+        name: 'Week 1: Javascript',
         description:
           'A deep dive into Javascript looking at functions, conditional, async-await, loops and more. We will also spend some time with Git and Github.',
         start: '9:00AM',
         end: '10:00AM',
       },
       {
-        name: 'Week 2: INTRO TO REACT',
+        name: 'Week 2: Intro to React',
         description:
           'A crash course in React. Learn about state, props, react-router,component design and libraries. CSS and HTML review as well',
         start: '10:00AM',
         end: '11:00AM',
       },
       {
-        name: 'Week 3: REACT IN-DEPTH',
+        name: 'Week 3: React in-depth',
         description:
           "Advanced React topics: hooks, async code, working with API's, context, state management, and more",
         start: '11:00AM',
@@ -51,14 +51,14 @@ const schedule = [
       'Learn how to create the backend and also integrate with it React using the MERN stack.',
     timeSlots: [
       {
-        name: "Week 5: DB'S / EXPRESS / NODE",
+        name: "Week 5: DB'S / Express / Node",
         description:
           'An overview of the Backend using Node and Express. Well go over the HTTP life client server life cycle and build out an API',
         start: '9:00AM',
         end: '10:00AM',
       },
       {
-        name: 'Week 6: THE MERN STACK PART 1',
+        name: 'Week 6: The MERN Stack',
         description:
           "Crash course in the MERN stack: MongoDB, Express, React, and Node. We'll use this to build our first full-stack app.",
         start: '10:00AM',
@@ -72,7 +72,7 @@ const schedule = [
         end: '12:00PM',
       },
       {
-        name: 'Week 8: THE MERN STACK PART 2',
+        name: 'Week 8: The MERN Stack in-depth',
         description:
           'Continue to build full-stack apps. We will also integrate authentication, image upload, model associations, and more.',
         start: '12:00PM',
@@ -87,28 +87,28 @@ const schedule = [
       'Learn common skills that companies are looking for and build advanced applications.',
     timeSlots: [
       {
-        name: 'Week 9: TESTING / TYPESCRIPT',
+        name: 'Week 9: Testing / Typescript',
         description:
           'Learn how to write better code by adding tests using jest and enzyme. Learn about typed Javascript with Typescript.',
         start: '9:00AM',
         end: '10:00AM',
       },
       {
-        name: 'Week 10: DEV OPS',
+        name: 'Week 10: Dev Ops',
         description:
           'Using tools such as Docker, Kuberantes, Github, and Heroku we will see how we can streamline the development experience and create CI/CD pipelines.',
         start: '10:00AM',
         end: '11:00AM',
       },
       {
-        name: 'Week 11: DATA STRUCTURES AND ALGORITHMS',
+        name: 'Week 11: Data structures and algorithms',
         description:
           'Get prepared for whiteboard interview questions and strengthen your coding fundamentals.',
         start: '11:00AM',
         end: '12:00PM',
       },
       {
-        name: 'Week 12: FINAL PROJECT',
+        name: 'Week 12: Final Project',
         description:
           'This is your week to take what you have learned and finish building out an advanced full-stack application that you can show off to potential employers.',
         start: '12:00PM',

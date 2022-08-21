@@ -24,11 +24,12 @@ const themeScript = `
       theme = 'light'
       document.documentElement.classList.remove('dark')
     }
-    return theme
+    return 'light'
+  
   }
 
   function updateThemeWithoutTransitions(savedTheme) {
-    updateTheme(savedTheme)
+    updateTheme('light')
     document.documentElement.classList.add('[&_*]:!transition-none')
     window.setTimeout(() => {
       document.documentElement.classList.remove('[&_*]:!transition-none')

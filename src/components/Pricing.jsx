@@ -6,7 +6,7 @@ import { Container } from '@/components/Container'
 import { GridPattern } from '@/components/GridPattern'
 import { SectionHeading } from '@/components/SectionHeading'
 
-function Plan({ name, description, price, features, href, featured }) {
+function Plan({ name, description, price, features, href,buttonText, featured }) {
   return (
     <div
       className={clsx(
@@ -83,7 +83,7 @@ function Plan({ name, description, price, features, href, featured }) {
           className="mt-8"
           aria-label={`Get started with the ${name} plan for $${price}`}
         >
-          Get started
+          {buttonText}
         </Button>
       </div>
     </div>
@@ -109,6 +109,7 @@ export function Pricing() {
             name="Prep Work"
             description="Free resources to help get you started on your path"
             price={'FREE'}
+            buttonText={'Get Started'}
             href="/prep-work"
             features={[
               'HTML ',
@@ -124,6 +125,7 @@ export function Pricing() {
             description="A complete Web Development course at a great price."
             price={3500}
             href="/contact"
+            buttonText={'Learn More / Apply'}
             features={[
               'Senior Dev lead classes',
               '40+ hours a week',

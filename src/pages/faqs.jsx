@@ -9,6 +9,12 @@ import backgroundImage from '@/images/background-faqs.jpg'
 
 const faqs = [
   [
+    // {
+    //   question: 'Why is your Bootcamp not as expensive as other Bootcamps?',
+    //   answer:
+    //     'We are a small bootcamp, who has no plans of growing.   Because of this we do not need a marketing team, a recuting team or addmision team.  And since we are online we do not need to rent out a building. ',
+    //     link: '/prep-work',
+    // },
     {
       question: 'What language should I learn first?',
       answer:
