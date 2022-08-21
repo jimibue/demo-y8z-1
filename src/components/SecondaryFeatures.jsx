@@ -235,7 +235,7 @@ export function SecondaryFeatures() {
           </p>
 
           <p className="mt-4 text-lg tracking-tight text-slate-700 md:text-left">
-            I'd recommend planning on spending a minimum of 100 hours coding,
+            I would recommend planning on spending a minimum of 100 hours coding,
             which you could do in a month before you start a Bootcamp. The more
             the better. Learning to code is hard and for most people is somewhat
             foreign when first hearing some of the concepts and can take some
