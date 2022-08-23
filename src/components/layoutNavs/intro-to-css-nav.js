@@ -1,8 +1,10 @@
 export const introToCSSNav = [
     {
-      title: 'Getting Started',
+      title: 'CSS Basics',
       links: [
         { title: 'Overview', href: '/intro-to-css' },
+        { title: 'Cheatsheet', href: '/intro-to-css/cheatsheet' },
+        { title: 'Selectors Table', href: '/intro-to-css/complete-selector-reference' },
       ],
     },
     {

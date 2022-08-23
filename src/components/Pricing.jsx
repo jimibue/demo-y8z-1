@@ -109,8 +109,8 @@ export function Pricing() {
             name="Prep Work"
             description="Free resources to help get you started on your path"
             price={'FREE'}
-            buttonText={'Get Started'}
-            href="/prep-work"
+            buttonText={'Learn More / Apply'}
+            href="/contact"
             features={[
               'HTML ',
               'CSS ',

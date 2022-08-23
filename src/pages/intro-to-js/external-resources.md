@@ -16,3 +16,22 @@ mozilla is a great resource and has really indepth documentation if you want to 
 
 ## [Codeaceademy](https://www.codecademy.com/learn)
 Codeaceademy has a great intro to js course, with step by step tutorials.  It is great for beginners.
+
+
+## All Prep Resources
+
+{% quick-links %}
+
+{% quick-link title="HTML" icon="installation" href="/intro-to-html" description="" /%}
+
+{% quick-link title="CSS" icon="presets" href="/intro-to-css" description="" /%}
+
+{% quick-link title="Javascript" icon="plugins" href="/intro-to-js" description="" /%}
+
+{% quick-link title="React" icon="plugins" href="/react-course" description="" /%}
+
+
+{% quick-link title="The Command Line" icon="theming" href="/intro-to-tools/command-line" description="" /%}
+
+{% quick-link title="Git and Github" icon="theming" href="/intro-to-tools/git" description="" /%}
+{% /quick-links %}

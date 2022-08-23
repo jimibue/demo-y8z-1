@@ -4,7 +4,6 @@ export const introToJsNav = [
       links: [
         { title: 'Overview', href: '/intro-to-js' },
         { title: 'Installation', href: '/intro-to-js/installation' },
-        { title: 'console and terminal', href: '/intro-to-js/console-and-terminal' },
       ],
     },
     {

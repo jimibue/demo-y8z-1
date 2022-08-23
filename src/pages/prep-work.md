@@ -17,6 +17,8 @@ Hello and welcome to our prep work section. Here you will find many useful inter
 
 {% quick-link title="Javascript" icon="plugins" href="/intro-to-js" description="Javascript is one of the most popular programming languages. It is used to add logic to our Web Pages. You can think of it as the brains of our Web page. We can also use JS to write backends, mobile apps, and more. Learn more here." /%}
 
+{% quick-link title="React" icon="plugins" href="/react-course" description="Javascript is one of the most popular programming languages. It is used to add logic to our Web Pages. You can think of it as the brains of our Web page. We can also use JS to write backends, mobile apps, and more. Learn more here." /%}
+
 
 
 {% /quick-links %}

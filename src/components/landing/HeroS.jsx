@@ -1,5 +1,5 @@
 import Image from 'next/future/image'
-import backgroundImage from '@/images/background-faqs.jpg'
+import backgroundImage from '@/images/background.jpg'
 
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
@@ -18,6 +18,7 @@ export function Hero() {
 
 
     <Container className="pt-20 pb-16 text-center lg:pt-32">
+
     <h1 className="relative mx-auto max-w-2xl font-display text-3xl font-medium tracking-tight text-slate-900 sm:text-4xl">
         Y8Z Web Development Course{' '}
         </h1>

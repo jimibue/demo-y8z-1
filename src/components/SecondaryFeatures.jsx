@@ -206,8 +206,8 @@ export function SecondaryFeatures() {
             Before joining a Bootcamp or any other type of school, you should
             learn some of the basics of coding on your own. There are plenty of
             free resources to get you started and build a basic foundation. You
-            can check out our reference{' '}
-            <Link href="/prep-work">
+            can learn more here{' '}
+            <Link href="/contact">
               <a className="text-cyan-500">here</a>
             </Link>{' '}
             which has some great external resources as well as some of our own

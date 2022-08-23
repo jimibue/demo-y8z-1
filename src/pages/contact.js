@@ -73,7 +73,7 @@ export default function Faqs() {
             </h2>
             <p className="mt-4 text-lg tracking-tight text-slate-700">
               {`
-              Want to sign up?  Or just learn more about or course and discuss your options for becoming a software engineer.  Setup a online zoom call to go over your options.`}
+              Want to sign up?  Or just learn more about or course and discuss your options for becoming a software engineer.  Setup a online zoom call to go over your options. You can also email us at y8z.studios@gmail.com`}
             </p>
           </div>
 
