@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Getting started
 pageTitle: Y8z - Full-Time bootcamp.
 description: Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.
@@ -111,4 +111,4 @@ Praesentium facilis iste aliquid quo quia a excepturi. Fuga reprehenderit illo s
 
 Eum et ut. Qui facilis est ipsa. Non facere quia sequi commodi autem. Dicta autem sit sequi omnis impedit. Eligendi amet dolorum magnam repudiandae in a.
 
-Molestiae iusto ut exercitationem dolorem unde iusto tempora atque nihil. Voluptatem velit facere laboriosam nobis ea. Consequatur rerum velit ipsum ipsam. Et qui saepe consequatur minima laborum tempore voluptatum et. Quia eveniet eaque sequi consequatur nihil eos.
+Molestiae iusto ut exercitationem dolorem unde iusto tempora atque nihil. Voluptatem velit facere laboriosam nobis ea. Consequatur rerum velit ipsum ipsam. Et qui saepe consequatur minima laborum tempore voluptatum et. Quia eveniet eaque sequi consequatur nihil eos. -->
