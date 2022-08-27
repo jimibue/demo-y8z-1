@@ -50,33 +50,35 @@ const schedule = [
     summary:
       'Learn how to create the backend and also integrate with it React using the MERN stack.',
     timeSlots: [
+
       {
-        name: "Week 5: DB'S / Express / Node",
-        description:
-          'An overview of the Backend using Node and Express. Well go over the HTTP life client server life cycle and build out an API',
-        start: '9:00AM',
-        end: '10:00AM',
-      },
-      {
-        name: 'Week 6: The MERN Stack',
+        name: 'Week 5: The MERN Stack I',
         description:
           "Crash course in the MERN stack: MongoDB, Express, React, and Node. We'll use this to build our first full-stack app.",
         start: '10:00AM',
         end: '11:00AM',
       },
       {
-        name: 'Week 7: NO CLASS',
+        name: 'Week 6: The MERN Stack II',
+        description:
+          'Continue to build full-stack apps. We will also integrate authentication, image upload, model associations, and more.',
+        start: '12:00PM',
+        end: '1:00PM',
+      },
+      {
+        name: 'Week 7: Project #1',
         description:
           "This is an intensive Bootcamp, this week is an 'off' week but is meant to give you a chance to get caught up with sections you might have gotten behind in.",
         start: '11:00AM',
         end: '12:00PM',
       },
+
       {
-        name: 'Week 8: The MERN Stack in-depth',
+        name: "Week 8: Redux/GraphQL",
         description:
-          'Continue to build full-stack apps. We will also integrate authentication, image upload, model associations, and more.',
-        start: '12:00PM',
-        end: '1:00PM',
+          'Now that we have a backend built we learn how to handle more advanced state in React with tools like Redux and GraphQL.',
+        start: '9:00AM',
+        end: '10:00AM',
       },
     ],
   },
@@ -93,19 +95,20 @@ const schedule = [
         start: '9:00AM',
         end: '10:00AM',
       },
+
       {
-        name: 'Week 10: Dev Ops',
+        name: 'Week 10: React Native',
+        description:
+          'Here we learn how to combine everything we have just learned and with the help of React Native we will be able to build mobile apps',
+        start: '11:00AM',
+        end: '12:00PM',
+      },
+      {
+        name: 'Week 11: Dev Ops',
         description:
           'Using tools such as Docker, Kuberantes, Github, and Heroku we will see how we can streamline the development experience and create CI/CD pipelines.',
         start: '10:00AM',
         end: '11:00AM',
-      },
-      {
-        name: 'Week 11: Data structures and algorithms',
-        description:
-          'Get prepared for whiteboard interview questions and strengthen your coding fundamentals.',
-        start: '11:00AM',
-        end: '12:00PM',
       },
       {
         name: 'Week 12: Final Project',
@@ -260,7 +263,7 @@ export function Schedule() {
             Our course is jam-packed with brilliant and creative content
           </h2>
           <p className="mt-4 font-display text-2xl tracking-tight text-blue-900">
-            Advanced, in-depth, and integrated curriculum. You will the learn the tool and skills companies are looking for.
+            Advanced, in-depth, and frontend focused full-stack  curriculum. You will learn up to date skills companies are looking for.
           </p>
         </div>
       </Container>

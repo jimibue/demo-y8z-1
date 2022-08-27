@@ -214,7 +214,8 @@ export function Layout({ children, title, tableOfContents }) {
 
   function getNavigation(path) {
     if (path.includes('js')) return introToJsNav
-    if (path.includes('css')) return introToCSSNav
+    if (path.includes('css')) return introToHTMLNav
+    // if (path.includes('css')) return introToCSSNav
     if (path.includes('git')) return introToGitNav
     if (path.includes('dad')) return introToDadNav
     if (path.includes('react')) return reactCourseNav
@@ -222,7 +223,7 @@ export function Layout({ children, title, tableOfContents }) {
 
     // if (path.includes('tools')) return introToToolsNav
 
-    if (path.includes('html')) {
+    if (path.includes('html') ) {
       return introToHTMLNav
     } else {
       return []

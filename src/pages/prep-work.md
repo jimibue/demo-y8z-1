@@ -11,7 +11,7 @@ Hello and welcome to our prep work section. Here you will find many useful inter
 
 {% quick-links %}
 
-{% quick-link title="HTML" icon="installation" href="/intro-to-html" description="HTML is short for Hypertext Markup Language. It is used to write Web Pages. You can think of it as the skeleton of our website. Learn more here." /%}
+{% quick-link title="HTML and CSS" icon="installation" href="/intro-to-html" description="HTML is short for Hypertext Markup Language. It is used to write Web Pages. You can think of it as the skeleton of our website. CSS is short for Cascading Style Sheets. It is used to style our Web Pages. We use HTML and CSS to structure and style websites.  Learn more here." /%}
 
 {% quick-link title="CSS" icon="presets" href="/intro-to-css" description="CSS is short for Cascading Style Sheets. It is used to style our Web Pages. You can think of it as the skin of our app. Learn more here." /%}
 

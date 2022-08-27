@@ -6,10 +6,26 @@ description: Cache every single thing your app could ever do ahead of time, so y
 
 ## Where to go next
 
+After you have the basics of HTML and CSS we recommend you head on over to our Javascript section
 
-After you have the basics of html we recommend you head on over to our css section
+{% quick-link title="Learn Javascript" icon="presets" href="/intro-to-js" description="Javascript is one of the most popular programming languages. It is used to add logic to our Web Pages. You can think of it as the brains of our Web page. We can also use JS to write backends, mobile apps, and more. Learn more here." /%}
 
-{% quick-link title="Learn CSS" icon="presets" href="/intro-to-css" description="CSS is short for Cascading Style Sheets. It is used to style our Web Pages. You can think of it as the skin of our app. Learn more here." /%}
+## Learn more about CSS
+
+There are many free online tools for learning css.  We have kept this section intentionally short as we want to get you to learning React ASAP.  
+
+
+{% md-link title="w3schools" href="https://www.w3schools.com/css/default.asp" /%} is a great resource to all things css.
+
+{% md-link title="Mozilla" href="https://developer.mozilla.org/en-US/docs/Web/css" /%} is a great resource and has really in-depth documentation if you want to learn everything.
+
+{% md-link title="Codeaceademy" href="https://www.codecademy.com/learn/learn-css" /%} has a great intro to css course, with step by step tutorials.  It is great for beginners.
+
+
+
+
+
+
 ## Learn more about HTML
 
 There are many free online tools for learning HTML.  We have kept this section intentionally short as we want to get you to learning React ASAP.  
@@ -35,9 +51,7 @@ After you have the basics of html we recommend you head on over to our [CSS](/in
 
 {% quick-links %}
 
-{% quick-link title="HTML" icon="installation" href="/intro-to-html" description="" /%}
-
-{% quick-link title="CSS" icon="presets" href="/intro-to-css" description="" /%}
+{% quick-link title="HTML and CSS" icon="installation" href="/intro-to-html" description="" /%}
 
 {% quick-link title="Javascript" icon="plugins" href="/intro-to-js" description="" /%}
 

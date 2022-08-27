@@ -1,4 +1,4 @@
-export function CodePen() {
+export function CodePen({src, href}) {
   return (
     <>
       <iframe
@@ -6,13 +6,13 @@ export function CodePen() {
         style={{width: '100%'}}
         scrolling="no"
         title="yo"
-        src="https://codepen.io/JamesYeates/embed/bGvzMWm?default-tab=html%2Cresult"
+        src={src}
         frameBorder="no"
         loading="lazy"
         allowTransparency="true"
         allowFullScreen="true"
       >
-        See the Pen <a href="https://codepen.io/JamesYeates/pen/bGvzMWm">yo</a>{' '}
+        See the Pen <a href={href}>yo</a>{' '}
         by James Yeates (
         <a href="https://codepen.io/JamesYeates">@JamesYeates</a>) on{' '}
         <a href="https://codepen.io">CodePen</a>.

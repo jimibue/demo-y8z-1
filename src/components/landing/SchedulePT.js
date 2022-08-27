@@ -15,28 +15,29 @@ const schedule = [
       'Learn the fundamentals of React, Javascript, HTML, CSS and Frontend Web Development.',
     timeSlots: [
       {
-        name: 'Week 1-2: JAVASCRIPT',
+        name: 'Week 1: Javascript',
         description:
           'A deep dive into Javascript looking at functions, conditional, async-await, loops and more. We will also spend some time with Git and Github.',
         start: '9:00AM',
         end: '10:00AM',
       },
       {
-        name: 'Week 3-4: INTRO TO REACT',
+        name: 'Week 2-4: React I and II',
         description:
           'A crash course in React. Learn about state, props, react-router,component design and libraries. CSS and HTML review as well',
         start: '10:00AM',
         end: '11:00AM',
       },
+
       {
-        name: 'Week 4-5: REACT IN-DEPTH',
+        name: 'Week 5: Tailwind/Next.js',
         description:
-          "Advanced React topics: hooks, async code, working with API's, context, state management, and more",
-        start: '11:00AM',
-        end: '12:00PM',
+          'Learn how to make our apps look professional and beatiful with tailwind.css and learn how to more easily get static website up and running with next.js',
+        start: '12:00PM',
+        end: '1:00PM',
       },
       {
-        name: 'Week 6-7: Tailwind/Next.js/Project',
+        name: 'Week 6: Project #1',
         description:
           'Learn how to make our apps look professional and beatiful with tailwind.css and learn how to more easily get static website up and running with next.js',
         start: '12:00PM',
@@ -51,34 +52,33 @@ const schedule = [
       'Learn how to create the backend and also integrate with it React using the MERN stack.',
     timeSlots: [
       {
-        name: "Week 8-9: DB'S / EXPRESS / NODE",
-        description:
-          'An overview of the Backend using Node and Express. Well go over the HTTP life client server life cycle and build out an API',
-        start: '9:00AM',
-        end: '10:00AM',
-      },
-      {
-        name: 'Week 11-12: THE MERN STACK PART 1',
+        name: 'Week 7-8: THE MERN  Stack I',
         description:
           "Crash course in the MERN stack: MongoDB, Express, React, and Node. We'll use this to build our first full-stack app.",
         start: '10:00AM',
         end: '11:00AM',
       },
       {
-        name: 'Week 12-13: THE MERN STACK PART 2',
+        name: 'Week 9: THE MERN Stack II',
         description:
-          'Continue to build full-stack apps. We will also integrate authentication, image upload, model associations, and more.',
+        'Continue to build full-stack apps. We will also integrate authentication, image upload, model associations, and more.',
+        start: '10:00AM',
+        end: '11:00AM',
+      },
+      {
+        name: 'Week 10-11 GraphQL/Redux',
+        description:
+          'Now that we have a backend built we learn how to handle more advanced state in React with tools like Redux and GraphQL.',
         start: '12:00PM',
         end: '1:00PM',
       },
       {
-        name: 'Week 14: NO CLASS',
+        name: 'Week 12: Project #2',
         description:
-          "This is an intensive Bootcamp, this week is an 'off' week but is meant to give you a chance to get caught up with sections you might have gotten behind in.",
-        start: '11:00AM',
-        end: '12:00PM',
+          'Learn how to make our apps look professional and beatiful with tailwind.css and learn how to more easily get static website up and running with next.js',
+        start: '12:00PM',
+        end: '1:00PM',
       },
-
     ],
   },
   {
@@ -88,33 +88,34 @@ const schedule = [
       'Learn common skills that companies are looking for and build advanced applications.',
     timeSlots: [
       {
-        name: 'Week 15-16: TESTING / TYPESCRIPT',
+        name: 'Week 13-14: Testing / Typescript',
         description:
           'Learn how to write better code by adding tests using jest and enzyme. Learn about typed Javascript with Typescript.',
         start: '9:00AM',
         end: '10:00AM',
       },
       {
-        name: 'Week 17-18: DEV OPS',
-        description:
-          'Using tools such as Docker, Kuberantes, Github, and Heroku we will see how we can streamline the development experience and create CI/CD pipelines.',
-        start: '10:00AM',
-        end: '11:00AM',
-      },
-      {
-        name: 'Week 19-20: DATA STRUCTURES AND ALGORITHMS',
+        name: 'Week 15-16: React Native',
         description:
           'Get prepared for whiteboard interview questions and strengthen your coding fundamentals.',
         start: '11:00AM',
         end: '12:00PM',
       },
       {
-        name: 'Week 21-22: FINAL PROJECT',
+        name: 'Week 17: DEV OPS',
         description:
-          'This is your week to take what you have learned and finish building out an advanced full-stack application that you can show off to potential employers.',
+          'Using tools such as Docker, Kuberantes, Github, and Heroku we will see how we can streamline the development experience and create CI/CD pipelines.',
+        start: '10:00AM',
+        end: '11:00AM',
+      },
+      {
+        name: 'Week 18: Project #3',
+        description:
+          'Learn how to make our apps look professional and beatiful with tailwind.css and learn how to more easily get static website up and running with next.js',
         start: '12:00PM',
         end: '1:00PM',
       },
+
     ],
   },
 ]

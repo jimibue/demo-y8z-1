@@ -48,7 +48,7 @@ Now we can go to {% md-link title="http://localhost:3000" href="http://localhost
 
 ## Key parts of a React
 
-There a many key parts to a React. Let's quickly go over them so of the terms and ideas start to sink in.  We will go over these in more detail later so for now let's just a high level view about what these are.
+There a many key parts to a React. Let's quickly go over them so of the terms and ideas start to sink in. We will go over these in more detail later so for now let's just a high level view about what these are.
 
 ### JSX
 
@@ -81,7 +81,7 @@ This means that you can use JSX inside of if statements and for loops, assign it
 function App() {
   // a variable
   let name = 'Bob'
-  
+
   // a function
   function getGreeting(user) {
     if (user) {
@@ -114,11 +114,146 @@ For example, class becomes className in JSX, and tabindex becomes tabIndex.
 
 ### Components
 
-### State
+One of the core features of React is that they allow you to write reusable components. This allows us to split the UI into independent, reusable pieces, and think about each piece as it is own thing. Let's look at a simple example where we might have users in our UI.
+
+```javascript
+// A 'User' Component
+function User = (props)=>{
+   return (
+    <div className='user'>
+       <h1>Hello I am {props.name}</h1>
+       <p>you can reach me at {props.email}</p>
+    </div>
+   )
+}
+
+function App = ()=>{
+   return (
+    <div>
+         <h1>Our Users</h1>
+         <div className='users'>
+           <User name='Bob' email='bob@yo.com' / >
+           <User name='Jane' email='jane@yo.com' / >
+          </div>
+    </div>
+   )
+}
+
+```
+
+Here we define a functional component name `Users`. We then render that component in our App component twice with two different sets if user data.
+
+{% callout type="warning" title="Note: Always start component names with a capital letter." %}
+
+React treats components starting with lowercase letters as DOM tags. For example, <div /> represents an HTML div tag, but <Welcome /> represents a component and requires Welcome to be in scope.
+
+{% /callout %}
+
+### Events
+
+Handling events with React elements is very similar to handling events on DOM elements. There are some syntax differences:
+
+- React events are named using camelCase, rather than lowercase.
+- With JSX you pass a function as the event handler, rather than a string.
+
+For example, the HTML:
+
+```javascript
+<button onclick="someFunction()">click</button>
+```
+
+is slightly different in React:
+
+```javascript
+<button onClick={someFunction}>click</button>
+```
+
+```javascript
+function Demo = (props)=>{
+  function warn(){
+    alert('button clicked')
+  }
+
+  return(
+    <>
+    <button onClick={warn}>
+      click
+    </button>
+    </>
+  )
+}
+```
+
+### Props
+
+Props is how we pass data to our components. Props are read only and is always going to be a Javascript object. In our example you see a 'props' param in our User functional components and when you see the User component being rendered we see them being `passed` like this
+
+```javascript
+<User name="Jane" email="jane@yo.com" />
+```
 
 ### Rendering
 
-### Props
+Rendering is when React takes our component and actually attaches it to the DOM. For now this is happening when our component 'mounts' or when the page first loads. This mount happens once. What our functional component returns is what is going to be mounted. We will look more into rendering but first let's talk about two concepts that go along with this. State and the lifecycle of a component in React
+
+### State
+
+So far everything we have done has been read only. Most web apps change though, they have state. React handles this with the useState hook. Let's look at an example where we have a counter
+
+```javascript
+// We need to import the hook from the react library
+import {useState} from 'react'
+
+function Counter = (props)=>{
+  const [count, setCount] = useState(0)
+  
+  function increment(){
+    setCount(count + 1)
+  }
+
+  return(
+    <div>
+      <h1>counter name: {props.name}</h1>
+      <p>the count is : {count}</p>
+      <button onClick={increment}>
+        add
+      </button>
+    </div>
+  )
+}
+
+function App = ()=>{
+   return (
+    <div>
+         <h1>Our Users</h1>
+         <Counter name='step counter' />
+         <Counter name='taco counter' />
+    </div>
+   )
+}
+
+```
+
+Let's break this down a little. Let's first look at the useState hook. useState is a function that returns an array who first value is the state or the way to get the state and the second value is a function to set the state.
+
+It has this general signature.
+
+```javascript
+// const [state, setState] = useState(initialState)
+```
+
+
+{% callout type="warning" title="Note:" %}
+ calling our setState function will trigger our component to be rerendered
+{% /callout %}
+
+
+{% callout type="warning" title="Note:" %}
+ we never want to mutate state directly always use the setState function to change state
+{% /callout %}
+
+useState is 
+
 
 ### LifeCycle
 

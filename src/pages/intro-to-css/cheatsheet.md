@@ -121,202 +121,884 @@ a[class~="logo"] {
 
 ## Pseudo Selectors & Elements
 
-Mouse Over Selector```css a:hover {}```
+### Mouse Over Selector
+The  :hover selector allows you to target an element that the user hovers over with a cursor or mouse pointer.
 
-Active Link Selector```css a:active {}```
+```css 
+a:hover {
+  /* styles here */
+}
+```
+ ----
+### Active Link Selector
+The  :active selector allows you to target an element that is being activated (such as a link that is being clicked on).
+```css 
+a:active {
+    /* styles here */
+}
+```
+ ----
+### Focus Selector
+The CSS :active selector allows you to target an element that is being that is focused (such as a input that is currently active).
+```css 
+input:focus {
+    /* styles here */
+}
+```
+ ----
+### Visited Links Selector
+The :visited selector allows you to target visited links.
 
-Focus Selector```css input:focus {}```
+```css 
+a:visited {
+    /* styles here */
+}
+```
+ ----
+### Link Selector
+The :link selector is used to select unvisited links.
+```css 
+.class:link {
+  /* styles here */
+}
+```
+ ----
+### First Line Selector
+The ::first-line selector is used to add a style to the first line of the specified selector.
+```css 
+p::first-line {
+  /* styles here */
+}
+```
 
-Visited Links Selector```css a:visited {}```
+### First Letter Selector
+The ::first-line selector is used to add a style to the first letter of the specified selector.
+```css 
+p::first-letter {
+  /* styles here */
+}
+```
+----
+### First Child Selector
+The :first-child CSS pseudo-class represents the first element among a group of sibling elements.
+```css 
+p:first-child {
+  /* styles here */
+}
+```
+----
+### Last Child Selector
+The :last-child CSS pseudo-class represents the last element among a group of sibling elements.
+```css 
+p:last-child {
+  /* styles here */
+}
+```
+----
+### Only Child Selector
+The :only-child CSS pseudo-class represents an element without any siblings.
+```css 
+p:only-child {
+  /* styles here */
+}
+```
+----
+### :nth-child Selector
+The :nth-child() CSS pseudo-class matches elements based on their position among a group of siblings.
+```css 
+p:nth-child() {
+  /* styles here */
+}
 
-Link Selector```css .class:link {}```
+p:nth-child(even) {
+  /* styles here */
+}
+```
+----
+### Checked elements selector 
+The :checked selector works for checkboxes, radio buttons, and options of select elements. To retrieve only the selected options of select elements, use the :selected selector.
+```css 
+input:checked {
+  /* styles here */
+}
+```
+---
+### Disabled elements selector
+The :disabled selector matches every disabled element (mostly used on form elements).
+```css
+input:disabled {
+  /* styles here */
+}
+```
 
-First Line Selector```css p::first-line {}```
+### Enabled elements selector
+The :enabled selector matches every enabled element (mostly used on form elements).
+```css
+input:enabled {
+  /* styles here */
+}
+```
+---
+### Elements that have no Children Selector (including text nodes)
 
-First Letter Selector```css p::first-letter {}```
+```css
+p:empty {
+  /* styles here */
+}
+```
+---
+### Not a Specified Element Selector
+styles for anything that does not math element
+```css
+:not(p) {
+  /* styles here */
+}
 
-First Child Selector```css p:first-child {}```
+```
+---
 
-Last Child Selector```css p:last-child {}```
+### Be
+element{
+  fore Element
+::before creates a pseudo-element that is the first child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default.
+```css 
+.class::before {
+  /* styles here */
+}
+```
+---
+### After Element
+```css 
+.class::before {
+  /* styles here */
+}
+```
+---
 
-Only Child Selector```css p:only-child {}```
-
-:nth-child Selector```css p:nth-child() {}```
-
-First Element of its Parent Selector```css p:first-of-type {}```
-
-Checked elements selector ```css input:checked {}```
-
-Disabled elements selector```css input:disabled {}```
-
-Enabled elements selector```css input:enabled {}```
-
-Elements that have no Children Selector (including text nodes)```css p:empty {}```
-
-Not a Specified Element Selector```css :not(p) {}```
-
-Before Element```css .class::before {}```
-
-After Element```css .class::before {}```
+---
 
 ## Text Styling
+----------
 
-Font style```css font-style: normal | italic | oblique`
+Font style
+```css 
+element{
+  font-style: normal | italic | oblique
+}
+```
 
-Font Variant```css font-variant: normal | small-caps`
+---
 
-Font Weight```css font-weight: normal | bold | bolder | lighter | 100 - 900`
 
-Vertical Alignment```css vertical-align: baseline | 10px | sub | super | top | text-top | middle | bottom | text-bottom | initial`
+Font Variant
+```css 
+element{
+  font-variant: normal | small-caps
+}
+```
 
-Font Size```css font-size: 12px | 0.8em | 80%`
+---
 
-Text Transform```css text-transform: capitalise | lowercase | uppercase`
 
-Space Between Characters```css letter-spacing: normal | 4px`
+Font Weight
+```css 
+element{
+  font-weight: normal | bold | bolder | lighter | 100 - 900
+}
+```
 
-Line Height```css line-height: normal | 3em | 34%`
+---
 
-Horizontal Alignment```css text-align: left | right | center | justify`
 
-Text Align Last```css text-align-last: auto | left | right | center | justify | start | end | initial | inherit`
+Vertical Alignment
+```css 
+element{
+  vertical-align: baseline | 10px | sub | super | top | text-top | middle | bottom | text-bottom | initial
+}
+```
 
-Text Decoration```css text-decoration: none | underline | overline | line-through`
+---
 
-Indent First Line```css text-indent: 25px`
 
-Font Family```css font-family: 'Open Sans', sans-serif`
+Font Size
+```css 
+element{
+  font-size: 12px | 0.8em | 80%
+}
+```
 
-Text Justify```css text-justify: auto | inter-word | inter-character | none | initial | inherit`
+---
 
-Text Overflow```css text-overflow: clip | ellipsis | string | initial | inherit`
 
-Text Shadow```css text-shadow: h-shadow v-shadow blur-radius color | none | initial | inherit`
+Text Transform
+```css 
+element{
+  text-transform: capitalise | lowercase | uppercase
+}
+```
+
+---
+
+
+Space Between Characters
+```css 
+element{
+  letter-spacing: normal | 4px
+}
+```
+
+---
+
+
+Line Height
+```css 
+element{
+  line-height: normal | 3em | 34%
+}
+```
+
+---
+
+
+Horizontal Alignment
+```css 
+element{
+  text-align: left | right | center | justify
+}
+```
+
+---
+
+
+Text Align Last
+```css 
+element{
+  text-align-last: auto | left | right | center | justify | start | end | initial | inherit
+}
+```
+
+---
+
+
+Text Decoration
+```css 
+element{
+  text-decoration: none | underline | overline | line-through
+}
+```
+
+---
+
+
+Indent First Line
+```css 
+element{
+  text-indent: 25px
+}
+```
+
+---
+
+
+Font Family
+```css 
+element{
+  font-family: 'Open Sans', sans-serif
+}
+```
+
+---
+
+
+Text Justify
+```css 
+element{
+  text-justify: auto | inter-word | inter-character | none | initial | inherit
+}
+```
+
+---
+
+
+Text Overflow
+```css 
+element{
+  text-overflow: clip | ellipsis | string | initial | inherit
+}
+```
+
+---
+
+
+Text Shadow
+```css 
+element{
+  text-shadow: h-shadow v-shadow blur-radius color | none | initial | inherit
+}
+```
+
+---
+
 
 ## Position
 
-Position```css position: static | relative | absolute | fixed | sticky`
+Position
+```css 
+element{
+  position: static | relative | absolute | fixed | sticky
+}
+```
 
-Position Properties```css top | right | bottom | left`
+---
 
-Float Element```css float: left | right | none`
 
-Clear Floating Elements```css clear: none | left | right | both`
+Position Properties
+```css 
+element{
+  top | right | bottom | left
+}
+```
 
-Z Index```css z-index: 3 | auto | inherit`
+---
+
+
+Float Element
+```css 
+element{
+  float: left | right | none
+}
+```
+
+---
+
+
+Clear Floating Elements
+```css 
+element{
+  clear: none | left | right | both
+}
+```
+
+---
+
+
+Z Index
+```css 
+element{
+  z-index: 3 | auto | inherit
+}
+```
+
+---
+
 
 ## Background
 
-Background Image```css background-image: url()`
+Background Image
+```css 
+element{
+  background-image: url()
+}
+```
 
-Background Repeat```css background-repeat: repeat-x | repeat-y | repeat | space | round | no-repeat`
+---
 
-Background Color```css background-color: #2AA9E0`
 
-Background Position```css background-position: top | right | bottom | left | center`
+Background Repeat
+```css 
+element{
+  background-repeat: repeat-x | repeat-y | repeat | space | round | no-repeat
+}
+```
 
-Background Attachment```css background-attachment: scroll | fixed | local | initial | inherit`
+---
+
+
+Background Color
+```css 
+element{
+  background-color: #2AA9E0
+}
+```
+
+---
+
+
+Background Position
+```css 
+element{
+  background-position: top | right | bottom | left | center
+}
+```
+
+---
+
+
+Background Attachment
+```css 
+element{
+  background-attachment: scroll | fixed | local | initial | inherit
+}
+```
+
+---
+
 
 ## Box properties
 
-Box Sizing```css box-sizing: border-box | content-box`
+Box Sizing
+```css 
+element{
+  box-sizing: border-box | content-box
+}
+```
 
-Margin```css margin: 2px 4px 6px 8px | 0 auto`
+---
 
-Padding```css padding: 2px 4px 6px 8px`
 
-Border Color```css border-color: #2AA9E0`
+Margin
+```css 
+element{
+  margin: 2px 4px 6px 8px | 0 auto
+}
+```
 
-Border Style```css border-style: none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset`
+---
 
-Border Width```css border-width: 10px`
+
+Padding
+```css 
+element{
+  padding: 2px 4px 6px 8px
+}
+```
+
+---
+
+
+Border Color
+```css 
+element{
+  border-color: #2AA9E0
+}
+```
+
+---
+
+
+Border Style
+```css 
+element{
+  border-style: none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset
+}
+```
+
+---
+
+
+Border Width
+```css 
+element{
+  border-width: 10px
+}
+```
+
+---
+
 
 ## List Styling
 
-List Type```css list-style-type: disc | circle | square | none`
+List Type
+```css 
+element{
+list-style-type: disc | circle | square | none
+}
+```
 
-List Position```css list-style-position: inside | outside`
-
-List Image```css list-style-image: url()`
+---
+List Position
+```css 
+element{
+list-style-position: inside | outside
+}
+`
+List Image
+```css 
+element{
+list-style-image: url()
+}```
 
 ## Flexbox
 
-Flex Direction```css flex-direction: row | row-reverse | column | column-reverse`
+Flex Direction
+```css 
+element{
+  flex-direction: row | row-reverse | column | column-reverse
+}
+```
 
-Flex Wrap```css flex-wrap: nowrap | wrap | wrap-reverse`
+---
 
-Justify Content```css justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly`
 
-Align Items```css align-items: flex-start | flex-end | center | baseline | stretch`
+Flex Wrap
+```css 
+element{
+  flex-wrap: nowrap | wrap | wrap-reverse
+}
+```
 
-Align Content```css align-content: flex-start | flex-end | center | space-between | space-around | stretch`
+---
 
-Order```css order: 0`
 
-Flex Grow```css flex-grow: 0`
+Justify Content
+```css 
+element{
+  justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly
+}
+```
 
-Flex Shrink```css flex-shrink: 1`
+---
 
-Flex Basis```css flex-basis: 3px | auto`
 
-Align Self```css align-self: auto | flex-start | flex-end | center | baseline | stretch`
+Align Items
+```css 
+element{
+  align-items: flex-start | flex-end | center | baseline | stretch
+}
+```
+
+---
+
+
+Align Content
+```css 
+element{
+  align-content: flex-start | flex-end | center | space-between | space-around | stretch
+}
+```
+
+---
+
+
+Order
+```css 
+element{
+  order: 0
+}
+```
+
+---
+
+
+Flex Grow
+```css 
+element{
+  flex-grow: 0
+}
+```
+
+---
+
+
+Flex Shrink
+```css 
+element{
+  flex-shrink: 1
+}
+```
+
+---
+
+
+Flex Basis
+```css 
+element{
+  flex-basis: 3px | auto
+}
+```
+Align Self
+
+```css 
+element{
+  align-self: auto | flex-start | flex-end | center | baseline | stretch
+}
+```
+
+---
+
 
 ## CSS Grid
 
-Grid Template Columns```css grid-template-columns: 40px 50px auto 50px 40px`
+Grid Template Columns
+```css 
+element{
+  grid-template-columns: 40px 50px auto 50px 40px
+}
+```
 
-Grid Template Rows```css grid-template-rows: 25% 100px auto`
+---
 
-Grid Template Areas```css grid-template-areas: "a b c" | none`
 
-Grid Template```css grid-template: "a a a" 20% "b b b" auto | 100px 1fr / 50px 1fr`
+Grid Template Rows
+```css 
+element{
+  grid-template-rows: 25% 100px auto
+}
+```
 
-Grid Column Gap```css grid-column-gap: 10px`
+---
 
-Grid Row Gap```css grid-row-gap: 10px`
 
-Justify Items```css justify-items: start | end | center | stretch`
+Grid Template Areas
+```css 
+element{
+  grid-template-areas: "a b c" | none
+}
+```
 
-Align Items```css align-items: start | end | center | stretch`
+---
 
-Justify Content```css justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly`
 
-Align Content```css align-content: flex-start | flex-end | center | space-between | space-around | stretch`
+Grid Template
+```css 
+element{
+  grid-template: "a a a" 20% "b b b" auto | 100px 1fr / 50px 1fr
+}
+```
 
-Grid Auto Columns```css grid-auto-columns: 100px | max-content | min-content`
+---
 
-Grid Auto Rows```css grid-auto-rows: 100px | max-content | min-content`
 
-Grid Auto Flow```css grid-auto-flow: row | column | row dense | column dense`
+Grid Column Gap
+```css 
+element{
+  grid-column-gap: 10px
+}
+```
 
-Grid Column Start```css grid-column-start: 2 | areaname | span 2 | span areaname | auto`
+---
 
-Grid Column End```css grid-column-end: 2 | areaname | span 2 | span areaname | auto`
 
-Grid Row Start```css grid-row-start: 2 | areaname | span 2 | span areaname | auto`
+Grid Row Gap
+```css 
+element{
+  grid-row-gap: 10px
+}
+```
 
-Grid Row End```css grid-row-end: 2 | areaname | span 2 | span areaname | auto`
+---
 
-Grid Column```css grid-column: 3 / span 2`
 
-Grid Row```css grid-row: 3 / span 2`
+Justify Items
+```css 
+element{
+  justify-items: start | end | center | stretch
+}
+```
 
-Justify Self```css justify-self: start | end | center | stretch`
+---
 
-Align Self```css align-self: start | end | center | stretch`
+
+Align Items
+```css 
+element{
+  align-items: start | end | center | stretch
+}
+```
+
+---
+
+
+Justify Content
+```css 
+element{
+  justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly
+}
+```
+
+---
+
+
+Align Content
+```css 
+element{
+  align-content: flex-start | flex-end | center | space-between | space-around | stretch
+}
+```
+
+---
+
+
+Grid Auto Columns
+```css 
+element{
+  grid-auto-columns: 100px | max-content | min-content
+}
+```
+
+---
+
+
+Grid Auto Rows
+```css 
+element{
+  grid-auto-rows: 100px | max-content | min-content
+}
+```
+
+---
+
+
+Grid Auto Flow
+```css 
+element{
+  grid-auto-flow: row | column | row dense | column dense
+}
+```
+
+---
+
+
+Grid Column Start
+```css 
+element{
+  grid-column-start: 2 | areaname | span 2 | span areaname | auto
+}
+```
+
+---
+
+
+Grid Column End
+```css 
+element{
+  grid-column-end: 2 | areaname | span 2 | span areaname | auto
+}
+```
+
+---
+
+
+Grid Row Start
+```css 
+element{
+  grid-row-start: 2 | areaname | span 2 | span areaname | auto
+}
+```
+
+---
+
+
+Grid Row End
+```css 
+element{
+  grid-row-end: 2 | areaname | span 2 | span areaname | auto
+}
+```
+
+---
+
+
+Grid Column
+```css 
+element{
+  grid-column: 3 / span 2
+}
+```
+
+---
+
+
+Grid Row
+```css 
+element{
+  grid-row: 3 / span 2
+}
+```
+
+---
+
+
+Justify Self
+```css 
+element{
+  justify-self: start | end | center | stretch
+}
+```
+
+---
+
+
+Align Self
+```css 
+element{
+  align-self: start | end | center | stretch
+}
+```
+
+---
+
 
 ## Dynamic Content
 
-CSS Variable```css --variable-name: value`
+CSS Variable
+```css 
+element{
+  --variable-name: value
+}
+```
 
-Variable Usage```css var(--variable-name)`
+---
 
-Counter Reset```css counter-reset: name-of-counter`
 
-Counter Increment```css counter-increment: name-of-counter`
+Variable Usage
+```css 
+element{
+  var(--variable-name)
+}
+```
 
-Counter Dynamic Value```css content: counter(name-of-counter)`
+---
 
-Attribute Dynamic Value```css content: attr(name-of-attribute)`
+
+Counter Reset
+```css 
+element{
+  counter-reset: name-of-counter
+}
+```
+
+---
+
+
+Counter Increment
+```css 
+element{
+  counter-increment: name-of-counter
+}
+```
+
+---
+
+
+Counter Dynamic Value
+```css 
+element{
+  content: counter(name-of-counter)
+}
+```
+
+---
+
+
+Attribute Dynamic Value
+```css 
+element{
+  content: attr(name-of-attribute)
+}
+```
+
+---
+
 
 

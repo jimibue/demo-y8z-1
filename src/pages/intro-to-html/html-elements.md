@@ -207,4 +207,5 @@ Comments can span single or multiple lines.
 
 ## Demo
 
-{% codepen /%}
+{% codepen src="https://codepen.io/JamesYeates/embed/bGvzMWm?default-tab=html%2Cresult"
+href="https://codepen.io/JamesYeates/pen/bGvzMWm /%}
