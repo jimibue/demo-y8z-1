@@ -4,7 +4,7 @@ description: A tutorial about datatypes in js
 videoURL: 'https://www.youtube.com/watch?v=CcJD7RMPh88&list=PLDX4hvAvkvz1axBVoR7hJAEgLakfuf4z8'
 ---
 
-In this tutorial, you will learn about the JavaScript datatypes and their unique characteristics.
+In this tutorial, you will learn about JavaScript datatypes and their unique characteristics.
 
 JavaScript has two main categories of data types: primitive and reference.
 
@@ -18,7 +18,7 @@ counter = false; // counter is now a boolean
 counter = "foo"; // counter is now a string
 ```
 
-To get the current type of the value that the variable stores, you use the typeof operator:
+To get the current type of the value that the variable stores, you use the 'typeof' operator:
 
 ```javascript
 let counter = 120;
@@ -45,7 +45,7 @@ console.log(counter); // undefined
 console.log(typeof counter); // undefined
 ```
 
-In this example, the counter is a variable. Since counter hasn’t been initialized, it is assigned the value undefined. The type of counter is also undefined.
+In this example, the counter is a variable. Since the counter hasn’t been initialized, it is assigned the value undefined. The type of counter is also undefined.
 
 ---
 
@@ -107,7 +107,7 @@ console.log(-Number.MAX_VALUE - Number.MAX_VALUE); // -Infinity
 
 ## The NaN type
 
-NaN stands for Not a Number. It is a special numeric value that indicates an invalid number. For example, the division of a string by a number returns NaN:.
+NaN stands for Not a Number. It is a special numeric value that indicates an invalid number. For example, the division of a string by a number returns NaN.
 
 ```javascript
 console.log("a" / 2); // NaN;
@@ -137,7 +137,7 @@ let greeting = "Hi";
 let message = "Bye";
 ```
 
-If you want to single quote or double quotes in a literal string, you need to use the backslash to escape it. For example:
+If you want to use a single quote or double quotes in a literal string, you need to use the backslash to escape it. For example:
 
 ```javascript
 let message = "I'm also a valid string"; // use \ to escape the single quote (')
@@ -218,7 +218,7 @@ Note that you’ll learn more about symbols in the symbol tutorial.
 
 ## The bigint type
 
-The bigint type represents the whole numbers that are larger than 253 – 1. To form a bigint literal number, you append the letter n at the end of the number:
+The 'bigint' type represents the whole numbers that are larger than 253 – 1. To form a bigint literal number, you append the letter n at the end of the number:
 
 ```javascript
 let pageView = 9007199254740991n;
@@ -274,7 +274,7 @@ The contact object has the firstName, lastName, email, phone, and address proper
 
 The address property itself holds an object that has building, street, city, state, and country properties.
 
-To access a object’s property, you can use
+To access an object’s property, you can use
 
 The dot notation (.)
 The array-like notation ([]).

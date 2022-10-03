@@ -14,6 +14,22 @@ export const introToJsNav = [
           title: 'Datatypes',
           href: '/intro-to-js/data-types',
         },
+        {
+          title: 'Operators',
+          href: '/intro-to-js/operators',
+        },
+        {
+          title: 'Conditionals',
+          href: '/intro-to-js/conditionals',
+        },
+        {
+          title: 'Strings',
+          href: '/intro-to-js/strings',
+        },
+        {
+          title: 'Functions',
+          href: '/intro-to-js/functions',
+        },
       ],
     },
     {

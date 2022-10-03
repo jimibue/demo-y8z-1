@@ -1,8 +1,6 @@
 We will be using the integrated terminal in vscode to run our js files.  To run a js file we open the terminal in vscode:
 
-`terminal > new terminal`
-
-Than we run the command
+`terminal > new terminal` Then we run the command
 
 ```
 node <name-of-file>
