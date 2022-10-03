@@ -11,7 +11,6 @@ let age = 23;
 //
 ```
 ---
-
 Here we would say we are:
 
 "`declaring` a variable named myAge and `assigning` it the value 23"
