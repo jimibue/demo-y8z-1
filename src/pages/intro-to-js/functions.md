@@ -67,7 +67,21 @@ getFullName("John")
 // My name is John undefined
 ```
  
-the order of parameters matters.  The first parameter is assigned to the first parameter in the function definition.  The second parameter is assigned to the second parameter in the function definition.  The third parameter is assigned to the third parameter in the function definition.  If there are more parameters than parameters in the function definition, the extra parameters are ignored.  If there are less parameters than parameters in the function definition, the missing parameters are assigned the value `undefined`.
+the order of parameters matters.  The first parameter is assigned to the first parameter in the function definition.  The second parameter is assigned to the second parameter in the function definition.  If there are more parameters than parameters in the function definition, the extra parameters are ignored.  If there are fewer parameters than parameters in the function definition, the missing parameters are assigned the value `undefined`.
+
+## Arguments
+Arguments are the values that are passed into a function.  Arguments are separated by commas.  For example:
+
+```javascript
+// defining a function with parameters
+function getFullName(firstName, lastName) {
+  console.log(`My name is ${firstName} ${lastName}`)
+}
+
+// passing in arguments
+// John and Doe are the arguments
+getFullName("John", "Doe")
+```
 
 
 ## Return
@@ -128,6 +142,47 @@ temperature = getTemperature(150)
 console.log(temperature)
 // Hot
 ```
+
+## Functions scope
+
+Functions have their own scope.  Variables defined inside a function are not accessible outside of the function.  Variables defined outside of a function are accessible inside of the function.  For example:
+
+
+
+```javascript
+let name = "John"
+
+function sayHello() {
+  let message = `Hello ${name}`
+  console.log(message)
+}
+
+ sayHello() // Hello John
+
+console.log(message) // ReferenceError: message is not defined
 ```
+
+## Naming Functions
+
+Functions should be named using camelCase.  They should be named using a verb and names
+should describe what the function does.  For example:
+
+```javascript
+// bad function name
+// what does this function do?
+function x() {
+  // ...
+}
+
+// good function name
+// what does this function do?
+function getUserBalance() {
+  // ...
+}
+```
+
+
+
+
 
 

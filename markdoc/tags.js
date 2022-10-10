@@ -38,6 +38,10 @@ const tags = {
   },
   'question': {
     render: Question,
+    attributes: {
+      question: { type: String },
+      answer: { type: String },
+    },
   },
   'codepen': {
     render: CodePen,

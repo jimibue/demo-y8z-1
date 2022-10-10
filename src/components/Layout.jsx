@@ -19,6 +19,7 @@ import { reactCourseNav } from './layoutNavs/react-course-nav'
 import { introToGitNav } from './layoutNavs/intro-to-git-nav'
 import { introToCommandLineNav } from './layoutNavs/intro-to-command-line-nav'
 import { introToToolsNav } from './layoutNavs/intro-to-tools-nav'
+import { introToTSNav } from './layoutNavs/intro-to-ts-nav'
 import { Header } from '@/components/landing/Header'
 import { Container } from './Container'
 
@@ -220,6 +221,7 @@ export function Layout({ children, title, tableOfContents }) {
     if (path.includes('dad')) return introToDadNav
     if (path.includes('react')) return reactCourseNav
     if (path.includes('command-line')) return introToCommandLineNav
+    if (path.includes('ts')) return introToTSNav
 
     // if (path.includes('tools')) return introToToolsNav
 

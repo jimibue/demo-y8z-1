@@ -1,14 +1,14 @@
-export function Question() {
+export function Question({question, answer, link}) {
   return (
     <>
       <details>
         <summary>
-          <b>Answer</b>
+   
+          <b>{question}</b>
         </summary>
-        <p>
-          Answer: B Note that the value of 
-          arrow functions, the `this` keyword refers to its current surrounding
-          scope, unlike regular functions! This means that when we call
+        <p style={{background:'#f3f3f3', borderRadius:'5px', padding:
+        '10px'}}>
+          {answer}s
         </p>
       </details>
     </>

@@ -30,6 +30,18 @@ export const introToJsNav = [
           title: 'Functions',
           href: '/intro-to-js/functions',
         },
+        {
+          title: 'Arrays',
+          href: '/intro-to-js/arrays',
+        },
+        {
+          title: 'Objects',
+          href: '/intro-to-js/objects',
+        },
+        {
+          title: 'Intro-to-coding-with-typescript',
+          href: '/intro-to-js/intro-to-coding-with-typescript',
+        },
       ],
     },
     {
