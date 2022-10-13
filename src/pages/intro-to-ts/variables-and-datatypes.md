@@ -35,27 +35,25 @@ let likes: number = 0;
 // the name of the variable is `likes`
 // the type of the variable is `number`
 // the value of the variable is `0`
-// the scope of the variable is `global` meaning that it can be accessed anywhere in this file
+// the scope of the variable is `block` meaning that it can be accessed anywhere in this file
 
 // we can reassign the value of a variable defined with `let`
 likes = 1;
 console.log(likes); // 1
 
 // we cannot change the type of a variable
-
 // Error: Type 'string' is not assignable to type 'number'.
-likes = '1'; 
+// likes = '1'; 
 
 const username: string = 'John';
 // the name of the variable is `username`
 // the type of the variable is `string`
 // the value of the variable is `'John'`
-// the scope of the variable is `global` meaning that it can be accessed anywhere in this file
+// the scope of the variable is `block` meaning that it can be accessed anywhere in this file
 
 console.log(username); // 'John'
 
 // we cannot reassign the value of a variable defined with `const`
-
 // Error: Cannot assign to 'username' because it is a constant.
 username = 'Jane'; 
 
@@ -72,7 +70,6 @@ Naming variables in JavaScript is not as simple as it might seem. Variable names
 3. Variable names must begin with a letter, an underscore (_) or a dollar sign ($).
 4. Variable names can only contain letters, numbers, underscores, or dollar signs.
 5. Variable names are case sensitive.
-
 
 ```ts
 
@@ -130,3 +127,24 @@ Sometimes we have constants that we know the value before-hand.  This can be thi
 // we might not know the artist before hand, but we don't want to change it after it is set.
  const artist: string = 'Britney Spears';
  ```
+
+### Variable Scope
+
+Variables have a scope. The scope of a variable is the area of the code where the variable can be accessed.  There are two types of scopes: `block` and `global`.  Variables defined with `let` and `const` have a `block` scope.  Variables defined with `var` have a `global` scope.  Variables defined with `let` and `const` can only be accessed within the block where they are defined.  Variables defined with `var` can be accessed anywhere in the file.  We will cover scope more in later lessons.
+
+
+## Datatypes
+
+## types in JavaScript
+
+### primitive types
+
+JavaScript has 6 primitive types: `number`, `string`, `boolean`, `null`, `undefined`, and `symbol`.  These types are the most basic types in JavaScript.  They are the building blocks of more complex types.  We will cover these types in more detail in the next section.  Primitive
+
+### reference types
+JavaScript also has 3 reference types: `object`, `array`, and `function`.  These types refer to a location in memory where the data is stored.  
+
+## types in TypeScript
+
+
+
