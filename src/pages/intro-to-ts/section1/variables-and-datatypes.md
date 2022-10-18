@@ -135,13 +135,41 @@ Variables have a scope. The scope of a variable is the area of the code where th
 
 ## Datatypes
 
-## types in JavaScript
+Datatypes are fundamental to programming.  They are used to represent different types of data.  When we think about the real world we can see there are many different types of data.  For example, there are numbers, people, lists, locations, and more.  In programming, we use datatypes to represent these different types of data.  
 
-### primitive types
+## Types in JavaScript
+Remember TypeScript is a superset of JavaScript.  This means that TypeScript has all the features of JavaScript and more.  So let's first look at the datatypes in JavaScript.  We can break these up into two categories: primitive and object.  Primitive datatypes are the most basic datatypes.  They are the building blocks of all other datatypes.  Object datatypes are more complex and are made up of primitive datatypes.  We will cover primitive datatypes first. 
+## Primitive types
 
-JavaScript has 6 primitive types: `number`, `string`, `boolean`, `null`, `undefined`, and `symbol`.  These types are the most basic types in JavaScript.  They are the building blocks of more complex types.  We will cover these types in more detail in the next section.  Primitive
+JavaScript has 6 primitive types: `number`, `string`, `boolean`, `null`, `undefined`, and `symbol`.  These types are the most basic types in JavaScript.  They are the building blocks of more complex types. 
 
-### reference types
+### Number
+
+Numbers in JavaScript are represented by the `number` type.  Numbers can be positive or negative and can be integers or decimals.  We can use the `typeof` operator to check the type of a variable.  Numbers allow us to represent things like age, height, weight, and more. 
+
+
+```ts
+let age: number = 30;
+let height: number = 6.1;
+let weight: number = 180.5;
+console.log(typeof age); // number
+
+// common things we do with numbers
+// addition
+console.log(1+1)
+// subtraction
+```
+
+
+### String
+
+
+
+
+
+
+
+### Reference types
 JavaScript also has 3 reference types: `object`, `array`, and `function`.  These types refer to a location in memory where the data is stored.  
 
 ## types in TypeScript
