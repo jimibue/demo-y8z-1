@@ -109,6 +109,7 @@ export function Header() {
    
               {/* <NavLink href="/life-after-bootcamp">Life after Bootcamp</NavLink> */}
               <NavLink href="/faqs">FAQS</NavLink>
+              <NavLink href="/modules">Modules</NavLink>
          
             </div>
           </div>
