@@ -1,5 +1,5 @@
 ---
-title: "Lesson 1TypeScript Crash Course"
+title: "TypeScript Crash Course"
 description: "TypeScript is a typed superset of JavaScript that compiles to plain JavaScript."
 ---
 

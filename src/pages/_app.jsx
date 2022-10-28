@@ -55,7 +55,7 @@ export default function App({ Component, pageProps }) {
   // LANDING PAGE
   console.log(asPath)
   console.log(asPath.includes('faqs'))
-  if ( asPath.includes('privacy') || asPath.includes('faqs')||asPath.includes('part-time') || (!asPath.includes('prep-work') && !asPath.includes('intro') && !asPath.includes('dad') && !asPath.includes('react')  && !asPath.includes('frontend') )) {
+  if ( asPath.includes('privacy') || asPath.includes('faqs')||asPath.includes('part-time') || (!asPath.includes('prep-work') && !asPath.includes('intro') && !asPath.includes('dad') && !asPath.includes('react')  && !asPath.includes('frontend')   && !asPath.includes('fullstack'))) {
     return (
       <>
       

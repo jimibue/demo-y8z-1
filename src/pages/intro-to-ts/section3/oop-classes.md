@@ -63,9 +63,15 @@ class Person {
   }
 }
 
-const person = new Person('John', 20, 0);
-console.log(person.getInformation()); // John is 20 years old and has 0 likes
-person.name = 'Jane'; // Error: Cannot assign to 'name' because it is a read-only property.
+const john = new Person('John', 20, 0);
+const bob = new Person('Bob', 20, 0); 
+console.log(john.getInformation()); // John is 20 years old and has 0 likes// John is 20 years old and has 0 likes
+john.name = 'Jane'; // Error: Cannot assign to 'name' because it is a read-only property.
+
+// array of instances of Person class
+const people: Person[] = [john, bob];
+
+
 ```
 
 ```

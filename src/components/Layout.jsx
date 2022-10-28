@@ -18,6 +18,7 @@ import { introToCSSNav } from './layoutNavs/intro-to-css-nav'
 import { reactCourseNav } from './layoutNavs/react-course-nav'
 import { introToGitNav } from './layoutNavs/intro-to-git-nav'
 import { frontendNav } from './layoutNavs/frontend-nav'
+import { fullstackNav } from './layoutNavs/fullstack-nav'
 import { introToCommandLineNav } from './layoutNavs/intro-to-command-line-nav'
 import { introToToolsNav } from './layoutNavs/intro-to-tools-nav'
 import { introToTSNav } from './layoutNavs/intro-to-ts-nav'
@@ -220,6 +221,7 @@ export function Layout({ children, title, tableOfContents }) {
     // if (path.includes('css')) return introToCSSNav
     if (path.includes('git')) return introToGitNav
     if (path.includes('frontend')) return frontendNav
+    if (path.includes('fullstack')) return fullstackNav
     if (path.includes('dad')) return introToDadNav
     if (path.includes('react')) return reactCourseNav
     if (path.includes('command-line')) return introToCommandLineNav

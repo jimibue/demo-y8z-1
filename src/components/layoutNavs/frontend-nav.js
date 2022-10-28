@@ -1,6 +1,6 @@
 export const frontendNav = [
     {
-        title: 'module 2',
+        title: 'Module 2: Frontend',
         links: [
           { title: 'overview', href: '/frontend' },
         ],
@@ -11,7 +11,7 @@ export const frontendNav = [
         { title: 'Overview', href: '/frontend/section1' },
         { title: 'L1 - HTML CSS Crash Course', href: '/frontend/section1/html-css-crash-course'},
         { title: 'L2 -Flexbox/Grid/HolyGrail', href: '/frontend/section1/html-css-crash-course'},
-        { title: 'L3 - React: Crash Course', href: '/frontend/section1/html-css-crash-course'},
+        { title: 'L3 - React: Crash Course', href: '/frontend/section1/react-crash-course'},
         { title: 'L4 - React: Components', href: '/frontend/section1/html-css-crash-course'},
         { title: 'L5 - Review and Apply', href: '/frontend/section1/html-css-crash-course'}
       ],
